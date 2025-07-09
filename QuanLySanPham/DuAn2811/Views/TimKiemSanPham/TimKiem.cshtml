@@ -1,0 +1,157 @@
+﻿@* @model ComboView *@
+
+@* <!DOCTYPE html> *@
+@* <html lang="en"> *@
+@* <head> *@
+@*     <meta charset="utf-8" /> *@
+@*     <meta name="viewport" content="width=device-width, initial-scale=1.0" /> *@
+@*     <title>@ViewData["Title"] - DuAn2811_</title> *@
+@*     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" /> *@
+@*     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" /> *@
+@*     <link href="~/css/site.css" rel="stylesheet" /> *@
+@*     <link rel="stylesheet" href="~/DuAn2811_.styles.css" asp-append-version="true" /> *@
+@* </head> *@
+@* <body> *@
+@*     <header></header> *@
+@*     <main> *@
+@*         <div class="content-sanpham"> *@
+@*             <h2 style="margin-left: 10%; padding-top:30px;">Sản phẩm Sale </h2> *@
+@*             <div class="sale-menu"> *@
+@*                 <a href="#">Điện thoại</a> *@
+@*                 <a href="#">Laptop</a> *@
+@*                 <a href="#">Phụ kiện</a> *@
+@*                 <a href="#">Đồng hồ</a> *@
+@*                 <a href="#">Apple</a> *@
+@*             </div> *@
+@*             <div class="product-container"> *@
+@*                 @if (!string.IsNullOrEmpty(ViewBag.ErrorMessage)) *@
+@*                 { *@
+@*                     <div class="alert alert-danger" role="alert"> *@
+@*                         @ViewBag.ErrorMessage *@
+@*                     </div> *@
+@*                 } *@
+@*                 @if (Model?.SaleSanPham != null && Model.SaleSanPham.Any()) *@
+@*                 { *@
+@*                     <div class="product-container"> *@
+@*                         @foreach (var sp in Model.SaleSanPham) *@
+@*                         { *@
+@*                             <div class="product hidden"> *@
+@*                                 <!-- Hiển thị tên sản phẩm --> *@
+@*                                 <!-- Hiển thị hình ảnh --> *@
+@*                                 @if (!string.IsNullOrEmpty(sp.Anh)) *@
+@*                                 { *@
+@*                                     <img src="@sp.Anh" style="text-align:center;" /> *@
+@*                                 } *@
+@*                                 else *@
+@*                                 { *@
+@*                                     <p>Không có hình ảnh.</p> *@
+@*                                 } *@
+@*                                 <!-- Hiển thị chi tiết sản phẩm --> *@
+@*                                 <p style="margin:10px">@sp.TenSanPham</p> *@
+
+
+@*                                 <ul style="list-style-type:none; padding:10px"> *@
+@*                                     <!-- Hiển thị danh sách ChiTietSanPhams --> *@
+@*                                     @foreach (var chitiet in sp.ChiTietSanPhams ?? Enumerable.Empty<ChiTietSanPham>()) *@
+@*                                     { *@
+@*                                         <li> *@
+@*                                             Giá: @chitiet.Gia đ *@
+@*                                         </li> *@
+@*                                     } *@
+@*                                     <!-- Hiển thị danh sách QuanLyTonKhos --> *@
+@*                                     @foreach (var chitiet in sp.QuanLyTonKhos ?? Enumerable.Empty<QuanLyTonKho>()) *@
+@*                                     { *@
+@*                                         <li> *@
+@*                                             đã bán: @chitiet.So_Luong_Da_Ban *@
+@*                                         </li> *@
+@*                                     } *@
+@*                                     @if (sp.ChiTietKhuyenMais != null) *@
+@*                                     { *@
+@*                                         @foreach (var ct in sp.ChiTietKhuyenMais) *@
+@*                                         { *@
+@*                                             <li> *@
+@*                                                 @ct.MaKhuyenMaiNavigation?.ChiTietKhuyenMais *@
+@*                                             </li> *@
+@*                                         } *@
+@*                                     } *@
+@*                                 </ul> *@
+
+@*                             </div> *@
+@*                         } *@
+@*                     </div> *@
+@*                 } *@
+@*                 else *@
+@*                 { *@
+@*                     <div class="alert alert-danger" role="alert"> *@
+@*                         Không có sản phẩm nào để hiển thị. <strong>Lỗi:</strong> Vui lòng kiểm tra cơ sở dữ liệu hoặc API. *@
+@*                     </div> *@
+@*                 } *@
+@*             </div> *@
+@*         </div> *@
+@*         <div class="content-sanpham"> *@
+@*             <h2 style="margin-left: 10%; padding-top:30px;">Sản phẩm </h2> *@
+@*             <div class="product-container"> *@
+@*                 @if (Model?.AllSanPham != null && Model.AllSanPham.Any()) *@
+@*                 { *@
+@*                     <div class="product-container"> *@
+@*                         @foreach (var sanpham in Model.AllSanPham) *@
+@*                         { *@
+@*                             <div class="product hidden"> *@
+@*                                 <!-- Kiểm tra và hiển thị hình ảnh --> *@
+@*                                 @if (!string.IsNullOrEmpty(sanpham.Anh)) *@
+@*                                 { *@
+@*                                     <img src="@sanpham.Anh" style="text-align:center;" /> *@
+@*                                 } *@
+@*                                 else *@
+@*                                 { *@
+@*                                     <p>Không có hình ảnh.</p> *@
+@*                                 } *@
+
+@*                                 <!-- Hiển thị tên sản phẩm --> *@
+@*                                 <p style="margin:10px">@sanpham.TenSanPham</p> *@
+@*                                 <ul style="list-style-type:none; padding:10px"> *@
+@*                                     <!-- Hiển thị danh sách ChiTietSanPhams --> *@
+@*                                     @if (sanpham.ChiTietSanPhams != null) *@
+@*                                     { *@
+@*                                         @foreach (var chitiet in sanpham.ChiTietSanPhams) *@
+@*                                         { *@
+@*                                             <li>Giá: @chitiet.Gia đ</li> *@
+@*                                         } *@
+@*                                     } *@
+
+@*                                     <!-- Hiển thị danh sách QuanLyTonKhos --> *@
+@*                                     @if (sanpham.QuanLyTonKhos != null) *@
+@*                                     { *@
+@*                                         @foreach (var chitiet in sanpham.QuanLyTonKhos) *@
+@*                                         { *@
+@*                                             <li>Đã bán: @chitiet.So_Luong_Da_Ban</li> *@
+@*                                         } *@
+@*                                     } *@
+
+@*                                     <!-- Hiển thị danh sách ChiTietKhuyenMais --> *@
+@*                                     @if (sanpham.ChiTietKhuyenMais != null) *@
+@*                                     { *@
+@*                                         @foreach (var ct in sanpham.ChiTietKhuyenMais) *@
+@*                                         { *@
+@*                                             <li> *@
+@*                                                 @ct.MaKhuyenMaiNavigation?.ChiTietKhuyenMais *@
+@*                                             </li> *@
+@*                                         } *@
+@*                                     } *@
+@*                                 </ul> *@
+@*                             </div> *@
+@*                         } *@
+@*                     </div> *@
+@*                 } *@
+@*                 else *@
+@*                 { *@
+@*                     <div class="alert alert-danger" role="alert"> *@
+@*                         Không có sản phẩm nào để hiển thị. <strong>Lỗi:</strong> Vui lòng kiểm tra cơ sở dữ liệu hoặc API. *@
+@*                     </div> *@
+@*                 } *@
+@*             </div> *@
+@*         </div> *@
+@*     </main> *@
+@*     <img src="Anh/LienHe.png" style="width:100%; padding-top:20px; padding-bottom:2px;" /> *@
+@* </body> *@
+@* </html> *@

@@ -1,0 +1,173 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\nguue\\source\\repos\\GioHang.com\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{9C600D06-F51B-418A-AB78-298003CAA37B}|GioHang.com\\GioHang.com.csproj|c:\\users\\nguue\\source\\repos\\giohang.com\\giohang.com\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9C600D06-F51B-418A-AB78-298003CAA37B}|GioHang.com\\GioHang.com.csproj|solutionrelative:giohang.com\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9C600D06-F51B-418A-AB78-298003CAA37B}|GioHang.com\\GioHang.com.csproj|c:\\users\\nguue\\source\\repos\\giohang.com\\giohang.com\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9C600D06-F51B-418A-AB78-298003CAA37B}|GioHang.com\\GioHang.com.csproj|solutionrelative:giohang.com\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9C600D06-F51B-418A-AB78-298003CAA37B}|GioHang.com\\GioHang.com.csproj|c:\\users\\nguue\\source\\repos\\giohang.com\\giohang.com\\controllersapi\\taikhoanapicontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9C600D06-F51B-418A-AB78-298003CAA37B}|GioHang.com\\GioHang.com.csproj|solutionrelative:giohang.com\\controllersapi\\taikhoanapicontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9C600D06-F51B-418A-AB78-298003CAA37B}|GioHang.com\\GioHang.com.csproj|c:\\users\\nguue\\source\\repos\\giohang.com\\giohang.com\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{9C600D06-F51B-418A-AB78-298003CAA37B}|GioHang.com\\GioHang.com.csproj|solutionrelative:giohang.com\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9C600D06-F51B-418A-AB78-298003CAA37B}|GioHang.com\\GioHang.com.csproj|c:\\users\\nguue\\source\\repos\\giohang.com\\giohang.com\\views\\home\\dangnhap.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{9C600D06-F51B-418A-AB78-298003CAA37B}|GioHang.com\\GioHang.com.csproj|solutionrelative:giohang.com\\views\\home\\dangnhap.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9C600D06-F51B-418A-AB78-298003CAA37B}|GioHang.com\\GioHang.com.csproj|c:\\users\\nguue\\source\\repos\\giohang.com\\giohang.com\\controllersapi\\trangchuapi.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9C600D06-F51B-418A-AB78-298003CAA37B}|GioHang.com\\GioHang.com.csproj|solutionrelative:giohang.com\\controllersapi\\trangchuapi.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9C600D06-F51B-418A-AB78-298003CAA37B}|GioHang.com\\GioHang.com.csproj|c:\\users\\nguue\\source\\repos\\giohang.com\\giohang.com\\models\\tmdtcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9C600D06-F51B-418A-AB78-298003CAA37B}|GioHang.com\\GioHang.com.csproj|solutionrelative:giohang.com\\models\\tmdtcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9C600D06-F51B-418A-AB78-298003CAA37B}|GioHang.com\\GioHang.com.csproj|c:\\users\\nguue\\source\\repos\\giohang.com\\giohang.com\\models\\chitietgiohang.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9C600D06-F51B-418A-AB78-298003CAA37B}|GioHang.com\\GioHang.com.csproj|solutionrelative:giohang.com\\models\\chitietgiohang.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9C600D06-F51B-418A-AB78-298003CAA37B}|GioHang.com\\GioHang.com.csproj|c:\\users\\nguue\\source\\repos\\giohang.com\\giohang.com\\models\\giohang.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9C600D06-F51B-418A-AB78-298003CAA37B}|GioHang.com\\GioHang.com.csproj|solutionrelative:giohang.com\\models\\giohang.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 100,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 7,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "C:\\Users\\nguue\\source\\repos\\GioHang.com\\GioHang.com\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "GioHang.com\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "C:\\Users\\nguue\\source\\repos\\GioHang.com\\GioHang.com\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "GioHang.com\\Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAABYAAABwAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-03-18T15:20:28.53Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "DangNhap.cshtml",
+              "DocumentMoniker": "C:\\Users\\nguue\\source\\repos\\GioHang.com\\GioHang.com\\Views\\Home\\DangNhap.cshtml",
+              "RelativeDocumentMoniker": "GioHang.com\\Views\\Home\\DangNhap.cshtml",
+              "ToolTip": "C:\\Users\\nguue\\source\\repos\\GioHang.com\\GioHang.com\\Views\\Home\\DangNhap.cshtml",
+              "RelativeToolTip": "GioHang.com\\Views\\Home\\DangNhap.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-03-18T15:19:56.833Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "C:\\Users\\nguue\\source\\repos\\GioHang.com\\GioHang.com\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "GioHang.com\\Controllers\\HomeController.cs",
+              "ToolTip": "C:\\Users\\nguue\\source\\repos\\GioHang.com\\GioHang.com\\Controllers\\HomeController.cs*",
+              "RelativeToolTip": "GioHang.com\\Controllers\\HomeController.cs*",
+              "ViewState": "AgIAABkAAAAAAAAAAAAAADAAAABQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-18T15:17:40.467Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "TaiKhoanAPIController.cs",
+              "DocumentMoniker": "C:\\Users\\nguue\\source\\repos\\GioHang.com\\GioHang.com\\ControllersAPI\\TaiKhoanAPIController.cs",
+              "RelativeDocumentMoniker": "GioHang.com\\ControllersAPI\\TaiKhoanAPIController.cs",
+              "ToolTip": "C:\\Users\\nguue\\source\\repos\\GioHang.com\\GioHang.com\\ControllersAPI\\TaiKhoanAPIController.cs",
+              "RelativeToolTip": "GioHang.com\\ControllersAPI\\TaiKhoanAPIController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-18T15:09:59.261Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "ChiTietGioHang.cs",
+              "DocumentMoniker": "C:\\Users\\nguue\\source\\repos\\GioHang.com\\GioHang.com\\Models\\ChiTietGioHang.cs",
+              "RelativeDocumentMoniker": "GioHang.com\\Models\\ChiTietGioHang.cs",
+              "ToolTip": "C:\\Users\\nguue\\source\\repos\\GioHang.com\\GioHang.com\\Models\\ChiTietGioHang.cs",
+              "RelativeToolTip": "GioHang.com\\Models\\ChiTietGioHang.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-18T14:19:07.592Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "GioHang.cs",
+              "DocumentMoniker": "C:\\Users\\nguue\\source\\repos\\GioHang.com\\GioHang.com\\Models\\GioHang.cs",
+              "RelativeDocumentMoniker": "GioHang.com\\Models\\GioHang.cs",
+              "ToolTip": "C:\\Users\\nguue\\source\\repos\\GioHang.com\\GioHang.com\\Models\\GioHang.cs",
+              "RelativeToolTip": "GioHang.com\\Models\\GioHang.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-18T14:18:55.807Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "TmdtContext.cs",
+              "DocumentMoniker": "C:\\Users\\nguue\\source\\repos\\GioHang.com\\GioHang.com\\Models\\TmdtContext.cs",
+              "RelativeDocumentMoniker": "GioHang.com\\Models\\TmdtContext.cs",
+              "ToolTip": "C:\\Users\\nguue\\source\\repos\\GioHang.com\\GioHang.com\\Models\\TmdtContext.cs",
+              "RelativeToolTip": "GioHang.com\\Models\\TmdtContext.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAzAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-18T14:18:19.425Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\nguue\\source\\repos\\GioHang.com\\GioHang.com\\Program.cs",
+              "RelativeDocumentMoniker": "GioHang.com\\Program.cs",
+              "ToolTip": "C:\\Users\\nguue\\source\\repos\\GioHang.com\\GioHang.com\\Program.cs*",
+              "RelativeToolTip": "GioHang.com\\Program.cs*",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAApAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-18T14:07:40.792Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "TrangChuAPI.cs",
+              "DocumentMoniker": "C:\\Users\\nguue\\source\\repos\\GioHang.com\\GioHang.com\\ControllersAPI\\TrangChuAPI.cs",
+              "RelativeDocumentMoniker": "GioHang.com\\ControllersAPI\\TrangChuAPI.cs",
+              "ToolTip": "C:\\Users\\nguue\\source\\repos\\GioHang.com\\GioHang.com\\ControllersAPI\\TrangChuAPI.cs",
+              "RelativeToolTip": "GioHang.com\\ControllersAPI\\TrangChuAPI.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABsAAAAuAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-18T14:04:19.023Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,54 @@
+﻿@using DuAn2811_.Models
+@model DuAn2811_.Models.ComboView
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - Sản phẩm đã xem</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/css/dienthoai.css" />
+    <link rel="stylesheet" href="~/css/locnhieu.css" />
+    <link href="~/css/daxem.css" rel="stylesheet" />
+    <link rel="stylesheet" href="~/DuAn2811_.styles.css" asp-append-version="true" />
+    <script src="~/js/locnhieu.js" asp-append-version="true"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+</head>
+<body>
+    <div class="recently-viewed-container">
+        <div class="recently-viewed-header">
+            <h2>Sản phẩm đã xem</h2>
+            <a href="#">Xóa lịch sử</a>
+        </div>
+        @if (Model != null && Model.RecentlyViewed != null && Model.RecentlyViewed.Any())
+        {
+            <div class="recently-viewed-list">
+                @foreach (var sanpham in Model.RecentlyViewed)
+                {
+                    <div class="product-card">
+                        <button class="remove-button">×</button>
+                        @if (sanpham.Anh != null && sanpham.Anh.Count > 0)
+                        {
+                            <a href="@Url.Action("GetChiTiet", "ChiTietSanPham", new { id = sanpham.MaSanPham })">
+                                <img src="@sanpham.Anh[0]" alt="@sanpham.TenSanPham" />
+                            </a>
+                        }
+                        else
+                        {
+                            <p>Không có hình ảnh.</p>
+                        }
+                        <a href="@Url.Action("GetChiTiet", "ChiTietSanPham", new { id = sanpham.MaSanPham })" class="product-name">
+                            @sanpham.TenSanPham
+                        </a>
+                    </div>
+                }
+            </div>
+        }
+        else
+        {
+            <p>Bạn chưa xem sản phẩm nào.</p>
+        }
+    </div>
+</body>
+</html>

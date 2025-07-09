@@ -1,0 +1,269 @@
+﻿/* Cấu hình font-size theo kích thước màn hình */
+html {
+    font-size: 14px; /* Kích thước chữ mặc định */
+}
+
+@media (min-width: 768px) {
+    html {
+        font-size: 16px; /* Tăng kích thước chữ trên màn hình lớn */
+    }
+}
+
+@media (max-width: 767px) {
+    .product-container {
+        grid-template-columns: repeat(3, 1fr); /* 2 sản phẩm mỗi hàng trên màn hình nhỏ */
+    }
+}
+
+/* Nền và phong cách chính */
+body {
+    font-family: 'Roboto', Arial, sans-serif; /* Thiết lập phông chữ chính */
+    background-color: #e8f5e9;
+    color: #2e7d32;
+    margin: 0; /* Xóa khoảng cách bên ngoài */
+    padding: 0; /* Xóa khoảng cách bên trong */
+    min-height: 100vh; /* Chiều cao tối thiểu 100% màn hình */
+}
+
+/* Header */
+.header {
+    /*background-color: #ffdd00;*/ /* Đặt màu nền vàng */
+    display: flex; /* Dùng Flexbox để sắp xếp phần tử ngang */
+    color: #ffffff;
+    align-items: center; /* Căn giữa theo chiều dọc */
+    justify-content: center; /* Căn giữa theo chiều ngang */
+    flex-wrap: wrap; /* Tự động xuống dòng nếu không đủ không gian */
+    gap: 10px; /* Khoảng cách giữa các phần tử */
+    padding: 10px; /* Đệm bên trong */
+    /*position: sticky;*/ /* Cố định trên cùng khi cuộn */
+    /*top: 0;*/ /* Đặt vị trí cố định */
+    z-index: 1000; /* Đảm bảo header luôn ở trên các phần tử khác */
+    /*box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);*/ /* Hiệu ứng bóng */
+}
+
+    .header .logo {
+        max-width: 100px; /* Giới hạn chiều rộng của logo */
+    }
+
+/* Thanh tìm kiếm */
+.search {
+    flex-grow: 1; /* Chiếm không gian còn lại trong Flexbox */
+    max-width: 800px; /* Chiều rộng tối đa */
+    height: 30px; /* Chiều cao của thanh tìm kiếm */
+    padding: 5px; /* Khoảng đệm bên trong */
+    margin: 0 10px; /* Khoảng cách 2 bên */
+    border: 2px solid #007BFF; /* Viền màu xanh dương */
+    border-radius: 25px; /* Góc bo tròn */
+    outline: none; /* Xóa viền mặc định khi chọn */
+}
+
+.banner {
+    display: flex; /* Hiển thị dưới dạng Flexbox */
+    justify-content: space-between; /* Cách đều các phần tử */
+    padding: 10px; /* Đệm bên trong */
+}
+
+/* Icons */
+.icons {
+    display: flex; /* Hiển thị biểu tượng ngang hàng */
+    gap: 20px; /* Khoảng cách giữa các biểu tượng */
+}
+
+.icon {
+    display: flex; /* Dùng Flexbox để xếp biểu tượng và chữ */
+    align-items: center; /* Căn giữa theo chiều dọc */
+    text-decoration: none; /* Xóa gạch chân */
+    color: #333; /* Màu chữ */
+}
+
+    .icon i {
+        margin-right: 8px; /* Khoảng cách giữa biểu tượng và chữ */
+    }
+
+    .icon span {
+        font-size: 14px; /* Kích thước chữ của tiêu đề icon */
+    }
+
+/* Vị trí */
+.location {
+    display: flex; /* Hiển thị ngang hàng */
+    align-items: center; /* Căn giữa theo chiều dọc */
+    gap: 5px; /* Khoảng cách giữa các phần tử */
+}
+
+.Trang {
+    background-color: #388e3c; /* Nền vàng */
+    color: #ffffff;
+    position: sticky; /* Cố định trên cùng khi cuộn */
+    top: 0; /* Đặt vị trí cố định */
+    height: 110px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    width: 100%;
+}
+/* Thanh menu */
+.nav-menu {
+    /*background-color: #ffdd00;*/ /* Nền vàng */
+    display: flex; /* Hiển thị ngang hàng */
+
+    justify-content: center; /* Căn giữa nội dung */
+    flex-wrap: wrap; /* Tự động xuống dòng nếu không đủ không gian */
+    text-align: center; /* Căn giữa chữ */
+    /*padding: 10px;*/ /* Đệm bên trong */
+    gap: 10px; /* Khoảng cách giữa các mục menu */
+}
+
+    .nav-menu a {
+        text-decoration: none; /* Xóa gạch chân */
+        color: #ffffff; /* Màu chữ */
+        font-weight: bold; /* Chữ đậm */
+        padding: 10px 20px; /* Đệm bên trong link */
+        border-radius: 5px; /* Bo tròn góc */
+        transition: background-color 0.3s; /* Hiệu ứng khi hover */
+    }
+
+        .nav-menu a:hover {
+            background-color: #fefefe; /* Nền xanh khi hover */
+            color: black; /* Chữ trắng khi hover */
+        }
+
+/* Hộp sản phẩm */
+.content-sanpham {
+    margin-top: 120px;
+}
+
+.product-container {
+    display: grid; /* Sử dụng lưới */
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Mặc định là 5 sản phẩm mỗi hàng */
+    gap: 20px; /* Khoảng cách giữa các sản phẩm */
+    padding: 20px; /* Đệm bên trong */
+    background-color: #ffffff;
+}
+
+/* Hộp sản phẩm chi tiết */
+.product {
+    background-color: #ffffff;
+    border: 1px solid #ddd; /* Viền màu xám nhạt */
+    border-radius: 10px; /* Bo góc ô sản phẩm */
+    overflow: hidden;
+    text-align: center;
+    padding: 15px; /* Khoảng cách bên trong */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Hiệu ứng bóng nhẹ */
+    transition: transform 0.3s, box-shadow 0.3s; /* Hiệu ứng khi hover */
+}
+
+    .product:hover {
+        transform: scale(1.05); /* Phóng to nhẹ khi hover */
+        box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.2); /* Bóng đậm hơn khi hover */
+    }
+
+    /* Hình ảnh sản phẩm */
+    .product img {
+        height: 200px; /* Chiều cao hình ảnh */
+        width: 100%; /* Chiều rộng bằng khung chứa */
+        object-fit: cover; /* Đảm bảo hình ảnh không bị méo */
+        border-radius: 5px;
+    }
+
+    /* Nội dung sản phẩm */
+    .product p {
+        font-size: 16px; /* Kích thước chữ mô tả */
+        color: #333;
+        font-weight: bold; /* Chữ đậm */
+        margin: 10px 0; /* Khoảng cách trên dưới */
+    }
+
+    .product ul {
+        list-style: none; /* Xóa gạch đầu dòng */
+        padding: 0;
+        margin: 0;
+        text-align: left; /* Căn trái nội dung */
+    }
+
+        .product ul li {
+            font-size: 14px;
+            color: #666; /* Màu xám nhạt */
+            margin: 5px 0; /* Khoảng cách giữa các mục */
+        }
+
+            .product ul li span {
+                font-weight: bold;
+                color: #FF4500; /* Màu đỏ cam cho giá tiền */
+            }
+
+    /* Nút bấm */
+    .product button {
+        background-color: #007BFF; /* Nút màu xanh */
+        color: white;
+        border: none;
+        padding: 10px 15px;
+        font-size: 14px;
+        border-radius: 5px; /* Bo góc nút */
+        cursor: pointer;
+        margin-top: 10px;
+        transition: background-color 0.3s ease; /* Hiệu ứng màu khi hover */
+    }
+
+        .product button:hover {
+            background-color: #0056b3; /* Đổi màu nút khi hover */
+        }
+
+/* Đáp ứng kích thước màn hình */
+@media (max-width: 1024px) {
+    .product-container {
+        grid-template-columns: repeat(3,ninmax(200, 1fr));
+        /* 3 sản phẩm mỗi hàng trên màn hình trung bình */
+    }
+}
+
+@media (max-width: 768px) {
+    .product-container {
+        grid-template-columns: repeat(2,minmax(200, 1fr)); /* 2 sản phẩm mỗi hàng trên màn hình nhỏ */
+    }
+}
+
+@media (max-width: 576px) {
+    .product-container {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+.Them {
+    display: flex;
+    align-content: center;
+    text-align: center;
+    justify-items: center;
+}
+
+
+
+.pagination {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    list-style: none;
+    padding: 0;
+}
+
+    .pagination a {
+        text-decoration: none;
+        color: white;
+        background: linear-gradient(45deg, #007bff, #0056b3);
+        padding: 8px 15px;
+        margin: 5px;
+        border-radius: 5px;
+        transition: 0.3s;
+        font-weight: bold;
+    }
+
+        .pagination a:hover {
+            background: linear-gradient(45deg, #0056b3, #003f7f);
+        }
+
+    .pagination span {
+        padding: 8px 15px;
+        font-weight: bold;
+        color: #333;
+    }

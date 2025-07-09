@@ -1,0 +1,83 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - DuAn2811_</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+
+</head>
+<body>
+    <div class="Trang">
+        <div class="header">
+
+            <a href="/QuanlySanPham/GetAllProducts">
+                <img src="https://vn-test-11.slatic.net/p/7e9f3dd9584b55bd30755e40ed273a52.jpg" height="45" width="100" class="logo">
+            </a>
+
+
+            <form asp-action="TimKiem" asp-controller="TimKiemSanPham" method="get" class="search-form">
+                <div style="display: flex; align-items: center; justify-content: center; max-width: 800px; margin: 0 auto;">
+                    <input type="text"
+                           placeholder="Tìm kiếm sản phẩm..."
+                           class="search"
+                           name="query"
+                           style="flex: 1; border: none; outline: none; padding: 10px; font-size: 16px; border-radius: 25px 0 0 25px; height:40px;">
+                    <button type="submit"
+                            style="background:#f5f5f5; border: none; color: wheat; padding: 10px 15px; font-size: 16px; border-radius: 0 25px 25px 0; cursor: pointer;">
+                        <i class="fa fa-search"></i>
+                    </button>
+                </div>
+
+            </form>
+
+            <div class="icons">
+                <a href="/TaiKhoan/DangNhap" class="icon">
+                    <i class="fas fa-user"></i>
+                    <span>
+                        Tài khoản
+                    </span>
+
+                </a>
+                <a href="/TrangChu/GioHang" class="icon">
+                    <i class="fas fa-shopping-cart"></i>
+                    <span>
+                        Giỏ hàng
+                    </span>
+                </a>
+            </div>
+            <div class="location">
+                <i class="fas fa-map-marker-alt"></i>
+                <span>Hồ Chí Minh</span>
+            </div>
+
+        </div>
+        <div class="nav-menu">
+            <a href="@Url.Action("Getphonefilter", "LocSanPham1", new { maDanhMuc = 1,pageIndex = 1, pageSize = 20 })">Điện thoại</a>
+            <a href="@Url.Action("GetLapTopfileter", "LocSanPham1", new { maDanhMuc = 2,pageIndex = 1, pageSize = 20 })">Laptop</a>
+            <a href="@Url.Action("GetFilteraccessories", "LocPhuKien", new { maDanhMuc = 3,pageIndex = 1, pageSize = 20 })">Phụ kiện</a>
+            <a href="@Url.Action("GetSmartwatchfilter", "LocSmartwatch", new { maDanhMuc = 4, pageIndex = 1, pageSize = 20 })">Smartwatch</a>
+            <a href="@Url.Action("GetFilterClock", "LocSanPham1", new { maDanhMuc = 5,pageIndex = 1, pageSize = 20 })">Đồng hồ</a>
+            <a href="#">Dịch vụ tiện ích </a>
+        </div>
+    </div>
+    <div class="container">
+        <main role="main" class="pb-3">
+            @RenderBody()
+        </main>
+    </div>
+    @if (!string.IsNullOrEmpty(ViewBag.ErrorMessage))
+    {
+        <div class="alert alert-danger" role="alert">
+            @ViewBag.ErrorMessage
+        </div>
+    }
+
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>

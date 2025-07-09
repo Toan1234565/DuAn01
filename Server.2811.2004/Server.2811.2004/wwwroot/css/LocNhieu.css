@@ -1,0 +1,135 @@
+﻿.filter-container {
+    display: none; /* Ẩn bộ lọc ban đầu */
+    position: fixed; /* Cố định vị trí trên màn hình */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff; /* Màu nền trắng cho vùng bộ lọc */
+    padding: 20px; /* Thêm padding bên trong vùng bộ lọc */
+    border-radius: 8px; /* Bo tròn góc của vùng bộ lọc */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Tạo hiệu ứng đổ bóng nhẹ */
+    width: 500px; /* Đặt chiều rộng cố định cho vùng bộ lọc */
+    z-index: 1000; /* Đảm bảo hiển thị trên các phần tử khác */
+}
+
+    .filter-container.show {
+        display: block; /* Hiển thị bộ lọc khi có class 'show' */
+    }
+
+.filter-group {
+    margin-bottom: 20px; /* Thêm margin bên dưới mỗi nhóm bộ lọc */
+    border-bottom: 1px solid #eee; /* Đường kẻ ngang mỏng để phân tách các nhóm */
+    padding-bottom: 15px; /* Thêm padding bên dưới đường kẻ ngang */
+}
+
+    .filter-group h3 {
+        margin-top: 0; /* Loại bỏ margin trên cùng của tiêu đề */
+        color: #333; /* Màu chữ đậm cho tiêu đề */
+        font-size: 1.2em; /* Kích thước chữ lớn hơn một chút */
+        margin-bottom: 10px; /* Thêm margin bên dưới tiêu đề */
+    }
+
+.filter-options button {
+    margin: 5px; /* Thêm margin xung quanh mỗi nút */
+    padding: 8px 15px; /* Thêm padding bên trong mỗi nút */
+    border: 1px solid #ddd; /* Viền mỏng màu xám nhạt */
+    border-radius: 5px; /* Bo tròn góc của nút */
+    background-color: #f9f9f9; /* Màu nền xám rất nhạt cho nút */
+    color: #333; /* Màu chữ đậm cho nút */
+    cursor: pointer; /* Hiển thị con trỏ chuột kiểu "bàn tay" khi di chuột qua */
+    transition: background-color 0.3s; /* Tạo hiệu ứng chuyển màu nền mượt mà */
+    font-size: 0.9em; /* Kích thước chữ nhỏ hơn một chút */
+}
+
+    .filter-options button:hover {
+        background-color: #eee; /* Màu nền sáng hơn khi di chuột qua */
+    }
+
+    .filter-options button.selected {
+        background-color: #5cb85c; /* Màu nền xanh lá cây khi nút được chọn */
+        color: white; /* Màu chữ trắng khi nút được chọn */
+        border-color: #5cb85c; /* Màu viền xanh lá cây khi nút được chọn */
+    }
+
+.price-range-group {
+    display: flex; /* Sử dụng flexbox để sắp xếp các phần tử con theo hàng ngang */
+    align-items: center; /* Căn chỉnh các phần tử con theo chiều dọc ở giữa */
+}
+
+    .price-range-group label {
+        margin-right: 5px; /* Thêm margin bên phải nhãn */
+    }
+
+    .price-range-group input[type="number"] {
+        width: 110px; /* Đặt chiều rộng cho ô nhập số */
+        padding: 8px; /* Thêm padding bên trong ô nhập số */
+        border: 1px solid #ddd; /* Viền mỏng màu xám nhạt */
+        border-radius: 4px; /* Bo tròn góc của ô nhập số */
+        margin: 5px; /* Thêm margin xung quanh ô nhập số */
+    }
+
+    .price-range-group input[type="range"] {
+        flex-grow: 1; /* Cho phép thanh trượt mở rộng để lấp đầy không gian */
+        margin: 5px; /* Thêm margin xung quanh thanh trượt */
+    }
+
+.selected-filters-container {
+    margin-top: 20px; /* Thêm margin phía trên vùng hiển thị bộ lọc đã chọn */
+    padding: 10px; /* Thêm padding bên trong vùng hiển thị */
+    border: 1px solid #ddd; /* Viền mỏng màu xám nhạt */
+    border-radius: 4px; /* Bo tròn góc của vùng hiển thị */
+    background-color: #f9f9f9; /* Màu nền xám rất nhạt */
+}
+
+    .selected-filters-container p {
+        margin: 0 0 5px 0; /* Loại bỏ margin trên và thêm margin dưới cho đoạn văn */
+        font-weight: bold; /* In đậm chữ */
+        color: #555; /* Màu chữ xám đậm hơn */
+    }
+
+    .selected-filters-container .filter-tag {
+        background-color: #e0e0e0; /* Màu nền xám nhạt cho tag bộ lọc */
+        color: #333; /* Màu chữ đậm cho tag bộ lọc */
+        padding: 5px 10px; /* Thêm padding bên trong tag */
+        border-radius: 15px; /* Bo tròn góc của tag */
+        margin-right: 5px; /* Thêm margin bên phải mỗi tag */
+        display: inline-block; /* Hiển thị tag như một phần tử inline nhưng có thể đặt kích thước */
+        font-size: 0.8em; /* Kích thước chữ nhỏ hơn */
+    }
+
+.apply-button-container {
+    text-align: center; /* Căn giữa các nút */
+    margin-top: 20px; /* Thêm margin phía trên vùng nút */
+}
+
+    .apply-button-container button {
+        padding: 10px 20px; /* Thêm padding bên trong nút */
+        border: none; /* Loại bỏ viền */
+        border-radius: 5px; /* Bo tròn góc */
+        background-color: #007bff; /* Màu nền xanh dương */
+        color: white; /* Màu chữ trắng */
+        cursor: pointer; /* Hiển thị con trỏ chuột kiểu "bàn tay" */
+        font-size: 1em; /* Kích thước chữ bình thường */
+        transition: background-color 0.3s; /* Hiệu ứng chuyển màu nền mượt mà */
+        margin: 5px; /* Thêm margin giữa các nút */
+    }
+
+        .apply-button-container button:hover {
+            background-color: #0056b3; /* Màu nền xanh dương đậm hơn khi di chuột qua */
+        }
+
+#open-filter-btn {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #28a745;
+    color: white;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background-color 0.3s;
+    margin-bottom: 20px; /* Thêm margin bên dưới nút "Lọc" chính */
+}
+
+    #open-filter-btn:hover {
+        background-color: #1e7e34;
+    }

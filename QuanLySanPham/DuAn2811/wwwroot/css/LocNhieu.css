@@ -1,0 +1,116 @@
+﻿<style>
+    /* CSS cho thanh bộ lọc ngang giống ảnh */
+    .filter-bar {
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap; /* Cho phép các nút xuống dòng khi không đủ không gian */
+        padding: 10px;
+        background-color: #f8f9fa; /* Màu nền nhạt */
+        border-bottom: 1px solid #eee; /* Đường kẻ dưới mỏng */
+        margin-bottom: 20px; /* Khoảng cách với nội dung bên dưới */
+    }
+
+    .filter-bar button,
+    .filter-bar a { /* Áp dụng style tương tự cho cả button và a nếu cần */
+        display: inline-flex;
+        align-items: center;
+        padding: 8px 12px;
+        margin: 5px;
+        border: 1px solid #ccc;
+        border-radius: 20px; /* Bo tròn mạnh để giống "tag" */
+        background-color: #fff;
+        color: #333;
+        text-decoration: none;
+        font-size: 0.9em;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+    }
+
+    .filter-bar button:hover,
+    .filter-bar a:hover {
+        background-color: #e0e0e0;
+    }
+
+    .filter-bar button i,
+    .filter-bar a i {
+        margin-right: 5px; /* Khoảng cách giữa icon và text */
+        font-size: 1em; /* Điều chỉnh kích thước icon nếu cần */
+    }
+
+    /* Style riêng cho nút "Lọc" đầu tiên */
+    .filter-bar #open-filter-btn {
+        background-color: #fff; /* Giữ màu trắng */
+        border-color: #007bff; /* Màu xanh dương */
+        color: #007bff;
+    }
+
+    .filter-bar #open-filter-btn:hover {
+        background-color: #e0f7fa; /* Màu hover nhạt hơn */
+    }
+
+    /* Ẩn ul.Loc chứa các link hãng sản xuất hiện tại */
+    .Loc:nth-child(2) {
+        display: none;
+    }
+
+    /* Style cho phần sắp xếp (nếu bạn muốn điều chỉnh) */
+    .Loc:nth-child(3) {
+        list-style: none;
+        padding: 0;
+        margin: 10px 0;
+        display: flex;
+        align-items: center;
+        font-size: 0.9em;
+        color: #555;
+    }
+
+    .Loc:nth-child(3) li {
+        margin-right: 15px;
+    }
+
+    .Loc:nth-child(3) li:first-child {
+        font-weight: bold;
+        margin-right: 8px;
+    }
+
+    .Loc:nth-child(3) li a {
+        text-decoration: none;
+        color: #007bff;
+    }
+
+    .Loc:nth-child(3) li a:hover {
+        text-decoration: underline;
+    }
+
+    .Loc:nth-child(3) .menu-item {
+        position: relative;
+    }
+
+    .Loc:nth-child(3) .sub-menu {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        background-color: #fff;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        padding: 5px 0;
+        list-style: none;
+        min-width: 100px;
+        display: none;
+        z-index: 10;
+    }
+
+    .Loc:nth-child(3) .menu-item:hover .sub-menu {
+        display: block;
+    }
+
+    .Loc:nth-child(3) .sub-menu li a {
+        padding: 8px 10px;
+        display: block;
+        color: #333;
+    }
+
+    .Loc:nth-child(3) .sub-menu li a:hover {
+        background-color: #f0f0f0;
+        text-decoration: none;
+    }

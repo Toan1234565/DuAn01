@@ -1,0 +1,18 @@
+[
+  {
+    "ContainingType": "GioHang.com.ControllersAPI.TrangChuAPI",
+    "Method": "Index",
+    "RelativePath": "api/TrangChuAPI/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  }
+]

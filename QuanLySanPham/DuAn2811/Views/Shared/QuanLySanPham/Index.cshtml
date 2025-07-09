@@ -1,0 +1,124 @@
+﻿@using DuAn2811_.Models
+@model DuAn2811_.Models.ComboView
+@using Newtonsoft.Json
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - Danh mục sản phẩm</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/css/dienthoai.css" />
+    <link rel="stylesheet" href="~/css/locnhieu.css" />
+    <link rel="stylesheet" href="~/DuAn2811_.styles.css" asp-append-version="true" />
+    <script src="~/js/locnhieu.js" asp-append-version="true"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+    <header></header>
+    <main>
+        <div class="product-container">
+            @if (Model?.AllSanPham != null && Model.AllSanPham.Any())
+            {
+                <div class="product-container">
+                    @foreach (var sanpham in Model.AllSanPham)
+                    {
+                        <div class="product">
+                            @if (sanpham.Anh != null && sanpham.Anh.Count > 0)
+                            {
+                                <a href="@Url.Action("GetChiTiet", "ChiTietSanPham", new { id = sanpham.MaSanPham })" style="display: block; text-align: center; margin-bottom: 10px;">
+                                    <img src="@sanpham.Anh[0]" style="text-align:center;" />
+                                </a>
+                            }
+                            else
+                            {
+                                <p>Không có hình ảnh.</p>
+                            }
+
+                            <a href="@Url.Action("GetChiTiet", "ChiTietSanPham", new { id = sanpham.MaSanPham })" style="text-decoration: none; color: inherit;">
+                                @sanpham.TenSanPham
+                            </a>
+                            <div class="capacity-options">
+                                @if (sanpham.ChiTietSanPhams != null && sanpham.ChiTietSanPhams.Any())
+                                {
+                                    var distinctCapacities = sanpham.ChiTietSanPhams.Select(ct => $"{ct.Dung_Luong}").Distinct().ToList();
+                                    foreach (var capacity in distinctCapacities)
+                                    {
+                                        <button class="capacity-button" data-product-id="@sanpham.MaSanPham" data-capacity="@capacity">
+                                            @capacity
+                                        </button>
+                                    }
+                                }
+                            </div>
+                            <div class="price-display" id="price-@sanpham.MaSanPham">
+                                @if (sanpham.ChiTietSanPhams != null && sanpham.ChiTietSanPhams.Any())
+                                {
+                                    <p>Giá: @sanpham.ChiTietSanPhams.First().Gia đ</p>
+                                }
+                                else
+                                {
+                                    <p>Giá: N/A</p>
+                                }
+                            </div>
+                            <ul class="product-details" style="list-style-type:none; padding:10px; display:none;">
+                                @if (sanpham.ChiTietSanPhams != null)
+                                {
+                                    @foreach (var chitiet in sanpham.ChiTietSanPhams)
+                                    {
+                                        <li data-capacity="@chitiet.Dung_Luong" data-price="@chitiet.Gia" data-color="@chitiet.Mau">
+                                            Giá: @chitiet.Gia đ, Dung lượng: @chitiet.Dung_Luong, Màu: @chitiet.Mau
+                                        </li>
+                                    }
+                                }
+
+                                @if (sanpham.QuanLyTonKhos != null)
+                                {
+                                    @foreach (var tonkho in sanpham.QuanLyTonKhos)
+                                    {
+                                        <li>Đã bán: @tonkho.So_Luong_Da_Ban</li>
+                                    }
+                                }
+
+                                @if (sanpham.ChiTietKhuyenMais != null)
+                                {
+                                    @foreach (var ctkm in sanpham.ChiTietKhuyenMais)
+                                    {
+                                        <li>
+                                            @ctkm.TenKhuyenMai
+                                        </li>
+                                    }
+                                }
+                            </ul>
+                        </div>
+                    }
+                </div>
+            }
+            else
+            {
+                <div class="alert alert-danger" role="alert">
+                    Không có sản phẩm nào để hiển thị.
+                </div>
+            }
+           
+        </div>    
+    </main>
+    <script>
+        $(document).ready(function () {
+            $('.capacity-button').click(function () {
+                var productId = $(this).data('product-id');
+                var capacity = $(this).data('capacity');
+                var priceDisplay = $('#price-' + productId);
+                var productDetails = $(this).closest('.product').find('.product-details li[data-capacity="' + capacity + '"]');
+
+                if (productDetails.length > 0) {
+                    var price = productDetails.data('price');
+                    priceDisplay.text('Giá: ' + price + ' đ');
+                } else {
+                    priceDisplay.text('Giá: N/A');
+                }
+            });
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,14 @@
+{
+  "web": {
+    "client_id": "840851254934-iqbcjjv8ln1ms7j13golob4rc0hnmg4o.apps.googleusercontent.com",
+    "project_id": "elevated-honor-446005-p1",
+    "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+    "token_uri": "https://oauth2.googleapis.com/token",
+    "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+    "client_secret": "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",
+    "redirect_uris": [
+      "http://localhost",
+      "http://localhost/oauth2callback"
+    ]
+  }
+}

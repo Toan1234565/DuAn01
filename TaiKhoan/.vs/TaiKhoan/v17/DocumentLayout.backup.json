@@ -1,0 +1,373 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\nguue\\source\\repos\\Toan2811\\TaiKhoan\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{0AC164A8-FBE3-456A-B0EF-C6D2193572A6}|TaiKhoan\\TaiKhoan.csproj|c:\\users\\nguue\\source\\repos\\toan2811\\taikhoan\\taikhoan\\controllersapi\\taikhoancontrollersapi.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0AC164A8-FBE3-456A-B0EF-C6D2193572A6}|TaiKhoan\\TaiKhoan.csproj|solutionrelative:taikhoan\\controllersapi\\taikhoancontrollersapi.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0AC164A8-FBE3-456A-B0EF-C6D2193572A6}|TaiKhoan\\TaiKhoan.csproj|c:\\users\\nguue\\source\\repos\\toan2811\\taikhoan\\taikhoan\\views\\taikhoan\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{0AC164A8-FBE3-456A-B0EF-C6D2193572A6}|TaiKhoan\\TaiKhoan.csproj|solutionrelative:taikhoan\\views\\taikhoan\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0AC164A8-FBE3-456A-B0EF-C6D2193572A6}|TaiKhoan\\TaiKhoan.csproj|c:\\users\\nguue\\source\\repos\\toan2811\\taikhoan\\taikhoan\\model1\\loginrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0AC164A8-FBE3-456A-B0EF-C6D2193572A6}|TaiKhoan\\TaiKhoan.csproj|solutionrelative:taikhoan\\model1\\loginrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0AC164A8-FBE3-456A-B0EF-C6D2193572A6}|TaiKhoan\\TaiKhoan.csproj|c:\\users\\nguue\\source\\repos\\toan2811\\taikhoan\\taikhoan\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{0AC164A8-FBE3-456A-B0EF-C6D2193572A6}|TaiKhoan\\TaiKhoan.csproj|solutionrelative:taikhoan\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0AC164A8-FBE3-456A-B0EF-C6D2193572A6}|TaiKhoan\\TaiKhoan.csproj|c:\\users\\nguue\\source\\repos\\toan2811\\taikhoan\\taikhoan\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0AC164A8-FBE3-456A-B0EF-C6D2193572A6}|TaiKhoan\\TaiKhoan.csproj|solutionrelative:taikhoan\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0AC164A8-FBE3-456A-B0EF-C6D2193572A6}|TaiKhoan\\TaiKhoan.csproj|c:\\users\\nguue\\source\\repos\\toan2811\\taikhoan\\taikhoan\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0AC164A8-FBE3-456A-B0EF-C6D2193572A6}|TaiKhoan\\TaiKhoan.csproj|solutionrelative:taikhoan\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0AC164A8-FBE3-456A-B0EF-C6D2193572A6}|TaiKhoan\\TaiKhoan.csproj|c:\\users\\nguue\\source\\repos\\toan2811\\taikhoan\\taikhoan\\mailutils\\emailservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0AC164A8-FBE3-456A-B0EF-C6D2193572A6}|TaiKhoan\\TaiKhoan.csproj|solutionrelative:taikhoan\\mailutils\\emailservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0AC164A8-FBE3-456A-B0EF-C6D2193572A6}|TaiKhoan\\TaiKhoan.csproj|c:\\users\\nguue\\source\\repos\\toan2811\\taikhoan\\taikhoan\\mailutils\\iemailservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0AC164A8-FBE3-456A-B0EF-C6D2193572A6}|TaiKhoan\\TaiKhoan.csproj|solutionrelative:taikhoan\\mailutils\\iemailservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0AC164A8-FBE3-456A-B0EF-C6D2193572A6}|TaiKhoan\\TaiKhoan.csproj|c:\\users\\nguue\\source\\repos\\toan2811\\taikhoan\\taikhoan\\mailutils\\maiutils.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0AC164A8-FBE3-456A-B0EF-C6D2193572A6}|TaiKhoan\\TaiKhoan.csproj|solutionrelative:taikhoan\\mailutils\\maiutils.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0AC164A8-FBE3-456A-B0EF-C6D2193572A6}|TaiKhoan\\TaiKhoan.csproj|c:\\users\\nguue\\source\\repos\\toan2811\\taikhoan\\taikhoan\\migrations\\tmdtcontextmodelsnapshot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0AC164A8-FBE3-456A-B0EF-C6D2193572A6}|TaiKhoan\\TaiKhoan.csproj|solutionrelative:taikhoan\\migrations\\tmdtcontextmodelsnapshot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0AC164A8-FBE3-456A-B0EF-C6D2193572A6}|TaiKhoan\\TaiKhoan.csproj|c:\\users\\nguue\\source\\repos\\toan2811\\taikhoan\\taikhoan\\migrations\\addotpfields.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0AC164A8-FBE3-456A-B0EF-C6D2193572A6}|TaiKhoan\\TaiKhoan.csproj|solutionrelative:taikhoan\\migrations\\addotpfields.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0AC164A8-FBE3-456A-B0EF-C6D2193572A6}|TaiKhoan\\TaiKhoan.csproj|c:\\users\\nguue\\source\\repos\\toan2811\\taikhoan\\taikhoan\\migrations\\20250309153726_tenmigration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0AC164A8-FBE3-456A-B0EF-C6D2193572A6}|TaiKhoan\\TaiKhoan.csproj|solutionrelative:taikhoan\\migrations\\20250309153726_tenmigration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0AC164A8-FBE3-456A-B0EF-C6D2193572A6}|TaiKhoan\\TaiKhoan.csproj|c:\\users\\nguue\\source\\repos\\toan2811\\taikhoan\\taikhoan\\views\\_viewstart.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{0AC164A8-FBE3-456A-B0EF-C6D2193572A6}|TaiKhoan\\TaiKhoan.csproj|solutionrelative:taikhoan\\views\\_viewstart.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0AC164A8-FBE3-456A-B0EF-C6D2193572A6}|TaiKhoan\\TaiKhoan.csproj|c:\\users\\nguue\\source\\repos\\toan2811\\taikhoan\\taikhoan\\migrations\\20250309153726_tenmigration.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0AC164A8-FBE3-456A-B0EF-C6D2193572A6}|TaiKhoan\\TaiKhoan.csproj|solutionrelative:taikhoan\\migrations\\20250309153726_tenmigration.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0AC164A8-FBE3-456A-B0EF-C6D2193572A6}|TaiKhoan\\TaiKhoan.csproj|c:\\users\\nguue\\source\\repos\\toan2811\\taikhoan\\taikhoan\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{0AC164A8-FBE3-456A-B0EF-C6D2193572A6}|TaiKhoan\\TaiKhoan.csproj|solutionrelative:taikhoan\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0AC164A8-FBE3-456A-B0EF-C6D2193572A6}|TaiKhoan\\TaiKhoan.csproj|c:\\users\\nguue\\source\\repos\\toan2811\\taikhoan\\taikhoan\\views\\taikhoan\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{0AC164A8-FBE3-456A-B0EF-C6D2193572A6}|TaiKhoan\\TaiKhoan.csproj|solutionrelative:taikhoan\\views\\taikhoan\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0AC164A8-FBE3-456A-B0EF-C6D2193572A6}|TaiKhoan\\TaiKhoan.csproj|c:\\users\\nguue\\source\\repos\\toan2811\\taikhoan\\taikhoan\\services\\hashhelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0AC164A8-FBE3-456A-B0EF-C6D2193572A6}|TaiKhoan\\TaiKhoan.csproj|solutionrelative:taikhoan\\services\\hashhelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0AC164A8-FBE3-456A-B0EF-C6D2193572A6}|TaiKhoan\\TaiKhoan.csproj|c:\\users\\nguue\\source\\repos\\toan2811\\taikhoan\\taikhoan\\services\\iotpservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0AC164A8-FBE3-456A-B0EF-C6D2193572A6}|TaiKhoan\\TaiKhoan.csproj|solutionrelative:taikhoan\\services\\iotpservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0AC164A8-FBE3-456A-B0EF-C6D2193572A6}|TaiKhoan\\TaiKhoan.csproj|c:\\users\\nguue\\source\\repos\\toan2811\\taikhoan\\taikhoan\\services\\aes-256.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0AC164A8-FBE3-456A-B0EF-C6D2193572A6}|TaiKhoan\\TaiKhoan.csproj|solutionrelative:taikhoan\\services\\aes-256.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0AC164A8-FBE3-456A-B0EF-C6D2193572A6}|TaiKhoan\\TaiKhoan.csproj|c:\\users\\nguue\\source\\repos\\toan2811\\taikhoan\\taikhoan\\services\\email.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0AC164A8-FBE3-456A-B0EF-C6D2193572A6}|TaiKhoan\\TaiKhoan.csproj|solutionrelative:taikhoan\\services\\email.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0AC164A8-FBE3-456A-B0EF-C6D2193572A6}|TaiKhoan\\TaiKhoan.csproj|c:\\users\\nguue\\source\\repos\\toan2811\\taikhoan\\taikhoan\\models\\taikhoan.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0AC164A8-FBE3-456A-B0EF-C6D2193572A6}|TaiKhoan\\TaiKhoan.csproj|solutionrelative:taikhoan\\models\\taikhoan.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0AC164A8-FBE3-456A-B0EF-C6D2193572A6}|TaiKhoan\\TaiKhoan.csproj|c:\\users\\nguue\\source\\repos\\toan2811\\taikhoan\\taikhoan\\models\\tmdtcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0AC164A8-FBE3-456A-B0EF-C6D2193572A6}|TaiKhoan\\TaiKhoan.csproj|solutionrelative:taikhoan\\models\\tmdtcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 100,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 20,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "AddOtpFields.cs",
+              "DocumentMoniker": "C:\\Users\\nguue\\source\\repos\\Toan2811\\TaiKhoan\\TaiKhoan\\Migrations\\AddOtpFields.cs",
+              "RelativeDocumentMoniker": "TaiKhoan\\Migrations\\AddOtpFields.cs",
+              "ToolTip": "C:\\Users\\nguue\\source\\repos\\Toan2811\\TaiKhoan\\TaiKhoan\\Migrations\\AddOtpFields.cs",
+              "RelativeToolTip": "TaiKhoan\\Migrations\\AddOtpFields.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-19T15:33:57.03Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "20250309153726_TenMigration.cs",
+              "DocumentMoniker": "C:\\Users\\nguue\\source\\repos\\Toan2811\\TaiKhoan\\TaiKhoan\\Migrations\\20250309153726_TenMigration.cs",
+              "RelativeDocumentMoniker": "TaiKhoan\\Migrations\\20250309153726_TenMigration.cs",
+              "ToolTip": "C:\\Users\\nguue\\source\\repos\\Toan2811\\TaiKhoan\\TaiKhoan\\Migrations\\20250309153726_TenMigration.cs",
+              "RelativeToolTip": "TaiKhoan\\Migrations\\20250309153726_TenMigration.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-19T15:33:55.743Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "_ViewStart.cshtml",
+              "DocumentMoniker": "C:\\Users\\nguue\\source\\repos\\Toan2811\\TaiKhoan\\TaiKhoan\\Views\\_ViewStart.cshtml",
+              "RelativeDocumentMoniker": "TaiKhoan\\Views\\_ViewStart.cshtml",
+              "ToolTip": "C:\\Users\\nguue\\source\\repos\\Toan2811\\TaiKhoan\\TaiKhoan\\Views\\_ViewStart.cshtml",
+              "RelativeToolTip": "TaiKhoan\\Views\\_ViewStart.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-03-19T15:33:51.099Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "TmdtContextModelSnapshot.cs",
+              "DocumentMoniker": "C:\\Users\\nguue\\source\\repos\\Toan2811\\TaiKhoan\\TaiKhoan\\Migrations\\TmdtContextModelSnapshot.cs",
+              "RelativeDocumentMoniker": "TaiKhoan\\Migrations\\TmdtContextModelSnapshot.cs",
+              "ToolTip": "C:\\Users\\nguue\\source\\repos\\Toan2811\\TaiKhoan\\TaiKhoan\\Migrations\\TmdtContextModelSnapshot.cs",
+              "RelativeToolTip": "TaiKhoan\\Migrations\\TmdtContextModelSnapshot.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-19T15:26:13.196Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "20250309153726_TenMigration.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\nguue\\source\\repos\\Toan2811\\TaiKhoan\\TaiKhoan\\Migrations\\20250309153726_TenMigration.Designer.cs",
+              "RelativeDocumentMoniker": "TaiKhoan\\Migrations\\20250309153726_TenMigration.Designer.cs",
+              "ToolTip": "C:\\Users\\nguue\\source\\repos\\Toan2811\\TaiKhoan\\TaiKhoan\\Migrations\\20250309153726_TenMigration.Designer.cs",
+              "RelativeToolTip": "TaiKhoan\\Migrations\\20250309153726_TenMigration.Designer.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-19T15:25:56.037Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\nguue\\source\\repos\\Toan2811\\TaiKhoan\\TaiKhoan\\appsettings.json",
+              "RelativeDocumentMoniker": "TaiKhoan\\appsettings.json",
+              "ToolTip": "C:\\Users\\nguue\\source\\repos\\Toan2811\\TaiKhoan\\TaiKhoan\\appsettings.json",
+              "RelativeToolTip": "TaiKhoan\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-03-19T15:20:15.506Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "C:\\Users\\nguue\\source\\repos\\Toan2811\\TaiKhoan\\TaiKhoan\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "TaiKhoan\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "C:\\Users\\nguue\\source\\repos\\Toan2811\\TaiKhoan\\TaiKhoan\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "TaiKhoan\\Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AgIAADkAAAAAAAAAAAAAABcAAAAmAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-03-19T03:41:44.755Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\nguue\\source\\repos\\Toan2811\\TaiKhoan\\TaiKhoan\\Views\\TaiKhoan\\Index.cshtml",
+              "RelativeDocumentMoniker": "TaiKhoan\\Views\\TaiKhoan\\Index.cshtml",
+              "ToolTip": "C:\\Users\\nguue\\source\\repos\\Toan2811\\TaiKhoan\\TaiKhoan\\Views\\TaiKhoan\\Index.cshtml",
+              "RelativeToolTip": "TaiKhoan\\Views\\TaiKhoan\\Index.cshtml",
+              "ViewState": "AgIAADQAAAAAAAAAAAAIwFIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-03-19T03:41:26.523Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "Login.cshtml",
+              "DocumentMoniker": "C:\\Users\\nguue\\source\\repos\\Toan2811\\TaiKhoan\\TaiKhoan\\Views\\TaiKhoan\\Login.cshtml",
+              "RelativeDocumentMoniker": "TaiKhoan\\Views\\TaiKhoan\\Login.cshtml",
+              "ToolTip": "C:\\Users\\nguue\\source\\repos\\Toan2811\\TaiKhoan\\TaiKhoan\\Views\\TaiKhoan\\Login.cshtml",
+              "RelativeToolTip": "TaiKhoan\\Views\\TaiKhoan\\Login.cshtml",
+              "ViewState": "AgIAAAcAAAAAAAAAAAAIwCUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-03-19T03:41:03.591Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "HashHelper.cs",
+              "DocumentMoniker": "C:\\Users\\nguue\\source\\repos\\Toan2811\\TaiKhoan\\TaiKhoan\\Services\\HashHelper.cs",
+              "RelativeDocumentMoniker": "TaiKhoan\\Services\\HashHelper.cs",
+              "ToolTip": "C:\\Users\\nguue\\source\\repos\\Toan2811\\TaiKhoan\\TaiKhoan\\Services\\HashHelper.cs",
+              "RelativeToolTip": "TaiKhoan\\Services\\HashHelper.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-19T03:04:16.514Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "Email.cs",
+              "DocumentMoniker": "C:\\Users\\nguue\\source\\repos\\Toan2811\\TaiKhoan\\TaiKhoan\\Services\\Email.cs",
+              "RelativeDocumentMoniker": "TaiKhoan\\Services\\Email.cs",
+              "ToolTip": "C:\\Users\\nguue\\source\\repos\\Toan2811\\TaiKhoan\\TaiKhoan\\Services\\Email.cs",
+              "RelativeToolTip": "TaiKhoan\\Services\\Email.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAASAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-19T03:04:15.034Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "AES-256.cs",
+              "DocumentMoniker": "C:\\Users\\nguue\\source\\repos\\Toan2811\\TaiKhoan\\TaiKhoan\\Services\\AES-256.cs",
+              "RelativeDocumentMoniker": "TaiKhoan\\Services\\AES-256.cs",
+              "ToolTip": "C:\\Users\\nguue\\source\\repos\\Toan2811\\TaiKhoan\\TaiKhoan\\Services\\AES-256.cs",
+              "RelativeToolTip": "TaiKhoan\\Services\\AES-256.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAASAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-19T03:04:13.556Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "MaiUtils.cs",
+              "DocumentMoniker": "C:\\Users\\nguue\\source\\repos\\Toan2811\\TaiKhoan\\TaiKhoan\\MailUtils\\MaiUtils.cs",
+              "RelativeDocumentMoniker": "TaiKhoan\\MailUtils\\MaiUtils.cs",
+              "ToolTip": "C:\\Users\\nguue\\source\\repos\\Toan2811\\TaiKhoan\\TaiKhoan\\MailUtils\\MaiUtils.cs",
+              "RelativeToolTip": "TaiKhoan\\MailUtils\\MaiUtils.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAASAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-19T03:04:09.874Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "IEmailService.cs",
+              "DocumentMoniker": "C:\\Users\\nguue\\source\\repos\\Toan2811\\TaiKhoan\\TaiKhoan\\MailUtils\\IEmailService.cs",
+              "RelativeDocumentMoniker": "TaiKhoan\\MailUtils\\IEmailService.cs",
+              "ToolTip": "C:\\Users\\nguue\\source\\repos\\Toan2811\\TaiKhoan\\TaiKhoan\\MailUtils\\IEmailService.cs",
+              "RelativeToolTip": "TaiKhoan\\MailUtils\\IEmailService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-19T03:04:08.371Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "EmailService.cs",
+              "DocumentMoniker": "C:\\Users\\nguue\\source\\repos\\Toan2811\\TaiKhoan\\TaiKhoan\\MailUtils\\EmailService.cs",
+              "RelativeDocumentMoniker": "TaiKhoan\\MailUtils\\EmailService.cs",
+              "ToolTip": "C:\\Users\\nguue\\source\\repos\\Toan2811\\TaiKhoan\\TaiKhoan\\MailUtils\\EmailService.cs",
+              "RelativeToolTip": "TaiKhoan\\MailUtils\\EmailService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAD8AAABPAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-19T02:55:42.845Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "IOTPService.cs",
+              "DocumentMoniker": "C:\\Users\\nguue\\source\\repos\\Toan2811\\TaiKhoan\\TaiKhoan\\Services\\IOTPService.cs",
+              "RelativeDocumentMoniker": "TaiKhoan\\Services\\IOTPService.cs",
+              "ToolTip": "C:\\Users\\nguue\\source\\repos\\Toan2811\\TaiKhoan\\TaiKhoan\\Services\\IOTPService.cs",
+              "RelativeToolTip": "TaiKhoan\\Services\\IOTPService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAASAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-19T02:55:19.825Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "TaiKHoan.cs",
+              "DocumentMoniker": "C:\\Users\\nguue\\source\\repos\\Toan2811\\TaiKhoan\\TaiKhoan\\Models\\TaiKHoan.cs",
+              "RelativeDocumentMoniker": "TaiKhoan\\Models\\TaiKHoan.cs",
+              "ToolTip": "C:\\Users\\nguue\\source\\repos\\Toan2811\\TaiKhoan\\TaiKhoan\\Models\\TaiKHoan.cs",
+              "RelativeToolTip": "TaiKhoan\\Models\\TaiKHoan.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAsAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-19T02:47:49.966Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "LoginRequest.cs",
+              "DocumentMoniker": "C:\\Users\\nguue\\source\\repos\\Toan2811\\TaiKhoan\\TaiKhoan\\model1\\LoginRequest.cs",
+              "RelativeDocumentMoniker": "TaiKhoan\\model1\\LoginRequest.cs",
+              "ToolTip": "C:\\Users\\nguue\\source\\repos\\Toan2811\\TaiKhoan\\TaiKhoan\\model1\\LoginRequest.cs",
+              "RelativeToolTip": "TaiKhoan\\model1\\LoginRequest.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-19T02:43:17.589Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "C:\\Users\\nguue\\source\\repos\\Toan2811\\TaiKhoan\\TaiKhoan\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "TaiKhoan\\Controllers\\HomeController.cs",
+              "ToolTip": "C:\\Users\\nguue\\source\\repos\\Toan2811\\TaiKhoan\\TaiKhoan\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "TaiKhoan\\Controllers\\HomeController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-19T02:31:45.166Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\nguue\\source\\repos\\Toan2811\\TaiKhoan\\TaiKhoan\\Program.cs",
+              "RelativeDocumentMoniker": "TaiKhoan\\Program.cs",
+              "ToolTip": "C:\\Users\\nguue\\source\\repos\\Toan2811\\TaiKhoan\\TaiKhoan\\Program.cs",
+              "RelativeToolTip": "TaiKhoan\\Program.cs",
+              "ViewState": "AgIAACcAAAAAAAAAAAAAAAwAAAArAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-19T02:28:35.477Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "TaiKhoanControllersAPI.cs",
+              "DocumentMoniker": "C:\\Users\\nguue\\source\\repos\\Toan2811\\TaiKhoan\\TaiKhoan\\ControllersAPI\\TaiKhoanControllersAPI.cs",
+              "RelativeDocumentMoniker": "TaiKhoan\\ControllersAPI\\TaiKhoanControllersAPI.cs",
+              "ToolTip": "C:\\Users\\nguue\\source\\repos\\Toan2811\\TaiKhoan\\TaiKhoan\\ControllersAPI\\TaiKhoanControllersAPI.cs",
+              "RelativeToolTip": "TaiKhoan\\ControllersAPI\\TaiKhoanControllersAPI.cs",
+              "ViewState": "AgIAADYAAAAAAAAAAAAAAFUAAAATAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-19T02:28:33.245Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "TmdtContext.cs",
+              "DocumentMoniker": "C:\\Users\\nguue\\source\\repos\\Toan2811\\TaiKhoan\\TaiKhoan\\Models\\TmdtContext.cs",
+              "RelativeDocumentMoniker": "TaiKhoan\\Models\\TmdtContext.cs",
+              "ToolTip": "C:\\Users\\nguue\\source\\repos\\Toan2811\\TaiKhoan\\TaiKhoan\\Models\\TmdtContext.cs",
+              "RelativeToolTip": "TaiKhoan\\Models\\TmdtContext.cs",
+              "ViewState": "AgIAAAQAAAAAAAAAAABBwBgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-19T02:27:27.353Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

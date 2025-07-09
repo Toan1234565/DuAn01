@@ -1,0 +1,66 @@
+[
+  {
+    "ContainingType": "TaiKhoan.ControllersAPI.TaiKhoanControllersAPI",
+    "Method": "HoSo",
+    "RelativePath": "api/TaiKhoanControllersAPI/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "TaiKhoan.ControllersAPI.TaiKhoanControllersAPI",
+    "Method": "ConfirmEmail",
+    "RelativePath": "api/TaiKhoanControllersAPI/confirm-email",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "token",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "TaiKhoan.ControllersAPI.TaiKhoanControllersAPI",
+    "Method": "DangNhap",
+    "RelativePath": "api/TaiKhoanControllersAPI/login",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "TaiKhoan.model1.LoginRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "TaiKhoan.ControllersAPI.TaiKhoanControllersAPI",
+    "Method": "DangKy",
+    "RelativePath": "api/TaiKhoanControllersAPI/register",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "model",
+        "Type": "TaiKhoan.Models.TaiKHoan",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  }
+]

@@ -1,0 +1,173 @@
+﻿body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    background-color: #f5f5f5;
+}
+
+.zalo-contact {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 50px;
+    height: 50px;
+    z-index: 1000;
+    cursor: pointer;
+}
+
+    .zalo-contact img {
+        width: 100%;
+        height: 100%;
+        border-radius: 50%;
+        box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s ease;
+    }
+
+    .zalo-contact:hover img {
+        transform: scale(1.1);
+    }
+
+.chat-container {
+    position: fixed;
+    bottom: 80px;
+    right: 20px;
+    width: 300px;
+    padding: 15px;
+    background-color: #f4f4f4;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    display: none;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+.chat-header p {
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.chat-options {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 10px;
+}
+
+.chat-button {
+    background-color: #0084ff;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none; /* Thêm để loại bỏ gạch chân mặc định của thẻ a */
+}
+
+    .chat-button:hover {
+        background-color: #005ecb;
+    }
+
+.language-switch {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 10px;
+}
+
+/* Hộp chat hỗ trợ */
+#chatContainer {
+    width: 350px;
+    position: fixed;
+    bottom: 80px;
+    right: 20px;
+    background: white;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+    border-radius: 8px;
+    overflow: hidden;
+    display: none;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+    z-index: 999; /* Đảm bảo hộp chat nằm trên overlay */
+}
+
+#chatHeader {
+    background: #007bff;
+    color: white;
+    padding: 15px;
+    text-align: center;
+    font-weight: bold;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+    #chatHeader span {
+        flex-grow: 1;
+        text-align: center;
+    }
+
+#closeButton {
+    background: none;
+    color: white;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+    outline: none;
+}
+
+#chatBox {
+    height: 300px;
+    padding: 10px;
+    overflow-y: auto;
+}
+
+#inputContainer {
+    display: flex;
+    padding: 10px;
+    border-top: 1px solid #ddd;
+}
+
+#inputBox {
+    flex-grow: 1;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#sendButton {
+    background: #007bff;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: 5px;
+}
+
+.message {
+    padding: 8px;
+    margin-bottom: 5px;
+    border-radius: 5px;
+    clear: both; /* Đảm bảo các tin nhắn không bị chồng lên nhau */
+}
+
+.bot {
+    background: #f1f1f1;
+    float: left;
+}
+
+.user {
+    background: #cce5ff;
+    text-align: right;
+    float: right;
+}
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.3);
+    display: none;
+    z-index: 998;
+}

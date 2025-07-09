@@ -1,0 +1,39 @@
+﻿
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - DuAn2811_</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link href="~/css/dangnhap.css" rel="stylesheet" asp-append-version="true" />
+    <link rel="stylesheet" href="~/DuAn2811_.styles.css" asp-append-version="true" />
+</head>
+<body>
+    <main>
+        <div class="login-container">
+            <div class="auth-link">
+                <a href="#" class="menu-item">Dang nhap</a>
+                <a href="/TaiKhoan/DangKy" class="menu-item">Dang ky</a>
+            </div>
+            <form class="login-form" asp-action="DangNhap" method="post">
+                <input type="text" placeholder="Số điện thoại" name="sodienthoai">
+
+                <input type="password" placeholder="Mat khau" name="matkhau">
+                <button type="submit" class="login-btn">ĐĂNG NHẬP</button>
+                <span asp-validation-summary="All"></span>
+                <div class="alternative-login">
+                    <button class="fb-login">Đăng nhập với Facebook</button>
+                    <button class="google-login">Đăng nhập với Google</button>
+                </div>
+                <a href="/TaiKhoan/QuenMatKhau" class="forgot-password">Quên mật khẩu </a>
+            </form>
+            @if (ViewBag.Error != null)
+            {
+                <div style="color:red;">@ViewBag.Error</div>
+            }
+        </div>
+    </main>
+</body>
+</html>

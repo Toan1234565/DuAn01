@@ -1,0 +1,131 @@
+﻿@using DuAn2811_.Models
+@model DuAn2811_.Models.ComboView
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] -Danh mục sản phẩm-</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link href="~/css/site.css" rel="stylesheet" />
+    <link href="~/css/dienthoai.css" rel="stylesheet" />
+    <link rel="stylesheet" href="~/DuAn2811_.styles.css" asp-append-version="true" />
+</head>
+<body>
+    <header></header>
+    <main>
+        <div class="content-sanpham">
+            <div style="padding-bottom:20px">
+                <partial name="~/Views/ChiTietSanPham/DaXem.cshtml" model="Model" />
+            </div>
+          
+            <h2 style="margin-left: 10%; padding-top:30px;">Sản phẩm </h2>
+            <div class="LocSanPham">
+                <ul class="Loc">
+                    <li>
+                        <button>
+                            Loc
+                        </button>
+                    </li>
+                    <li>
+                        <a href="@Url.Action("GetManufacturer", "LocDienThoai", new { maSanXuat = 11,pageIndex = 1, pageSize = 20 })">
+                            ASUS
+                        </a>
+                    </li>
+                    <li>
+                        <a href="@Url.Action("GetManufacturer", "LocDienThoai", new { maSanXuat = 4,pageIndex = 1, pageSize = 20 })">
+                            HP
+                        </a>
+                    </li>
+                    <li>
+                        <a href="@Url.Action("GetManufacturer", "LocDienThoai", new { maSanXuat = 2,pageIndex = 1, pageSize = 20 })">
+                            DELL
+                        </a>
+                    </li>
+                    <li>
+                        <a href="@Url.Action("GetManufacturer", "LocDienThoai", new { maSanXuat = 12,pageIndex = 1, pageSize = 20 })">
+                            Acer
+                        </a>
+                    </li>
+                    <li>
+                        <a href="@Url.Action("GetManufacturer", "LocDienThoai", new { maSanXuat = 13,pageIndex = 1, pageSize = 20 })">
+                            MacBook
+                        </a>
+                    </li>
+                    <li>
+                        <a href="@Url.Action("GetManufacturer", "LocDienThoai", new { maSanXuat = 14,pageIndex = 1, pageSize = 20 })">
+                            Lenovo
+                        </a>
+                    </li>
+                    <li>
+                        <a href="@Url.Action("GetManufacturer", "LocDienThoai", new { maSanXuat = 15,pageIndex = 1, pageSize = 20 })">
+                            Msi
+                        </a>
+                    </li>
+                </ul>
+                <ul class="Loc">
+                    <li>Sắp xếp theo:</li>
+                    <li>
+                        <a href="#">
+                            Nổi bật
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            Bán chạy
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            Giảm giá
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            MớiMới
+                        </a>
+                    </li>
+                    <li class="menu-item">
+                        Giá
+                        <ul class="sub-menu">
+                            <li>
+                                <a href="#">
+                                    Giảm
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">Tăng</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <div>
+                <partial name="~/Views/Shared/QuanLySanPham/Index.cshtml" model="Model" />
+            </div>
+            <div>
+                @if (Model?.CurrentPage != null && Model.TotalPages > 1)
+                {
+                    <ul class="pagination">
+                        @if (Model.CurrentPage > 1)
+                        {
+                            <li><a href="@Url.Action("GetFilterClock", new {maDanhMuc = 5, pageIndex = Model.CurrentPage - 1, pageSize = Model.PageSize })">❮ Trang trước</a></li>
+                        }
+
+                        <li><span>Trang @Model.CurrentPage / @Model.TotalPages</span></li>
+
+                        @if (Model.CurrentPage < Model.TotalPages)
+                        {
+                            <li><a href="@Url.Action("GetFilterClock", new {maDanhMuc = 5, pageIndex = Model.CurrentPage + 1, pageSize = Model.PageSize })">Trang sau ❯</a></li>
+                        }
+                    </ul>
+                }
+            </div>
+
+        </div>
+
+    </main>
+    <img src="/Anh/LienHe.png" style="width:100%; padding-top:20px; padding-bottom:2px;" />
+</body>
+</html>

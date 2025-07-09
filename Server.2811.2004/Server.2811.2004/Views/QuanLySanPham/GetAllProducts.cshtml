@@ -1,0 +1,215 @@
+﻿@using DuAn2811_.Models
+@model DuAn2811_.Models.ComboView
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - DuAn2811_</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link href="~/css/site.css" rel="stylesheet" />
+    <link href="~/css/zalo.css" rel="stylesheet" />
+
+    <script src="~/js/Zalo.js" asp-append-version="true"></script>
+    <link rel="stylesheet" href="~/DuAn2811_.styles.css" asp-append-version="true" />
+   
+</head>
+<body>
+    <header></header>
+    <main>
+        <div class="content-sanpham">
+            <h2 style="margin-left: 10%; padding-top:30px;">Sản phẩm Sale </h2>
+            <div class="sale-menu">
+                <a href="#">Điện thoại</a>
+                <a href="#">Laptop</a>
+                <a href="#">Phụ kiện</a>
+                <a href="#">Đồng hồ</a>
+                <a href="#">Apple</a>
+            </div>
+            <div class="product-container">
+                @if (!string.IsNullOrEmpty(ViewBag.ErrorMessage))
+                {
+                    <div class="alert alert-danger" role="alert">
+                        @ViewBag.ErrorMessage
+                    </div>
+                }
+                @if (Model?.SaleSanPham != null && Model.SaleSanPham.Any())
+                {
+                    <div class="product-container">
+                        @foreach (var sp in Model.SaleSanPham)
+                        {
+                            <div class="product hidden">
+                                <!-- Hiển thị tên sản phẩm -->
+                                <!-- Hiển thị hình ảnh -->
+                                @if (!string.IsNullOrEmpty(sp.Anh))
+                                {
+                                    <img src="@sp.Anh" style="text-align:center;" />
+                                }
+                                else
+                                {
+                                    <p>Không có hình ảnh.</p>
+                                }
+                                <p style="margin:10px">@sp.TenSanPham</p>
+                                <ul style="list-style-type:none; padding:10px">
+                                    <!-- Hiển thị danh sách ChiTietSanPhams -->
+                                    @if (sp.ChiTietSanPhams != null)
+                                    {
+                                        @foreach (var chitiet in sp.ChiTietSanPhams)
+                                        {
+                                            <li>
+                                                Giá: @chitiet.Gia đ
+                                            </li>
+                                        }
+                                    }
+                                    @* so luong con o trong kho *@
+                                    @if (sp.QuanLyTonKhos != null)
+                                    {
+                                        @foreach (var tonkho in sp.QuanLyTonKhos)
+                                        {
+                                            <li>
+                                                Đã bán: @tonkho.So_Luong_Da_Ban
+                                            </li>
+                                        }
+                                    }
+                                   @* ten khuyen mai *@
+                                    @if (sp.ChiTietKhuyenMais != null)
+                                    {
+                                        @foreach (var ctkm in sp.ChiTietKhuyenMais)
+                                        {
+                                            <li>
+                                                @ctkm.TenKhuyenMai
+                                            </li>
+                                        }
+                                    }
+                                </ul>
+                            </div>
+                        }
+                    </div>
+                }
+                else
+                {
+                    <div class="alert alert-danger" role="alert">
+                        Không có sản phẩm nào để hiển thị. <strong>Lỗi:</strong> Vui lòng kiểm tra cơ sở dữ liệu hoặc API.
+                    </div>
+                }
+            </div>
+        </div>
+        <div class="content-sanpham">
+            <h2 style="margin-left: 10%; padding-top:30px;">Sản phẩm </h2>
+            <div class="product-container">
+                @if (Model?.AllSanPham != null && Model.AllSanPham.Any())
+                {
+                    <div class="product-container">
+                        @foreach (var sanpham in Model.AllSanPham)
+                        {
+                            <div class="product hidden">
+                                @if (!string.IsNullOrEmpty(sanpham.Anh))
+                                {
+                                    <img src="@sanpham.Anh" style="text-align:center;" />
+                                }
+                                else
+                                {
+                                    <p>Không có hình ảnh.</p>
+                                }
+
+                                <p style="margin:10px">@sanpham.TenSanPham</p>
+                                <ul style="list-style-type:none; padding:10px">
+                                    @if (sanpham.ChiTietSanPhams != null)
+                                    {
+                                        @foreach (var chitiet in sanpham.ChiTietSanPhams)
+                                        {
+                                            <li>Giá: @chitiet.Gia đ</li>
+                                        }
+                                    }
+
+                                    @if (sanpham.QuanLyTonKhos != null)
+                                    {
+                                        @foreach (var tonkho in sanpham.QuanLyTonKhos)
+                                        {
+                                            <li>Đã bán: @tonkho.So_Luong_Da_Ban</li>
+                                        }
+                                    }
+
+                                    @if (sanpham.ChiTietKhuyenMais != null)
+                                    {
+                                        @foreach (var ctkm in sanpham.ChiTietKhuyenMais)
+                                        {
+                                            <li>
+                                                @ctkm.TenKhuyenMai
+                                            </li>
+                                        }
+                                    }
+                                </ul>
+                            </div>
+                        }
+                    </div>
+                }
+                else
+                {
+                    <div class="alert alert-danger" role="alert">
+                        Không có sản phẩm nào để hiển thị. <strong>Lỗi:</strong> Vui lòng kiểm tra cơ sở dữ liệu hoặc API.
+                    </div>
+                }
+            </div>
+            <div>
+                @if (Model?.CurrentPage != null && Model.TotalPages > 1)
+                {
+                    <ul class="pagination">
+                        @if (Model.CurrentPage > 1)
+                        {
+                            <li><a href="@Url.Action("GetAllProducts", new { pageIndex = Model.CurrentPage - 1, pageSize = Model.PageSize })">❮ Trang trước</a></li>
+                        }
+
+                        <li><span>Trang @Model.CurrentPage / @Model.TotalPages</span></li>
+
+                        @if (Model.CurrentPage < Model.TotalPages)
+                        {
+                            <li><a href="@Url.Action("GetAllProducts", new { pageIndex = Model.CurrentPage + 1, pageSize = Model.PageSize })">Trang sau ❯</a></li>
+                        }
+                    </ul>
+                }
+            </div>
+           
+        </div>
+        <div>
+            <div class="zalo-contact" onclick="toggleChatBox()">
+                
+                <img src="~/anh/zalo.jpg" alt="Liên hệ Zalo" />
+            </div>
+            <div class="chat-container" id="quickChatContainer">
+                <div class="chat-header">
+                    <p>Xin chào! Rất vui khi được hỗ trợ bạn.</p>
+                </div>
+                <div class="chat-options">
+                    <a href="https://chat.zalo.me/" target="_blank" class="chat-button">Chat bằng Zalo</a>
+                    <button class="chat-button" onclick="openChat()">Chat nhanh</button>
+                </div>
+                <hr />
+                <div class="language-switch">
+                    <button onclick="changeLanguage('vi')">🇻🇳 Tiếng Việt</button>
+                    <button onclick="changeLanguage('en')">🇬🇧 English</button>
+                </div>
+            </div>
+
+            <div class="overlay" id="overlay" onclick="closeAllChats()"></div>
+            <div id="chatContainer">
+                <div id="chatHeader">
+                    <span>Chat Hỗ Trợ</span>
+                    <button id="closeButton" onclick="closeChat()">×</button>
+                </div>
+                <div id="chatBox">
+                    <div class="message bot"><strong>Hệ thống:</strong> Xin chào! Rất vui được hỗ trợ bạn.</div>
+                </div>
+                <div id="inputContainer">
+                    <input type="text" id="inputBox" placeholder="Nhập tin nhắn..." />
+                    <button id="sendButton" onclick="sendMessage()">Gửi</button>
+                </div>
+            </div>
+        </div>
+      
+    </main>
+
+    <img src="Anh/LienHe.png" style="width:100%; padding-top:20px; padding-bottom:2px;" />
+</body>
+</html>

@@ -1,0 +1,17 @@
+﻿using System;
+using System.Collections.Generic;
+
+namespace GioHang.com.Models;
+
+public partial class ChiTietKhuyenMai
+{
+    public int MaChiTietKhuyenMai { get; set; }
+
+    public int? MaSanPham { get; set; }
+
+    public int? MaKhuyenMai { get; set; }
+
+    public virtual KhuyenMai? MaKhuyenMaiNavigation { get; set; }
+
+    public virtual SanPham? MaSanPhamNavigation { get; set; }
+}

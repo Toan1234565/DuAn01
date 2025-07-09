@@ -1,0 +1,437 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\nguue\\source\\repos\\Toan2811\\Server.2811.2004\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{C21A27E4-6F9E-456A-A279-B48D17B0E4C6}|Server.2811.2004\\Server.2811.2004.csproj|c:\\users\\nguue\\source\\repos\\toan2811\\server.2811.2004\\server.2811.2004\\wwwroot\\css\\locnhieu.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{C21A27E4-6F9E-456A-A279-B48D17B0E4C6}|Server.2811.2004\\Server.2811.2004.csproj|solutionrelative:server.2811.2004\\wwwroot\\css\\locnhieu.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C21A27E4-6F9E-456A-A279-B48D17B0E4C6}|Server.2811.2004\\Server.2811.2004.csproj|c:\\users\\nguue\\source\\repos\\toan2811\\server.2811.2004\\server.2811.2004\\views\\quanlysanpham\\getallproducts.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{C21A27E4-6F9E-456A-A279-B48D17B0E4C6}|Server.2811.2004\\Server.2811.2004.csproj|solutionrelative:server.2811.2004\\views\\quanlysanpham\\getallproducts.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C21A27E4-6F9E-456A-A279-B48D17B0E4C6}|Server.2811.2004\\Server.2811.2004.csproj|c:\\users\\nguue\\source\\repos\\toan2811\\server.2811.2004\\server.2811.2004\\wwwroot\\js\\zalo.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{C21A27E4-6F9E-456A-A279-B48D17B0E4C6}|Server.2811.2004\\Server.2811.2004.csproj|solutionrelative:server.2811.2004\\wwwroot\\js\\zalo.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C21A27E4-6F9E-456A-A279-B48D17B0E4C6}|Server.2811.2004\\Server.2811.2004.csproj|c:\\users\\nguue\\source\\repos\\toan2811\\server.2811.2004\\server.2811.2004\\wwwroot\\js\\site.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{C21A27E4-6F9E-456A-A279-B48D17B0E4C6}|Server.2811.2004\\Server.2811.2004.csproj|solutionrelative:server.2811.2004\\wwwroot\\js\\site.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C21A27E4-6F9E-456A-A279-B48D17B0E4C6}|Server.2811.2004\\Server.2811.2004.csproj|c:\\users\\nguue\\source\\repos\\toan2811\\server.2811.2004\\server.2811.2004\\wwwroot\\js\\locnhieu.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{C21A27E4-6F9E-456A-A279-B48D17B0E4C6}|Server.2811.2004\\Server.2811.2004.csproj|solutionrelative:server.2811.2004\\wwwroot\\js\\locnhieu.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C21A27E4-6F9E-456A-A279-B48D17B0E4C6}|Server.2811.2004\\Server.2811.2004.csproj|c:\\users\\nguue\\source\\repos\\toan2811\\server.2811.2004\\server.2811.2004\\wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{C21A27E4-6F9E-456A-A279-B48D17B0E4C6}|Server.2811.2004\\Server.2811.2004.csproj|solutionrelative:server.2811.2004\\wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C21A27E4-6F9E-456A-A279-B48D17B0E4C6}|Server.2811.2004\\Server.2811.2004.csproj|c:\\users\\nguue\\source\\repos\\toan2811\\server.2811.2004\\server.2811.2004\\controllers\\quanlysanpham.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C21A27E4-6F9E-456A-A279-B48D17B0E4C6}|Server.2811.2004\\Server.2811.2004.csproj|solutionrelative:server.2811.2004\\controllers\\quanlysanpham.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C21A27E4-6F9E-456A-A279-B48D17B0E4C6}|Server.2811.2004\\Server.2811.2004.csproj|c:\\users\\nguue\\source\\repos\\toan2811\\server.2811.2004\\server.2811.2004\\modelsdangnhap\\loginresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C21A27E4-6F9E-456A-A279-B48D17B0E4C6}|Server.2811.2004\\Server.2811.2004.csproj|solutionrelative:server.2811.2004\\modelsdangnhap\\loginresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C21A27E4-6F9E-456A-A279-B48D17B0E4C6}|Server.2811.2004\\Server.2811.2004.csproj|c:\\users\\nguue\\source\\repos\\toan2811\\server.2811.2004\\server.2811.2004\\controllers\\taikhoan.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C21A27E4-6F9E-456A-A279-B48D17B0E4C6}|Server.2811.2004\\Server.2811.2004.csproj|solutionrelative:server.2811.2004\\controllers\\taikhoan.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C21A27E4-6F9E-456A-A279-B48D17B0E4C6}|Server.2811.2004\\Server.2811.2004.csproj|c:\\users\\nguue\\source\\repos\\toan2811\\server.2811.2004\\server.2811.2004\\views\\taikhoan\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{C21A27E4-6F9E-456A-A279-B48D17B0E4C6}|Server.2811.2004\\Server.2811.2004.csproj|solutionrelative:server.2811.2004\\views\\taikhoan\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C21A27E4-6F9E-456A-A279-B48D17B0E4C6}|Server.2811.2004\\Server.2811.2004.csproj|c:\\users\\nguue\\source\\repos\\toan2811\\server.2811.2004\\server.2811.2004\\views\\taikhoan\\register.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{C21A27E4-6F9E-456A-A279-B48D17B0E4C6}|Server.2811.2004\\Server.2811.2004.csproj|solutionrelative:server.2811.2004\\views\\taikhoan\\register.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C21A27E4-6F9E-456A-A279-B48D17B0E4C6}|Server.2811.2004\\Server.2811.2004.csproj|c:\\users\\nguue\\source\\repos\\toan2811\\server.2811.2004\\server.2811.2004\\models\\tmdtcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C21A27E4-6F9E-456A-A279-B48D17B0E4C6}|Server.2811.2004\\Server.2811.2004.csproj|solutionrelative:server.2811.2004\\models\\tmdtcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C21A27E4-6F9E-456A-A279-B48D17B0E4C6}|Server.2811.2004\\Server.2811.2004.csproj|c:\\users\\nguue\\source\\repos\\toan2811\\server.2811.2004\\server.2811.2004\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{C21A27E4-6F9E-456A-A279-B48D17B0E4C6}|Server.2811.2004\\Server.2811.2004.csproj|solutionrelative:server.2811.2004\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C21A27E4-6F9E-456A-A279-B48D17B0E4C6}|Server.2811.2004\\Server.2811.2004.csproj|c:\\users\\nguue\\source\\repos\\toan2811\\server.2811.2004\\server.2811.2004\\models\\quanlytonkho.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C21A27E4-6F9E-456A-A279-B48D17B0E4C6}|Server.2811.2004\\Server.2811.2004.csproj|solutionrelative:server.2811.2004\\models\\quanlytonkho.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C21A27E4-6F9E-456A-A279-B48D17B0E4C6}|Server.2811.2004\\Server.2811.2004.csproj|c:\\users\\nguue\\source\\repos\\toan2811\\server.2811.2004\\server.2811.2004\\views\\taikhoan\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{C21A27E4-6F9E-456A-A279-B48D17B0E4C6}|Server.2811.2004\\Server.2811.2004.csproj|solutionrelative:server.2811.2004\\views\\taikhoan\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C21A27E4-6F9E-456A-A279-B48D17B0E4C6}|Server.2811.2004\\Server.2811.2004.csproj|c:\\users\\nguue\\source\\repos\\toan2811\\server.2811.2004\\server.2811.2004\\modelsdangnhap\\taikhoanmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C21A27E4-6F9E-456A-A279-B48D17B0E4C6}|Server.2811.2004\\Server.2811.2004.csproj|solutionrelative:server.2811.2004\\modelsdangnhap\\taikhoanmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C21A27E4-6F9E-456A-A279-B48D17B0E4C6}|Server.2811.2004\\Server.2811.2004.csproj|c:\\users\\nguue\\source\\repos\\toan2811\\server.2811.2004\\server.2811.2004\\views\\shared\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{C21A27E4-6F9E-456A-A279-B48D17B0E4C6}|Server.2811.2004\\Server.2811.2004.csproj|solutionrelative:server.2811.2004\\views\\shared\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C21A27E4-6F9E-456A-A279-B48D17B0E4C6}|Server.2811.2004\\Server.2811.2004.csproj|c:\\users\\nguue\\source\\repos\\toan2811\\server.2811.2004\\server.2811.2004\\views\\shared\\_validationscriptspartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{C21A27E4-6F9E-456A-A279-B48D17B0E4C6}|Server.2811.2004\\Server.2811.2004.csproj|solutionrelative:server.2811.2004\\views\\shared\\_validationscriptspartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C21A27E4-6F9E-456A-A279-B48D17B0E4C6}|Server.2811.2004\\Server.2811.2004.csproj|c:\\users\\nguue\\source\\repos\\toan2811\\server.2811.2004\\server.2811.2004\\views\\shared\\error.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{C21A27E4-6F9E-456A-A279-B48D17B0E4C6}|Server.2811.2004\\Server.2811.2004.csproj|solutionrelative:server.2811.2004\\views\\shared\\error.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C21A27E4-6F9E-456A-A279-B48D17B0E4C6}|Server.2811.2004\\Server.2811.2004.csproj|c:\\users\\nguue\\source\\repos\\toan2811\\server.2811.2004\\server.2811.2004\\views\\home\\privacy.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{C21A27E4-6F9E-456A-A279-B48D17B0E4C6}|Server.2811.2004\\Server.2811.2004.csproj|solutionrelative:server.2811.2004\\views\\home\\privacy.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C21A27E4-6F9E-456A-A279-B48D17B0E4C6}|Server.2811.2004\\Server.2811.2004.csproj|c:\\users\\nguue\\source\\repos\\toan2811\\server.2811.2004\\server.2811.2004\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C21A27E4-6F9E-456A-A279-B48D17B0E4C6}|Server.2811.2004\\Server.2811.2004.csproj|solutionrelative:server.2811.2004\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C21A27E4-6F9E-456A-A279-B48D17B0E4C6}|Server.2811.2004\\Server.2811.2004.csproj|c:\\users\\nguue\\source\\repos\\toan2811\\server.2811.2004\\server.2811.2004\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{C21A27E4-6F9E-456A-A279-B48D17B0E4C6}|Server.2811.2004\\Server.2811.2004.csproj|solutionrelative:server.2811.2004\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C21A27E4-6F9E-456A-A279-B48D17B0E4C6}|Server.2811.2004\\Server.2811.2004.csproj|c:\\users\\nguue\\source\\repos\\toan2811\\server.2811.2004\\server.2811.2004\\views\\_viewimports.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{C21A27E4-6F9E-456A-A279-B48D17B0E4C6}|Server.2811.2004\\Server.2811.2004.csproj|solutionrelative:server.2811.2004\\views\\_viewimports.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C21A27E4-6F9E-456A-A279-B48D17B0E4C6}|Server.2811.2004\\Server.2811.2004.csproj|c:\\users\\nguue\\source\\repos\\toan2811\\server.2811.2004\\server.2811.2004\\views\\_viewstart.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{C21A27E4-6F9E-456A-A279-B48D17B0E4C6}|Server.2811.2004\\Server.2811.2004.csproj|solutionrelative:server.2811.2004\\views\\_viewstart.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C21A27E4-6F9E-456A-A279-B48D17B0E4C6}|Server.2811.2004\\Server.2811.2004.csproj|c:\\users\\nguue\\source\\repos\\toan2811\\server.2811.2004\\server.2811.2004\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{C21A27E4-6F9E-456A-A279-B48D17B0E4C6}|Server.2811.2004\\Server.2811.2004.csproj|solutionrelative:server.2811.2004\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C21A27E4-6F9E-456A-A279-B48D17B0E4C6}|Server.2811.2004\\Server.2811.2004.csproj|c:\\users\\nguue\\source\\repos\\toan2811\\server.2811.2004\\server.2811.2004\\models\\taikhoan.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C21A27E4-6F9E-456A-A279-B48D17B0E4C6}|Server.2811.2004\\Server.2811.2004.csproj|solutionrelative:server.2811.2004\\models\\taikhoan.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 100,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 3,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Zalo.js",
+              "DocumentMoniker": "C:\\Users\\nguue\\source\\repos\\Toan2811\\Server.2811.2004\\Server.2811.2004\\wwwroot\\js\\Zalo.js",
+              "RelativeDocumentMoniker": "Server.2811.2004\\wwwroot\\js\\Zalo.js",
+              "ToolTip": "C:\\Users\\nguue\\source\\repos\\Toan2811\\Server.2811.2004\\Server.2811.2004\\wwwroot\\js\\Zalo.js",
+              "RelativeToolTip": "Server.2811.2004\\wwwroot\\js\\Zalo.js",
+              "ViewState": "AgIAADYAAAAAAAAAAAAcwFkAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2025-04-13T08:30:51.736Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "site.js",
+              "DocumentMoniker": "C:\\Users\\nguue\\source\\repos\\Toan2811\\Server.2811.2004\\Server.2811.2004\\wwwroot\\js\\site.js",
+              "RelativeDocumentMoniker": "Server.2811.2004\\wwwroot\\js\\site.js",
+              "ToolTip": "C:\\Users\\nguue\\source\\repos\\Toan2811\\Server.2811.2004\\Server.2811.2004\\wwwroot\\js\\site.js",
+              "RelativeToolTip": "Server.2811.2004\\wwwroot\\js\\site.js",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2025-04-13T08:30:51.195Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "LocNhieu.js",
+              "DocumentMoniker": "C:\\Users\\nguue\\source\\repos\\Toan2811\\Server.2811.2004\\Server.2811.2004\\wwwroot\\js\\LocNhieu.js",
+              "RelativeDocumentMoniker": "Server.2811.2004\\wwwroot\\js\\LocNhieu.js",
+              "ToolTip": "C:\\Users\\nguue\\source\\repos\\Toan2811\\Server.2811.2004\\Server.2811.2004\\wwwroot\\js\\LocNhieu.js",
+              "RelativeToolTip": "Server.2811.2004\\wwwroot\\js\\LocNhieu.js",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2025-04-13T08:30:50.422Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "LocNhieu.css",
+              "DocumentMoniker": "C:\\Users\\nguue\\source\\repos\\Toan2811\\Server.2811.2004\\Server.2811.2004\\wwwroot\\css\\LocNhieu.css",
+              "RelativeDocumentMoniker": "Server.2811.2004\\wwwroot\\css\\LocNhieu.css",
+              "ToolTip": "C:\\Users\\nguue\\source\\repos\\Toan2811\\Server.2811.2004\\Server.2811.2004\\wwwroot\\css\\LocNhieu.css",
+              "RelativeToolTip": "Server.2811.2004\\wwwroot\\css\\LocNhieu.css",
+              "ViewState": "AgIAAG8AAAAAAAAAAAAAAD8AAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2025-04-13T08:29:37.564Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "site.css",
+              "DocumentMoniker": "C:\\Users\\nguue\\source\\repos\\Toan2811\\Server.2811.2004\\Server.2811.2004\\wwwroot\\css\\site.css",
+              "RelativeDocumentMoniker": "Server.2811.2004\\wwwroot\\css\\site.css",
+              "ToolTip": "C:\\Users\\nguue\\source\\repos\\Toan2811\\Server.2811.2004\\Server.2811.2004\\wwwroot\\css\\site.css",
+              "RelativeToolTip": "Server.2811.2004\\wwwroot\\css\\site.css",
+              "ViewState": "AgIAAOwAAAAAAAAAAAAQwA0BAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2025-04-08T14:05:23.506Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "QuanLyTonKho.cs",
+              "DocumentMoniker": "C:\\Users\\nguue\\source\\repos\\Toan2811\\Server.2811.2004\\Server.2811.2004\\Models\\QuanLyTonKho.cs",
+              "RelativeDocumentMoniker": "Server.2811.2004\\Models\\QuanLyTonKho.cs",
+              "ToolTip": "C:\\Users\\nguue\\source\\repos\\Toan2811\\Server.2811.2004\\Server.2811.2004\\Models\\QuanLyTonKho.cs",
+              "RelativeToolTip": "Server.2811.2004\\Models\\QuanLyTonKho.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-02T15:48:41.328Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "GetAllProducts.cshtml",
+              "DocumentMoniker": "C:\\Users\\nguue\\source\\repos\\Toan2811\\Server.2811.2004\\Server.2811.2004\\Views\\QuanLySanPham\\GetAllProducts.cshtml",
+              "RelativeDocumentMoniker": "Server.2811.2004\\Views\\QuanLySanPham\\GetAllProducts.cshtml",
+              "ToolTip": "C:\\Users\\nguue\\source\\repos\\Toan2811\\Server.2811.2004\\Server.2811.2004\\Views\\QuanLySanPham\\GetAllProducts.cshtml",
+              "RelativeToolTip": "Server.2811.2004\\Views\\QuanLySanPham\\GetAllProducts.cshtml",
+              "ViewState": "AgIAALoAAAAAAAAAAAAAAM8AAAASAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-04-02T15:44:26.144Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "QuanLySanPham.cs",
+              "DocumentMoniker": "C:\\Users\\nguue\\source\\repos\\Toan2811\\Server.2811.2004\\Server.2811.2004\\Controllers\\QuanLySanPham.cs",
+              "RelativeDocumentMoniker": "Server.2811.2004\\Controllers\\QuanLySanPham.cs",
+              "ToolTip": "C:\\Users\\nguue\\source\\repos\\Toan2811\\Server.2811.2004\\Server.2811.2004\\Controllers\\QuanLySanPham.cs",
+              "RelativeToolTip": "Server.2811.2004\\Controllers\\QuanLySanPham.cs",
+              "ViewState": "AgIAABUAAAAAAAAAAAAAABAAAAAkAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-02T15:43:45.423Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\nguue\\source\\repos\\Toan2811\\Server.2811.2004\\Server.2811.2004\\Views\\Shared\\Index.cshtml",
+              "RelativeDocumentMoniker": "Server.2811.2004\\Views\\Shared\\Index.cshtml",
+              "ToolTip": "C:\\Users\\nguue\\source\\repos\\Toan2811\\Server.2811.2004\\Server.2811.2004\\Views\\Shared\\Index.cshtml",
+              "RelativeToolTip": "Server.2811.2004\\Views\\Shared\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-03-30T15:29:52.994Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "Privacy.cshtml",
+              "DocumentMoniker": "C:\\Users\\nguue\\source\\repos\\Toan2811\\Server.2811.2004\\Server.2811.2004\\Views\\Home\\Privacy.cshtml",
+              "RelativeDocumentMoniker": "Server.2811.2004\\Views\\Home\\Privacy.cshtml",
+              "ToolTip": "C:\\Users\\nguue\\source\\repos\\Toan2811\\Server.2811.2004\\Server.2811.2004\\Views\\Home\\Privacy.cshtml",
+              "RelativeToolTip": "Server.2811.2004\\Views\\Home\\Privacy.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-03-30T15:11:26.562Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\nguue\\source\\repos\\Toan2811\\Server.2811.2004\\Server.2811.2004\\Views\\TaiKhoan\\Index.cshtml",
+              "RelativeDocumentMoniker": "Server.2811.2004\\Views\\TaiKhoan\\Index.cshtml",
+              "ToolTip": "C:\\Users\\nguue\\source\\repos\\Toan2811\\Server.2811.2004\\Server.2811.2004\\Views\\TaiKhoan\\Index.cshtml",
+              "RelativeToolTip": "Server.2811.2004\\Views\\TaiKhoan\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-03-30T15:08:54.307Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "appsettings.Development.json",
+              "DocumentMoniker": "C:\\Users\\nguue\\source\\repos\\Toan2811\\Server.2811.2004\\Server.2811.2004\\appsettings.Development.json",
+              "RelativeDocumentMoniker": "Server.2811.2004\\appsettings.Development.json",
+              "ToolTip": "C:\\Users\\nguue\\source\\repos\\Toan2811\\Server.2811.2004\\Server.2811.2004\\appsettings.Development.json",
+              "RelativeToolTip": "Server.2811.2004\\appsettings.Development.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-03-26T05:38:19.79Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "_ViewStart.cshtml",
+              "DocumentMoniker": "C:\\Users\\nguue\\source\\repos\\Toan2811\\Server.2811.2004\\Server.2811.2004\\Views\\_ViewStart.cshtml",
+              "RelativeDocumentMoniker": "Server.2811.2004\\Views\\_ViewStart.cshtml",
+              "ToolTip": "C:\\Users\\nguue\\source\\repos\\Toan2811\\Server.2811.2004\\Server.2811.2004\\Views\\_ViewStart.cshtml",
+              "RelativeToolTip": "Server.2811.2004\\Views\\_ViewStart.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-03-20T16:51:49.934Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\nguue\\source\\repos\\Toan2811\\Server.2811.2004\\Server.2811.2004\\appsettings.json",
+              "RelativeDocumentMoniker": "Server.2811.2004\\appsettings.json",
+              "ToolTip": "C:\\Users\\nguue\\source\\repos\\Toan2811\\Server.2811.2004\\Server.2811.2004\\appsettings.json",
+              "RelativeToolTip": "Server.2811.2004\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-03-20T16:37:18.988Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Register.cshtml",
+              "DocumentMoniker": "C:\\Users\\nguue\\source\\repos\\Toan2811\\Server.2811.2004\\Server.2811.2004\\Views\\TaiKhoan\\Register.cshtml",
+              "RelativeDocumentMoniker": "Server.2811.2004\\Views\\TaiKhoan\\Register.cshtml",
+              "ToolTip": "C:\\Users\\nguue\\source\\repos\\Toan2811\\Server.2811.2004\\Server.2811.2004\\Views\\TaiKhoan\\Register.cshtml",
+              "RelativeToolTip": "Server.2811.2004\\Views\\TaiKhoan\\Register.cshtml",
+              "ViewState": "AgIAADwAAAAAAAAAAAAAAFMAAABNAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-03-20T16:33:28.955Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "_ValidationScriptsPartial.cshtml",
+              "DocumentMoniker": "C:\\Users\\nguue\\source\\repos\\Toan2811\\Server.2811.2004\\Server.2811.2004\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
+              "RelativeDocumentMoniker": "Server.2811.2004\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
+              "ToolTip": "C:\\Users\\nguue\\source\\repos\\Toan2811\\Server.2811.2004\\Server.2811.2004\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
+              "RelativeToolTip": "Server.2811.2004\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-03-20T16:29:29.026Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "Error.cshtml",
+              "DocumentMoniker": "C:\\Users\\nguue\\source\\repos\\Toan2811\\Server.2811.2004\\Server.2811.2004\\Views\\Shared\\Error.cshtml",
+              "RelativeDocumentMoniker": "Server.2811.2004\\Views\\Shared\\Error.cshtml",
+              "ToolTip": "C:\\Users\\nguue\\source\\repos\\Toan2811\\Server.2811.2004\\Server.2811.2004\\Views\\Shared\\Error.cshtml",
+              "RelativeToolTip": "Server.2811.2004\\Views\\Shared\\Error.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-03-20T16:29:28.46Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "TaiKhoanModel.cs",
+              "DocumentMoniker": "C:\\Users\\nguue\\source\\repos\\Toan2811\\Server.2811.2004\\Server.2811.2004\\ModelsDangNhap\\TaiKhoanModel.cs",
+              "RelativeDocumentMoniker": "Server.2811.2004\\ModelsDangNhap\\TaiKhoanModel.cs",
+              "ToolTip": "C:\\Users\\nguue\\source\\repos\\Toan2811\\Server.2811.2004\\Server.2811.2004\\ModelsDangNhap\\TaiKhoanModel.cs",
+              "RelativeToolTip": "Server.2811.2004\\ModelsDangNhap\\TaiKhoanModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAApAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-19T16:00:32.136Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "LoginResponse.cs",
+              "DocumentMoniker": "C:\\Users\\nguue\\source\\repos\\Toan2811\\Server.2811.2004\\Server.2811.2004\\ModelsDangNhap\\LoginResponse.cs",
+              "RelativeDocumentMoniker": "Server.2811.2004\\ModelsDangNhap\\LoginResponse.cs",
+              "ToolTip": "C:\\Users\\nguue\\source\\repos\\Toan2811\\Server.2811.2004\\Server.2811.2004\\ModelsDangNhap\\LoginResponse.cs",
+              "RelativeToolTip": "Server.2811.2004\\ModelsDangNhap\\LoginResponse.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-19T15:59:33.52Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "_ViewImports.cshtml",
+              "DocumentMoniker": "C:\\Users\\nguue\\source\\repos\\Toan2811\\Server.2811.2004\\Server.2811.2004\\Views\\_ViewImports.cshtml",
+              "RelativeDocumentMoniker": "Server.2811.2004\\Views\\_ViewImports.cshtml",
+              "ToolTip": "C:\\Users\\nguue\\source\\repos\\Toan2811\\Server.2811.2004\\Server.2811.2004\\Views\\_ViewImports.cshtml",
+              "RelativeToolTip": "Server.2811.2004\\Views\\_ViewImports.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-03-19T03:28:43.472Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "TaiKHoan.cs",
+              "DocumentMoniker": "C:\\Users\\nguue\\source\\repos\\Toan2811\\Server.2811.2004\\Server.2811.2004\\Models\\TaiKHoan.cs",
+              "RelativeDocumentMoniker": "Server.2811.2004\\Models\\TaiKHoan.cs",
+              "ToolTip": "C:\\Users\\nguue\\source\\repos\\Toan2811\\Server.2811.2004\\Server.2811.2004\\Models\\TaiKHoan.cs",
+              "RelativeToolTip": "Server.2811.2004\\Models\\TaiKHoan.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-19T03:23:08.737Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Login.cshtml",
+              "DocumentMoniker": "C:\\Users\\nguue\\source\\repos\\Toan2811\\Server.2811.2004\\Server.2811.2004\\Views\\TaiKhoan\\Login.cshtml",
+              "RelativeDocumentMoniker": "Server.2811.2004\\Views\\TaiKhoan\\Login.cshtml",
+              "ToolTip": "C:\\Users\\nguue\\source\\repos\\Toan2811\\Server.2811.2004\\Server.2811.2004\\Views\\TaiKhoan\\Login.cshtml",
+              "RelativeToolTip": "Server.2811.2004\\Views\\TaiKhoan\\Login.cshtml",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAAB8AAAA9AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-03-19T03:20:05.162Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "TaiKhoan.cs",
+              "DocumentMoniker": "C:\\Users\\nguue\\source\\repos\\Toan2811\\Server.2811.2004\\Server.2811.2004\\Controllers\\TaiKhoan.cs",
+              "RelativeDocumentMoniker": "Server.2811.2004\\Controllers\\TaiKhoan.cs",
+              "ToolTip": "C:\\Users\\nguue\\source\\repos\\Toan2811\\Server.2811.2004\\Server.2811.2004\\Controllers\\TaiKhoan.cs",
+              "RelativeToolTip": "Server.2811.2004\\Controllers\\TaiKhoan.cs",
+              "ViewState": "AgIAAFMAAAAAAAAAAAAswEcAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-19T03:16:22.717Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "C:\\Users\\nguue\\source\\repos\\Toan2811\\Server.2811.2004\\Server.2811.2004\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "Server.2811.2004\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "C:\\Users\\nguue\\source\\repos\\Toan2811\\Server.2811.2004\\Server.2811.2004\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "Server.2811.2004\\Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAABMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-03-19T02:29:56.68Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\nguue\\source\\repos\\Toan2811\\Server.2811.2004\\Server.2811.2004\\Program.cs",
+              "RelativeDocumentMoniker": "Server.2811.2004\\Program.cs",
+              "ToolTip": "C:\\Users\\nguue\\source\\repos\\Toan2811\\Server.2811.2004\\Server.2811.2004\\Program.cs",
+              "RelativeToolTip": "Server.2811.2004\\Program.cs",
+              "ViewState": "AgIAAB4AAAAAAAAAAAAswDgAAAA/AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-19T02:28:39.116Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "TmdtContext.cs",
+              "DocumentMoniker": "C:\\Users\\nguue\\source\\repos\\Toan2811\\Server.2811.2004\\Server.2811.2004\\Models\\TmdtContext.cs",
+              "RelativeDocumentMoniker": "Server.2811.2004\\Models\\TmdtContext.cs",
+              "ToolTip": "C:\\Users\\nguue\\source\\repos\\Toan2811\\Server.2811.2004\\Server.2811.2004\\Models\\TmdtContext.cs",
+              "RelativeToolTip": "Server.2811.2004\\Models\\TmdtContext.cs",
+              "ViewState": "AgIAAI0BAAAAAAAAAAAQwLoBAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-19T02:23:37.885Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

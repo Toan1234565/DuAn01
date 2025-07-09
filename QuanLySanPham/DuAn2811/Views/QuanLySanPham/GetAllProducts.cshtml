@@ -1,0 +1,283 @@
+﻿@using DuAn2811_.Models
+@model DuAn2811_.Models.ComboView
+@using Newtonsoft.Json
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - DuAn2811_</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link href="~/css/zalo.css" rel="stylesheet" />
+    <script src="~/js/Zalo.js"></script>
+</head>
+<body>
+    <header></header>
+    <main>
+        <div class="content-sanpham">
+            <div>
+                <partial name="~/Views/ChiTietSanPham/DaXem.cshtml" model="Model" />
+            </div>
+            <h2 style="margin-left: 10%; padding-top:30px;">Sản phẩm Sale </h2>
+            <div class="sale-menu">
+                <a href="#">Điện thoại</a>
+                <a href="#">Laptop</a>
+                <a href="#">Phụ kiện</a>
+                <a href="#">Đồng hồ</a>
+                <a href="#">Apple</a>
+            </div>
+            <div class="product-container">             
+                @if (!string.IsNullOrEmpty(ViewBag.ErrorMessage))
+                {
+                    <div class="alert alert-danger" role="alert">
+                        @ViewBag.ErrorMessage
+                    </div>
+                }
+                @if (Model?.SaleSanPham != null && Model.SaleSanPham.Any())
+                {
+                    <div class="product-container">
+                        @foreach (var sp in Model.SaleSanPham)
+                        {
+                            <div class="product hidden">
+                                @if (sp.Anh != null && sp.Anh.Count > 0)
+                                {
+                                    <a href="@Url.Action("GetChiTiet", "ChiTietSanPham", new { id = sp.MaSanPham })" style="display: block; text-align: center; margin-bottom: 10px;">
+                                        <img src="@sp.Anh[0]" style="text-align:center;" />
+                                    </a>
+                                }
+                                else
+                                {
+                                    <p>Không có hình ảnh.</p>
+                                }
+                                <p style="margin:10px; text-align: center;">
+                                    <a href="@Url.Action("GetChiTiet", "ChiTietSanPham", new { id = sp.MaSanPham })" style="text-decoration: none; color: inherit;">
+                                        @sp.TenSanPham
+                                    </a>
+                                </p>
+                                <div class="capacity-options">
+                                    @if(sp.ChiTietSanPhams != null && sp.ChiTietSanPhams.Any())
+                                    {
+                                        var distinctCapacities = sp.ChiTietSanPhams.Select(ct => $"{ct.Dung_Luong}").Distinct().ToList();
+                                        foreach(var capacity in distinctCapacities)
+                                        {
+                                            <button class="capacity-button" data-product-id="@sp.MaSanPham" data-capacity="@capacity">
+                                                @capacity
+                                            </button>
+                                        }
+                                    }
+                                </div>
+                                <div class="price-display" id="price-@sp.MaSanPham">
+                                    @if(sp.ChiTietSanPhams != null && sp.ChiTietSanPhams.Any())
+                                    {
+                                        <p>Gia: @sp.ChiTietSanPhams.First().Gia d</p>
+                                    }
+                                    else
+                                    {
+                                        <p>Giá: N/A</p>
+                                    }
+                                </div>
+                                @* <p style="margin:10px">@sp.TenSanPham</p> *@
+                                <ul style="list-style-type:none; padding:10px">
+                                    
+                                    @* so luong con o trong kho *@
+                                    @if (sp.QuanLyTonKhos != null)
+                                    {
+                                        @foreach (var tonkho in sp.QuanLyTonKhos)
+                                        {
+                                            <li>
+                                                Đã bán: @tonkho.So_Luong_Da_Ban
+                                            </li>
+                                        }
+                                    }
+                                   @* ten khuyen mai *@
+                                    @* @if (sp.ChiTietKhuyenMais != null) *@
+                                    @* { *@
+                                    @*     @foreach (var ctkm in sp.ChiTietKhuyenMais) *@
+                                    @*     { *@
+                                    @*         <li> *@
+                                    @*             @ctkm.TenKhuyenMai *@
+                                    @*         </li> *@
+                                           
+                                    @*     } *@
+                                    @* } *@
+                                </ul>
+                            </div>
+                        }
+                    </div>
+                }
+                else
+                {
+                    <div class="alert alert-danger" role="alert">
+                        Không có sản phẩm nào để hiển thị. <strong>Lỗi:</strong> Vui lòng kiểm tra cơ sở dữ liệu hoặc API.
+                    </div>
+                }
+            </div>
+        </div>     
+            <div>
+                @if (Model?.CurrentPage != null && Model.TotalPages > 1)
+                {
+                    <ul class="pagination">
+                        @if (Model.CurrentPage > 1)
+                        {
+                            <li><a href="@Url.Action("GetAllProducts", new { pageIndex = Model.CurrentPage - 1, pageSize = Model.PageSize })">❮ Trang trước</a></li>
+                        }
+
+                        <li><span>Trang @Model.CurrentPage / @Model.TotalPages</span></li>
+
+                        @if (Model.CurrentPage < Model.TotalPages)
+                        {
+                            <li><a href="@Url.Action("GetAllProducts", new { pageIndex = Model.CurrentPage + 1, pageSize = Model.PageSize })">Trang sau ❯</a></li>
+                        }
+                    </ul>
+                }
+            </div>
+          
+        <div>
+            <div class="zalo-contact" onclick="toggleChatBox()">
+                
+                <img src="~/anh/zalo.jpg" alt="Liên hệ Zalo" />
+            </div>
+            <div class="chat-container" id="quickChatContainer" style="display: none;">
+                <div class="chat-header">
+                    <p>Xin chào! Rất vui khi được hỗ trợ bạn.</p>
+                </div>
+                <div class="chat-options">
+                    <a href="https://chat.zalo.me/" target="_blank" class="chat-button">Chat bằng Zalo</a>
+                    <button class="chat-button" onclick="openChat()">Chat nhanh</button>
+                </div>
+                <hr />
+                <div class="language-switch">
+                    <button onclick="changeLanguage('vi')">🇻🇳 Tiếng Việt</button>
+                    <button onclick="changeLanguage('en')">🇬🇧 English</button>
+                </div>
+            </div>
+
+            <div class="overlay" id="overlay" onclick="closeAllChats()"></div>
+            <div id="chatContainer">
+                <div id="chatHeader">
+                    <span>Chat Hỗ Trợ</span>
+                    <button id="closeButton" onclick="closeChat()">×</button>
+                </div>
+                <div id="chatBox">
+                    <div class="message bot"><strong>Hệ thống:</strong> Xin chào! Rất vui được hỗ trợ bạn.</div>
+                </div>
+                <div id="inputContainer">
+                    <input type="text" id="inputBox" placeholder="Nhập tin nhắn..." />
+                    <button id="sendButton" onclick="sendMessage()">Gửi</button>
+                </div>
+            </div>
+           
+        </div>
+       
+    </main>
+    <script>
+        var quickChatContainer = document.getElementById("quickChatContainer");
+        var chatContainer = document.getElementById("chatContainer");
+        var overlay = document.getElementById("overlay");
+
+        function toggleChatBox() {
+            if (quickChatContainer.style.display === "none" || quickChatContainer.style.display === "") {
+                quickChatContainer.style.display = "block";
+                quickChatContainer.style.opacity = "1";
+
+            } else {
+                quickChatContainer.style.opacity = "0";
+
+                setTimeout(() => {
+                    quickChatContainer.style.display = "none";
+                }, 300);
+            }
+            // Ẩn hộp chat đầy đủ khi mở hộp chat nhanh
+            if (chatContainer.style.display === "block") {
+                chatContainer.style.display = "none";
+                chatContainer.style.opacity = "0";
+            }
+        }
+
+        function openChat() {
+            quickChatContainer.style.display = "none";
+            quickChatContainer.style.opacity = "0";
+            chatContainer.style.display = "block";
+            chatContainer.style.opacity = "1";
+            overlay.style.display = "block";
+        }
+
+        function closeChat() {
+            chatContainer.style.opacity = "0";
+            overlay.style.display = "none";
+            setTimeout(() => {
+                chatContainer.style.display = "none";
+            }, 300);
+        }
+
+        function closeAllChats() {
+            // Đóng hộp chat nhanh
+            quickChatContainer.style.opacity = "0";
+            setTimeout(() => {
+                quickChatContainer.style.display = "none";
+            }, 300);
+
+            // Đóng hộp chat đầy đủ
+            chatContainer.style.opacity = "0";
+            setTimeout(() => {
+                chatContainer.style.display = "none";
+            }, 300);
+
+            // Ẩn overlay
+            overlay.style.display = "none";
+        }
+
+        function sendMessage() {
+            let inputBox = document.getElementById("inputBox");
+            let chatBox = document.getElementById("chatBox");
+            let userMessage = inputBox.value.trim();
+
+            if (userMessage !== "") {
+                appendMessage("Bạn", userMessage, "user");
+                inputBox.value = "";
+
+                setTimeout(() => {
+                    appendMessage("Hệ thống", "Cảm ơn bạn đã liên hệ. Chúng tôi sẽ phản hồi sớm nhất.", "bot");
+                    chatBox.scrollTop = chatBox.scrollHeight;
+                }, 1000);
+            }
+        }
+
+        function appendMessage(sender, message, type) {
+            let chatBox = document.getElementById("chatBox");
+            let msgElement = document.createElement("div");
+            msgElement.classList.add("message", type);
+            msgElement.innerHTML = `<strong>${sender}:</strong> ${message}`;
+            chatBox.appendChild(msgElement);
+            chatBox.scrollTop = chatBox.scrollHeight; // Tự động cuộn xuống tin nhắn mới
+        }
+
+        function changeLanguage(lang) {
+            if (lang === 'vi') {
+                alert('Đã chuyển sang tiếng Việt!');
+                // Thực hiện các thay đổi ngôn ngữ khác tại đây
+            } else if (lang === 'en') {
+                alert('Switched to English!');
+                // Thực hiện các thay đổi ngôn ngữ khác tại đây
+            }
+        }
+         $(document).ready(function () {
+            $('.capacity-button').click(function () {
+                var productId = $(this).data('product-id');
+                var capacity = $(this).data('capacity');
+                var priceDisplay = $('#price-' + productId);
+                var productDetails = $('.product').find('a[href*="/ChiTietSanPham/GetChiTiet/' + productId + '"]').siblings('ul').find('li[data-capacity="' + capacity + '"]');
+
+                if (productDetails.length > 0) {
+                    var price = productDetails.data('price');
+                    priceDisplay.text('Giá: ' + price + ' đ');
+                } else {
+                    priceDisplay.text('Giá: N/A');
+                }
+            });
+        });
+    </script>
+    <img src="Anh/LienHe.png" style="width:100%; padding-top:20px; padding-bottom:2px;" />
+</body>
+</html>

@@ -1,0 +1,55 @@
+﻿@using DuAn2811_.Models
+@model DuAn2811_.Models.ComboView
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] -Danh mục sản phẩm-</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link href="~/css/site.css" rel="stylesheet" />
+    <link href="~/css/dienthoai.css" rel="stylesheet" />
+    <script src="~/js/locnhieu.js" asp-append-version="true"></script>
+    <link href="~/css/locnhieu.css" rel="stylesheet" asp-append-version="true" />
+    <link rel="stylesheet" href="~/DuAn2811_.styles.css" asp-append-version="true" />
+</head>
+<body>
+    <header></header>
+    <main>
+        <div class="content-sanpham">
+            <div style="padding-bottom:20px">
+                <partial name="~/Views/ChiTietSanPham/DaXem.cshtml" model="Model" />
+            </div>
+            <h2 style="margin-left: 10%; padding-top:30px;">Sản phẩm </h2>
+            <div>
+                <partial name="~/Views/Shared/QuanLySanPham/LocNhieu.cshtml" model="Model" />
+            </div>
+            <div>
+
+                <partial name="~/Views/Shared/QuanLySanPham/Index.cshtml" model="Model" />
+            </div>
+            <div>
+                @if (Model?.CurrentPage != null && Model.TotalPages > 1)
+                {
+                    <ul class="pagination">
+                        @if (Model.CurrentPage > 1)
+                        {
+                            <li><a href="@Url.Action("GetManufacturer", new {maSanXuat = Model.maHangSX, pageIndex = Model.CurrentPage - 1, pageSize = Model.PageSize })">❮ Trang trước</a></li>
+                        }
+
+                        <li><span>Trang @Model.CurrentPage / @Model.TotalPages</span></li>
+
+                        @if (Model.CurrentPage < Model.TotalPages)
+                        {
+                            <li><a href="@Url.Action("GetManufacturer", new {maSanXuat = Model.maHangSX, pageIndex = Model.CurrentPage + 1, pageSize = Model.PageSize })">Trang sau ❯</a></li>
+                        }
+                    </ul>
+                }
+            </div>
+
+        </div>
+    </main>
+    <img src="/Anh/LienHe.png" style="width:100%; padding-top:20px; padding-bottom:2px;" />
+</body>
+</html>

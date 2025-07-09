@@ -1,0 +1,92 @@
+﻿@model Server._2811._2004.Models.TaiKHoan
+
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - DuAn2811_</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link href="~/css/dangnhap.css" rel="stylesheet" asp-append-version="true" />
+    <link rel="stylesheet" href="~/DuAn2811_.styles.css" asp-append-version="true" />
+</head>
+<body>
+    <main>
+        <div class="login-container">
+            <div class="auth-link">
+                <a href="/TaiKhoan/Login" class="menu-item">Đăng nhập</a>
+                <a href="/TaiKhoan/DangKy" class="menu-item">Đăng ký</a>
+            </div>
+            <form class="login-form" asp-action="DangKy" asp-controller="TaiKhoan" method="post">
+
+                <!-- Hiển thị thông báo lỗi chung -->
+                <div class="text-danger">
+                    @Html.ValidationSummary(true, "Có lỗi xảy ra, vui lòng kiểm tra lại thông tin bên dưới:")
+                </div>
+
+                <!-- Email -->
+                <input type="email"
+                       class="form-control"
+                       placeholder="Email"
+                       name="Email"
+                       value="@Model?.Email" />
+                <br />
+                <span asp-validation-for="Email" class="text-danger"></span>
+
+                <!-- Số điện thoại -->
+                <input type="text"
+                       class="form-control"
+                       placeholder="Số điện thoại"
+                       name="SoDienThoai"
+                       value="@Model?.SoDienThoai" />
+                <br />
+                <span asp-validation-for="SoDienThoai" class="text-danger"></span>
+
+                <!-- Mật khẩu -->
+                <input type="password"
+                       class="form-control"
+                       placeholder="Mật khẩu"
+                       name="MatKhau" />
+                <br />
+                <span asp-validation-for="MatKhau" class="text-danger"></span>
+
+                <!-- Xác thực mật khẩu -->
+                <input type="password"
+                       class="form-control"
+                       placeholder="Xác thực mật khẩu"
+                       name="MatKhau1" />
+                <br />
+
+                <!-- Tên đăng nhập -->
+                <input type="text"
+                       class="form-control"
+                       placeholder="Tên đăng nhập"
+                       name="TenDangNhap"
+                       value="@Model?.TenDangNhap" />
+                <br />
+                <span asp-validation-for="TenDangNhap" class="text-danger"></span>
+
+                <!-- Nút đăng ký -->
+                <button type="submit" class="btn btn-primary login-btn">ĐĂNG KÝ</button>
+
+                <!-- Thông báo lỗi nếu có -->
+                <div class="text-danger mt-3">
+                    @Html.ValidationSummary(false)
+                </div>
+
+                <!-- Đăng ký bằng mạng xã hội -->
+                <div class="alternative-login mt-3">
+                    <button type="button" class="btn btn-primary fb-login">Đăng ký với Facebook</button>
+                    <button type="button" class="btn btn-danger google-login">Đăng ký với Google</button>
+                </div>
+
+                <p class="mt-3">Bạn đã có tài khoản? <a href="/TaiKhoan/Login">Đăng nhập</a></p>
+            </form>
+        </div>
+    </main>
+
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

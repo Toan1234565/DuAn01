@@ -1,0 +1,309 @@
+﻿@using DuAn2811_.Models
+@model DuAn2811_.Models.ComboView
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - Danh mục sản phẩm</title>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+
+    <!-- CSS tùy chỉnh -->
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/css/dienthoai.css" />
+    <link rel="stylesheet" href="~/css/locnhieu.css" />
+    <link rel="stylesheet" href="~/DuAn2811_.styles.css" asp-append-version="true" />
+
+    <!-- JavaScript -->
+    <script src="~/js/locnhieu.js" asp-append-version="true"></script>
+</head>
+
+<body>
+    <header></header>
+    <main>
+        <div>
+            <ul class="Loc">
+                <li>
+                    <button id="open-filter-btn">Lọc</button>
+
+                    <div class="filter-container" id="loc">
+                        <div class="selected-filters-container">
+                            <p>Đã chọn:</p>
+                            <div id="selected-filters"></div>
+                        </div>
+
+                        <div class="filter-group">
+                            <h3>Hãng sản xuất</h3>
+                            <div class="filter-options hang">
+                                <button data-value="samsung" onclick="toggleFilter(this, 'Hãng')">Samsung</button>
+                                <button data-value="iphone" onclick="toggleFilter(this,'Hãng')">iPhone</button>
+                                <button data-value="xiaomi" onclick="toggleFilter(this,'Hãng')">Xiaomi</button>
+                                <button data-value="oppo" onclick="toggleFilter(this,'Hãng')">OPPO</button>
+                                <button data-value="vivo" onclick="toggleFilter(this,'Hãng')">Vivo</button>
+                                <button data-value="realme" onclick="toggleFilter(this,'Hãng')">Realme</button>
+                                <button data-value="nokia" onclick="toggleFilter(this,'Hãng')">Nokia</button>
+                            </div>
+                        </div>
+
+                        <div class="filter-group">
+                            <h3>Giá</h3>
+                            <div class="filter-options gia">
+                                <button data-min="0" data-max="2000000" onclick="selectPriceRange(this)">Dưới 2 triệu</button>
+                                <button data-min="2000000" data-max="4000000" onclick="selectPriceRange(this)">2-4 triệu</button>
+                                <button data-min="4000000" data-max="7000000" onclick="selectPriceRange(this)">4-7 triệu</button>
+                                <button data-min="7000000" data-max="14000000" onclick="selectPriceRange(this)">7-14 triệu</button>
+                                <button data-min="14000000" data-max="20000000" onclick="selectPriceRange(this)">14-20 triệu</button>
+                                <button data-min="20000000" data-max="99999999" onclick="selectPriceRange(this)">Trên 20 triệu</button>
+                            </div>
+                            <div class="price-range-group">
+                                <label for="min-price">Từ:</label>
+                                <input type="number" id="min-price" min="0" max="99999999" value="0" oninput="updatePriceSlider()" style="width:120px">
+                                <label for="max-price">Đến:</label>
+                                <input type="number" id="max-price" min="0" max="99999999" value="99999999" oninput="updatePriceSlider()" style="width:120px">
+                            </div>
+                            <input type="range" class="price-slider" min="0" max="99999999" step="100000" value="0" id="price-slider-min" oninput="updatePriceInputs()">
+                            <input type="range" class="price-slider" min="0" max="99999999" step="100000" value="99999999" id="price-slider-max" oninput="updatePriceInputs()">
+                        </div>
+
+                        <div class="filter-group">
+                            <h3>RAM</h3>
+                            <div class="filter-options ram">
+                                <button data-value="4" onclick="toggleFilter(this, 'ram')">4GB</button>
+                                <button data-value="6" onclick="toggleFilter(this, 'ram')">6GB</button>
+                                <button data-value="8" onclick="toggleFilter(this, 'ram')">8GB</button>
+                                <button data-value="12" onclick="toggleFilter(this, 'ram')">12GB</button>
+                                <button data-value="16" onclick="toggleFilter(this, 'ram')">16GB</button>
+                            </div>
+                        </div>
+
+                        <div class="filter-group">
+                            <h3>Dung lượng lưu trữ</h3>
+                            <div class="filter-options dl">
+                                <button data-value="64" onclick="toggleFilter(this, 'dung lượng')">64GB</button>
+                                <button data-value="128" onclick="toggleFilter(this, 'dung lượng ')">128GB</button>
+                                <button data-value="256" onclick="toggleFilter(this, 'dung lượng ')">256GB</button>
+                                <button data-value="512" onclick="toggleFilter(this, 'dung lượng')">512GB</button>
+                                <button data-value="1000" onclick="toggleFilter(this, 'dung lượng')">1TB</button>
+                            </div>
+                        </div>
+
+                        <div class="apply-button-container">
+                            <button id="apply-filters-btn" onclick="applyFilters()">Áp dụng</button>
+                            <button id="close-filter-btn" onclick="toggleChatBox()">Đóng</button>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <a href="@Url.Action("GetManufacturer", "LocSanPham1", new { maSanXuat = 1,pageIndex = 1, pageSize = 20 })">
+                        SAMSUNG
+                    </a>
+                </li>
+                <li>
+                    <a href="@Url.Action("GetManufacturer", "LocSanPham1", new { maSanXuat = 6,pageIndex = 1, pageSize = 20 })">
+                        iPhone
+                    </a>
+                </li>
+                <li>
+                    <a href="@Url.Action("GetManufacturer", "LocSanPham1", new { maSanXuat = 5,pageIndex = 1, pageSize = 20 })">
+                        OPPO
+                    </a>
+                </li>
+                <li>
+                    <a href="@Url.Action("GetManufacturer", "LocSanPham1", new { maSanXuat = 7,pageIndex = 1, pageSize = 20 })">
+                        Xiaomi
+                    </a>
+                </li>
+                <li>
+                    <a href="@Url.Action("GetManufacturer", "LocSanPham1", new { maSanXuat = 8,pageIndex = 1, pageSize = 20 })">
+                        realme
+                    </a>
+                </li>
+                <li>
+                    <a href="@Url.Action("GetManufacturer", "LocSanPham1", new { maSanXuat = 21,pageIndex = 1, pageSize = 20 })">
+                        VIVO
+                    </a>
+                </li>
+                <li>
+                    <a href="@Url.Action("GetManufacturer", "LocSanPham1", new { maSanXuat = 22,pageIndex = 1, pageSize = 20 })">
+                        NOKIA
+                    </a>
+                </li>
+            </ul>
+            <ul class="Loc1">
+                <li>Sắp xếp theo:</li>
+                <li>
+                    <a href="#">
+                        Nổi bật
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        Bán chạy
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        Giảm giá
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        Mới
+                    </a>
+                </li>
+                <li class="menu-item">
+                    Giá
+                    <ul class="sub-menu">
+                        <li>
+                            <a href="@Url.Action("GetProductsByCategory", new { maDanhMuc = ViewBag.CurrentDanhMuc, maHangSanXuat = ViewBag.CurrentHangSanXuat, sortOrder = "gia_asc" })"
+                               class="@(ViewBag.CurrentSortOrder == "gia_asc" ? "active" : "")">Tăng </a> |
+                            <a href="@Url.Action("GetProductsByCategory", new { maDanhMuc = ViewBag.CurrentDanhMuc,maHangSanXuat = ViewBag.CurrentHangSanXuat, sortOrder = "gia_desc" })"
+                               class="@(ViewBag.CurrentSortOrder == "gia_desc" ? "active" : "")">Giảm </a>
+                        </li>
+                    </ul>
+                </li>
+             </ul>
+        </div>      
+    </main>
+    <script>
+        let selectedFilters = {}; // Đối tượng lưu trữ các bộ lọc đã chọn (ví dụ: { hang: ['samsung'], ram: ['8'] })
+        let selectedPriceButton = null; // Biến lưu trữ nút giá đã được chọn (để bỏ chọn khi chọn nút khác hoặc dùng slider)
+        const selectedFiltersContainer = document.getElementById('selected-filters'); // Lấy phần tử div hiển thị các bộ lọc đã chọn
+        const minPriceInput = document.getElementById('min-price'); // Lấy ô nhập giá tối thiểu
+        const maxPriceInput = document.getElementById('max-price'); // Lấy ô nhập giá tối đa
+        const priceSliderMin = document.getElementById('price-slider-min'); // Lấy thanh trượt giá tối thiểu
+        const priceSliderMax = document.getElementById('price-slider-max'); // Lấy thanh trượt giá tối đa
+        const minPriceLimit = 0; // Giới hạn giá tối thiểu
+        const maxPriceLimit = 99999999; // Giới hạn giá tối đa
+        const filterSection = document.getElementById("loc");
+        const openFilterBtn = document.getElementById("open-filter-btn");
+
+        openFilterBtn.addEventListener('click', toggleChatBox);
+
+         document.addEventListener('click', function(event) {
+            var filterBox = document.getElementById('Loc');
+            if (filterBox && !filterBox.contains(event.target)) {
+                filterBox.style.display = 'none'; // hoặc bất kỳ cách nào bạn dùng để ẩn bảng lọc
+            }
+        });
+
+        function toggleChatBox() {
+            filterSection.classList.toggle('show');
+            filterSection.style.opacity = filterSection.classList.contains('show') ? "1" : "0";
+            if (!filterSection.classList.contains('show')) {
+                setTimeout(() => {
+                    filterSection.style.display = "none";
+                }, 300);
+            } else {
+                filterSection.style.display = "block";
+            }
+        }
+
+        function updateSelectedFiltersDisplay() {
+            selectedFiltersContainer.innerHTML = ''; // Xóa nội dung hiện tại của vùng hiển thị bộ lọc đã chọn
+            for (const category in selectedFilters) { // Duyệt qua từng danh mục bộ lọc trong đối tượng selectedFilters
+                if (selectedFilters[category]) { // Kiểm tra nếu có giá trị nào được chọn cho danh mục này
+                    const tag = document.createElement('span'); // Tạo một phần tử span mới (sẽ hiển thị như một "tag")
+                    tag.classList.add('filter-tag'); // Thêm class 'filter-tag' để áp dụng kiểu dáng
+                    tag.textContent = `${category}: ${Array.isArray(selectedFilters[category]) ? selectedFilters[category].join(', ') : selectedFilters[category]}`; // Thiết lập nội dung của tag (tên danh mục và giá trị đã chọn)
+                    selectedFiltersContainer.appendChild(tag); // Thêm tag vào vùng hiển thị
+                }
+            }
+            // Hiển thị khoảng giá từ input
+            const priceTag = document.createElement('span');
+            priceTag.classList.add('filter-tag');
+            priceTag.textContent = `Giá: ${formatCurrency(minPriceInput.value)} - ${formatCurrency(maxPriceInput.value)}`;
+            selectedFiltersContainer.appendChild(priceTag);
+        }
+
+        function toggleFilter(button, category) {
+            // Hàm xử lý khi một nút bộ lọc (không phải giá) được nhấp vào
+            if (!selectedFilters[category]) {
+                selectedFilters[category] = []; // Nếu chưa có mảng cho danh mục này, hãy tạo một mảng mới
+            }
+            const value = button.dataset.value; // Lấy giá trị bộ lọc từ thuộc tính 'data-value' của nút
+            const index = selectedFilters[category].indexOf(value); // Kiểm tra xem giá trị đã tồn tại trong mảng chưa
+
+            if (index > -1) {
+                selectedFilters[category].splice(index, 1); // Nếu đã tồn tại, hãy xóa nó khỏi mảng (bỏ chọn)
+                button.classList.remove("selected"); // Loại bỏ class 'selected' để thay đổi kiểu dáng nút
+            } else {
+                selectedFilters[category].push(value); // Nếu chưa tồn tại, hãy thêm nó vào mảng (chọn)
+                button.classList.add("selected"); // Thêm class 'selected' để thay đổi kiểu dáng nút
+            }
+
+            // Logic để chỉ chọn một giá trị cho bộ lọc "Hãng sản xuất"
+            if (category === 'hang') {
+                const buttons = button.parentNode.querySelectorAll('button'); // Lấy tất cả các nút trong cùng nhóm "Hãng sản xuất"
+                buttons.forEach(btn => {
+                    if (btn !== button) { // Bỏ chọn tất cả các nút khác trong nhóm
+                        btn.classList.remove('selected');
+                        const indexToRemove = selectedFilters['hang'] ? selectedFilters['hang'].indexOf(btn.dataset.value) : -1;
+                        if (indexToRemove > -1) {
+                            selectedFilters['hang'].splice(indexToRemove, 1);
+                        }
+                    }
+                });
+                selectedFilters['hang'] = [value]; // Chỉ giữ lại giá trị của nút vừa được chọn
+            }
+
+            updateSelectedFiltersDisplay(); // Cập nhật hiển thị các bộ lọc đã chọn
+        }
+
+        function selectPriceRange(button) {
+            // Hàm xử lý khi một nút chọn khoảng giá được nhấp vào
+            // Bỏ chọn nút giá đã chọn trước đó
+            if (selectedPriceButton && selectedPriceButton !== button) {
+                selectedPriceButton.classList.remove("selected");
+            }
+            // Chọn nút hiện tại
+            button.classList.add("selected");
+            selectedPriceButton = button;
+
+            // Cập nhật giá trị input và slider
+            minPriceInput.value = button.dataset.min; // Đặt giá trị tối thiểu từ thuộc tính 'data-min' của nút
+            maxPriceInput.value = button.dataset.max; // Đặt giá trị tối đa từ thuộc tính 'data-max' của nút
+            updatePriceSlider(); // Cập nhật vị trí của thanh trượt
+            updateSelectedFiltersDisplay(); // Cập nhật hiển thị các bộ lọc đã chọn
+        }
+
+        function updatePriceInputs() {
+            minPriceInput.value = priceSliderMin.value;
+            maxPriceInput.value = priceSliderMax.value;
+            // Bỏ chọn nút giá khi slider thay đổi thủ công
+            if (selectedPriceButton) {
+                selectedPriceButton.classList.remove("selected");
+                selectedPriceButton = null;
+            }
+            updateSelectedFiltersDisplay();
+        }
+
+        function updatePriceSlider() {
+            priceSliderMin.value = minPriceInput.value;
+            priceSliderMax.value = maxPriceInput.value;
+        }
+
+        function formatCurrency(number) {
+            return new Intl.NumberFormat('vi-VN', { style: 'currency', currency: 'VND' }).format(number);
+        }
+
+        function applyFilters() {
+            const filtersToSend = { ...selectedFilters, minPrice: minPriceInput.value, maxPrice: maxPriceInput.value };
+            alert("Đã lọc theo: " + JSON.stringify(filtersToSend));
+            // Ở đây bạn sẽ gửi `filtersToSend` đến backend API của mình
+        }
+
+        // Thiết lập sự kiện cho input số và slider giá
+        minPriceInput.addEventListener('input', updatePriceSlider);
+        maxPriceInput.addEventListener('input', updatePriceSlider);
+        priceSliderMin.addEventListener('input', updatePriceInputs);
+        priceSliderMax.addEventListener('input', updatePriceInputs);
+
+        filterSection.style.display = 'none'; // Đóng bộ lọc sau khi áp dụng
+        // Hiển thị ban đầu
+        updateSelectedFiltersDisplay();
+    </script>
+</body>
+</html>

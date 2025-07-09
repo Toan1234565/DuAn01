@@ -1,0 +1,109 @@
+is_global = true
+build_property.TargetFramework = net8.0
+build_property.TargetFramework = net8.0
+build_property.TargetPlatformMinVersion = 
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = Server._2811._2004
+build_property.RootNamespace = Server._2811._2004
+build_property.ProjectDir = C:\Users\nguue\source\repos\Toan2811\QuanLySanPham\DuAn2811\
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = 
+build_property.RazorLangVersion = 8.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = C:\Users\nguue\source\repos\Toan2811\QuanLySanPham\DuAn2811
+build_property._RazorSourceGeneratorDebug = 
+build_property.EffectiveAnalysisLevelStyle = 8.0
+build_property.EnableCodeStyleSeverity = 
+
+[C:/Users/nguue/source/repos/Toan2811/QuanLySanPham/DuAn2811/Views/ChiTietSanPham/DaXem.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2hpVGlldFNhblBoYW1cRGFYZW0uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/nguue/source/repos/Toan2811/QuanLySanPham/DuAn2811/Views/ChiTietSanPham/GetChiTiet.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2hpVGlldFNhblBoYW1cR2V0Q2hpVGlldC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/nguue/source/repos/Toan2811/QuanLySanPham/DuAn2811/Views/LocSanPham1/GetFilterClock.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTG9jU2FuUGhhbTFcR2V0RmlsdGVyQ2xvY2suY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/nguue/source/repos/Toan2811/QuanLySanPham/DuAn2811/Views/LocSanPham1/GetLapTopfileter.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTG9jU2FuUGhhbTFcR2V0TGFwVG9wZmlsZXRlci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/nguue/source/repos/Toan2811/QuanLySanPham/DuAn2811/Views/LocSanPham1/GetManufacturer.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTG9jU2FuUGhhbTFcR2V0TWFudWZhY3R1cmVyLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/nguue/source/repos/Toan2811/QuanLySanPham/DuAn2811/Views/LocSanPham1/Getphonefilter.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTG9jU2FuUGhhbTFcR2V0cGhvbmVmaWx0ZXIuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/nguue/source/repos/Toan2811/QuanLySanPham/DuAn2811/Views/LocSanPham1/GetProductsByCategory.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTG9jU2FuUGhhbTFcR2V0UHJvZHVjdHNCeUNhdGVnb3J5LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/nguue/source/repos/Toan2811/QuanLySanPham/DuAn2811/Views/LocSanPham1/GetProductsByFilter.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTG9jU2FuUGhhbTFcR2V0UHJvZHVjdHNCeUZpbHRlci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/nguue/source/repos/Toan2811/QuanLySanPham/DuAn2811/Views/LocSanPham1/GetProductsByManufacturer.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTG9jU2FuUGhhbTFcR2V0UHJvZHVjdHNCeU1hbnVmYWN0dXJlci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/nguue/source/repos/Toan2811/QuanLySanPham/DuAn2811/Views/LocSanPham/LocSanPhamNhieu.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTG9jU2FuUGhhbVxMb2NTYW5QaGFtTmhpZXUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/nguue/source/repos/Toan2811/QuanLySanPham/DuAn2811/Views/QuanLySanPham/GetAllProducts.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUXVhbkx5U2FuUGhhbVxHZXRBbGxQcm9kdWN0cy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/nguue/source/repos/Toan2811/QuanLySanPham/DuAn2811/Views/QuanLySanPham/SortProducts.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUXVhbkx5U2FuUGhhbVxTb3J0UHJvZHVjdHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/nguue/source/repos/Toan2811/QuanLySanPham/DuAn2811/Views/Shared/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/nguue/source/repos/Toan2811/QuanLySanPham/DuAn2811/Views/Shared/QuanLySanPham/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXFF1YW5MeVNhblBoYW1cSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/nguue/source/repos/Toan2811/QuanLySanPham/DuAn2811/Views/Shared/QuanLySanPham/LocNhieu.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXFF1YW5MeVNhblBoYW1cTG9jTmhpZXUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/nguue/source/repos/Toan2811/QuanLySanPham/DuAn2811/Views/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/nguue/source/repos/Toan2811/QuanLySanPham/DuAn2811/Views/TimKiemSanPham/TimKiem.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGltS2llbVNhblBoYW1cVGltS2llbS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/nguue/source/repos/Toan2811/QuanLySanPham/DuAn2811/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/nguue/source/repos/Toan2811/QuanLySanPham/DuAn2811/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/nguue/source/repos/Toan2811/QuanLySanPham/DuAn2811/Views/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-l65min6hpk
