@@ -4,11 +4,16 @@ wwwroot\css\ChiTietSanPham.css
 wwwroot\css\DangNhap.css
 wwwroot\css\DaXem.css
 wwwroot\css\DienThoai.css
+wwwroot\css\GioHang.css
 wwwroot\css\LocNhieu.css
 wwwroot\css\site.css
+wwwroot\css\ThanhToan.css
 wwwroot\css\Zalo.css
 wwwroot\favicon.ico
+wwwroot\js\ChiTietSanPham.js
+wwwroot\js\GioHang.js
 wwwroot\js\LocNhieu.js
+wwwroot\js\ThanhToan.js
 wwwroot\js\Zalo.js
 wwwroot\lib\bootstrap\dist\css\bootstrap.css
 wwwroot\lib\bootstrap\dist\css\bootstrap.css.map

@@ -1,116 +1,371 @@
-﻿<style>
-    /* CSS cho thanh bộ lọc ngang giống ảnh */
-    .filter-bar {
-        display: flex;
-        align-items: center;
-        flex-wrap: wrap; /* Cho phép các nút xuống dòng khi không đủ không gian */
-        padding: 10px;
-        background-color: #f8f9fa; /* Màu nền nhạt */
-        border-bottom: 1px solid #eee; /* Đường kẻ dưới mỏng */
-        margin-bottom: 20px; /* Khoảng cách với nội dung bên dưới */
-    }
+﻿/* General body styling (optional, but good for context) */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
 
-    .filter-bar button,
-    .filter-bar a { /* Áp dụng style tương tự cho cả button và a nếu cần */
-        display: inline-flex;
-        align-items: center;
-        padding: 8px 12px;
-        margin: 5px;
-        border: 1px solid #ccc;
-        border-radius: 20px; /* Bo tròn mạnh để giống "tag" */
-        background-color: #fff;
-        color: #333;
-        text-decoration: none;
-        font-size: 0.9em;
-        cursor: pointer;
-        transition: background-color 0.3s ease;
-    }
+/* --- Horizontal Filter Bar (top section, like image 2) --- */
+.filter-bar-horizontal {
+    display: flex;
+    flex-wrap: wrap; /* Allows items to wrap to the next line */
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #fff;
+    border-bottom: 1px solid #e0e0e0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+    gap: 10px; /* Space between items */
+    margin-bottom: 20px;
+}
 
-    .filter-bar button:hover,
-    .filter-bar a:hover {
+.filter-bar-button-primary,
+.filter-bar-link {
+    display: inline-flex;
+    align-items: center;
+    padding: 8px 15px;
+    border: 1px solid #ccc;
+    border-radius: 20px; /* Pill-shaped buttons */
+    background-color: #f8f8f8;
+    color: #333;
+    text-decoration: none;
+    font-size: 0.9em;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+    white-space: nowrap; /* Prevents text from wrapping inside the button/link */
+}
+
+    .filter-bar-button-primary:hover,
+    .filter-bar-link:hover {
         background-color: #e0e0e0;
+        border-color: #a0a0a0;
     }
 
-    .filter-bar button i,
-    .filter-bar a i {
-        margin-right: 5px; /* Khoảng cách giữa icon và text */
-        font-size: 1em; /* Điều chỉnh kích thước icon nếu cần */
+/* Specific style for the "Lọc" button */
+.filter-bar-button-primary {
+    background-color: #007bff;
+    color: white;
+    border-color: #007bff;
+    font-weight: bold;
+}
+
+    .filter-bar-button-primary:hover {
+        background-color: #0056b3;
+        border-color: #0056b3;
     }
 
-    /* Style riêng cho nút "Lọc" đầu tiên */
-    .filter-bar #open-filter-btn {
-        background-color: #fff; /* Giữ màu trắng */
-        border-color: #007bff; /* Màu xanh dương */
-        color: #007bff;
+    .filter-bar-button-primary i {
+        margin-right: 5px;
     }
 
-    .filter-bar #open-filter-btn:hover {
-        background-color: #e0f7fa; /* Màu hover nhạt hơn */
-    }
+/* Style for active links/buttons in the horizontal bar */
+.filter-bar-link.active {
+    background-color: #e0f0ff;
+    border-color: #007bff;
+    color: #007bff;
+    font-weight: bold;
+}
 
-    /* Ẩn ul.Loc chứa các link hãng sản xuất hiện tại */
-    .Loc:nth-child(2) {
-        display: none;
-    }
+/* Sort section styling */
+.filter-bar-sort-section {
+    display: flex; /* Added display flex to align items consistently */
+    align-items: center;
+    gap: 10px;
+    margin-left: auto; /* Pushes sort options to the right */
+}
 
-    /* Style cho phần sắp xếp (nếu bạn muốn điều chỉnh) */
-    .Loc:nth-child(3) {
-        list-style: none;
-        padding: 0;
-        margin: 10px 0;
-        display: flex;
-        align-items: center;
+    .filter-bar-sort-section span {
         font-size: 0.9em;
         color: #555;
-    }
-
-    .Loc:nth-child(3) li {
-        margin-right: 15px;
-    }
-
-    .Loc:nth-child(3) li:first-child {
         font-weight: bold;
-        margin-right: 8px;
+        /* display: block; Removing this as flex will handle alignment better */
+        /* margin-bottom: 5px; Removing this, adjust gap on parent if needed */
     }
 
-    .Loc:nth-child(3) li a {
+.filter-bar-dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.filter-bar-dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 120px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1; /* Make sure it's above other content but can be below higher z-index elements like filter-container */
+    border-radius: 5px;
+    top: 100%; /* Position below the dropdown trigger */
+    left: 0;
+    padding: 5px 0;
+}
+
+    .filter-bar-dropdown-content a {
+        color: black;
+        padding: 8px 15px;
         text-decoration: none;
-        color: #007bff;
+        display: block;
+        border: none; /* Remove border from dropdown items */
+        background-color: transparent; /* Remove background from dropdown items */
+        border-radius: 0; /* Remove border-radius from dropdown items */
     }
 
-    .Loc:nth-child(3) li a:hover {
-        text-decoration: underline;
+        .filter-bar-dropdown-content a:hover {
+            background-color: #f1f1f1;
+        }
+
+.filter-bar-dropdown:hover .filter-bar-dropdown-content {
+    display: block;
+}
+
+/* Hide the old ul.Loc elements (if they are still in your HTML) */
+ul.Loc {
+    display: none; /* This entire section is replaced by .filter-bar-horizontal */
+}
+
+ul.Loc1 {
+    display: none; /* This entire section is replaced by .filter-bar-sort-section */
+}
+
+/* --- Detailed Filter Container (the popup) --- */
+.filter-container {
+    /* Use opacity and visibility for smooth transitions, instead of display: none/block */
+    opacity: 0; /* Hidden by default for transition */
+    visibility: hidden; /* Ensures it's not interactive when hidden */
+    pointer-events: none; /* Disables interaction when hidden */
+
+    position: fixed;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0.95); /* Add a slight scale for subtle animation */
+    background-color: white;
+    border: 1px solid #ccc;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+    z-index: 1001; /* Higher than overlay's z-index */
+    padding: 25px;
+    width: 90%;
+    max-width: 700px;
+    border-radius: 8px;
+    transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out, visibility 0.3s ease-in-out;
+}
+
+    .filter-container.show {
+        opacity: 1;
+        visibility: visible;
+        pointer-events: auto; /* Re-enable interaction when shown */
+        transform: translate(-50%, -50%) scale(1); /* Scale back to normal */
     }
 
-    .Loc:nth-child(3) .menu-item {
-        position: relative;
+/* Filter group styling inside the popup */
+.filter-group {
+    margin-bottom: 20px;
+    padding-bottom: 15px;
+    border-bottom: 1px dashed #eee;
+}
+
+    .filter-group:last-child {
+        border-bottom: none;
     }
 
-    .Loc:nth-child(3) .sub-menu {
-        position: absolute;
-        top: 100%;
-        left: 0;
-        background-color: #fff;
+    .filter-group h3 {
+        font-size: 1.1em;
+        color: #333;
+        margin-bottom: 12px;
+        font-weight: bold;
+    }
+
+/* Filter options (buttons like Samsung, 4GB, etc.) */
+.filter-options {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px; /* Space between buttons */
+}
+
+    .filter-options button {
+        padding: 8px 15px;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+        background-color: #f8f8f8;
+        color: #555;
+        font-size: 0.9em;
+        cursor: pointer;
+        transition: background-color 0.2s ease, border-color 0.2s ease, color 0.2s ease;
+    }
+
+        .filter-options button:hover {
+            background-color: #e2e2e2;
+            border-color: #bbb;
+        }
+
+        /* Selected button style */
+        .filter-options button.selected {
+            background-color: #e0f0ff;
+            border-color: #007bff;
+            color: #007bff;
+            font-weight: bold;
+        }
+
+/* Price range specific styling */
+.price-range-group {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+    .price-range-group label {
+        font-size: 0.9em;
+        color: #555;
+        white-space: nowrap;
+    }
+
+    .price-range-group input[type="number"] {
+        width: 100px;
+        padding: 8px;
         border: 1px solid #ccc;
         border-radius: 4px;
-        padding: 5px 0;
-        list-style: none;
-        min-width: 100px;
-        display: none;
-        z-index: 10;
+        font-size: 0.9em;
     }
 
-    .Loc:nth-child(3) .menu-item:hover .sub-menu {
-        display: block;
+/* Range slider styling */
+input[type="range"].price-slider {
+    width: 100%;
+    -webkit-appearance: none;
+    height: 6px;
+    background: #d3d3d3;
+    outline: none;
+    opacity: 0.8;
+    transition: opacity .2s;
+    border-radius: 3px;
+    margin-top: 15px;
+    margin-bottom: 5px;
+}
+
+    input[type="range"].price-slider:hover {
+        opacity: 1;
     }
 
-    .Loc:nth-child(3) .sub-menu li a {
-        padding: 8px 10px;
-        display: block;
+    input[type="range"].price-slider::-webkit-slider-thumb {
+        -webkit-appearance: none;
+        appearance: none;
+        width: 18px;
+        height: 18px;
+        background: #007bff;
+        border-radius: 50%;
+        cursor: grab;
+        border: 2px solid white;
+        box-shadow: 0 0 5px rgba(0,0,0,0.2);
+    }
+
+    input[type="range"].price-slider::-moz-range-thumb {
+        width: 18px;
+        height: 18px;
+        background: #007bff;
+        border-radius: 50%;
+        cursor: grab;
+        border: 2px solid white;
+        box-shadow: 0 0 5px rgba(0,0,0,0.2);
+    }
+
+/* Selected filters display (top of the popup) */
+.selected-filters-container {
+    margin-bottom: 20px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #eee;
+}
+
+    .selected-filters-container p {
+        font-weight: bold;
         color: #333;
+        margin-bottom: 8px;
+        font-size: 0.95em;
     }
 
-    .Loc:nth-child(3) .sub-menu li a:hover {
-        background-color: #f0f0f0;
-        text-decoration: none;
+#selected-filters {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px; /* Space between tags */
+}
+
+.filter-tag {
+    background-color: #e9f5ff;
+    border: 1px solid #b3d9ff;
+    color: #0056b3;
+    padding: 6px 10px;
+    border-radius: 15px;
+    font-size: 0.8em;
+    display: flex;
+    align-items: center;
+    white-space: nowrap;
+}
+
+    .filter-tag .remove-tag {
+        margin-left: 8px;
+        cursor: pointer;
+        color: #007bff;
+        font-weight: bold;
+        font-size: 1.1em;
+    }
+
+        .filter-tag .remove-tag:hover {
+            color: #dc3545;
+        }
+
+/* Apply and Close buttons */
+.apply-button-container {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+    padding-top: 20px;
+}
+
+    .apply-button-container button {
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 1em;
+        font-weight: bold;
+        transition: background-color 0.2s ease;
+    }
+
+#apply-filters-btn {
+    background-color: #28a745;
+    color: white;
+}
+
+    #apply-filters-btn:hover {
+        background-color: #218838;
+    }
+
+#close-filter-btn {
+    background-color: #6c757d;
+    color: white;
+}
+
+    #close-filter-btn:hover {
+        background-color: #5a6268;
+    }
+
+/* --- Optional: Overlay for when filter is open --- */
+.overlay {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    
+    background-color: transparent; /* Changed to transparent if you explicitly want no visual overlay */
+    z-index: 1000;
+    transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
+}
+
+    .overlay.show {
+        opacity: 1; /* Keep opacity 1 even if transparent to allow pointer-events */
+        visibility: visible;
+        pointer-events: auto;
+       
     }

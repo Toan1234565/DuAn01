@@ -1,0 +1,562 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Giỏ hàng của bạn</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<style>
+    /* General Body & Container */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+/* Header */
+.header {
+    background-color: #fff;
+    border-bottom: 1px solid #ddd;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 0;
+}
+
+.logo a {
+    font-size: 24px;
+    font-weight: bold;
+    color: #4CAF50; /* Green color from provided images */
+    text-decoration: none;
+}
+
+.search-bar {
+    display: flex;
+    flex-grow: 1;
+    margin: 0 20px;
+    max-width: 400px;
+}
+
+.search-bar input {
+    flex-grow: 1;
+    padding: 8px 15px;
+    border: 1px solid #ddd;
+    border-radius: 20px 0 0 20px;
+    outline: none;
+}
+
+.search-bar button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 0 20px 20px 0;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.nav-menu ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-menu ul li a {
+    text-decoration: none;
+    color: #555;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.main-nav {
+    background-color: #4CAF50; /* Green background for main nav */
+    padding: 10px 0;
+}
+
+.main-nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+}
+
+.main-nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    padding: 10px 15px;
+    display: block;
+    transition: background-color 0.3s ease;
+}
+
+.main-nav ul li a:hover {
+    background-color: #45a049;
+    border-radius: 5px;
+}
+
+/* Main Content - Cart Page Specific */
+.main-content {
+    padding: 30px 0;
+}
+
+.breadcrumb {
+    margin-bottom: 20px;
+    font-size: 14px;
+    color: #666;
+}
+
+.breadcrumb a {
+    text-decoration: none;
+    color: #4CAF50;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #333;
+}
+
+.cart-container {
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap; /* Allow wrapping on smaller screens */
+}
+
+.cart-items {
+    flex: 3; /* Takes more space */
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    min-width: 600px; /* Ensure cart items don't shrink too much */
+}
+
+.cart-item {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #eee;
+    padding: 15px 0;
+}
+
+.cart-item:last-child {
+    border-bottom: none;
+}
+
+.item-image img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    margin-right: 20px;
+    border-radius: 5px;
+    border: 1px solid #eee;
+}
+
+.item-details {
+    flex-grow: 1;
+}
+
+.item-name {
+    margin: 0 0 5px 0;
+    font-size: 18px;
+    color: #333;
+}
+
+.item-attributes {
+    font-size: 14px;
+    color: #777;
+    margin-bottom: 10px;
+}
+
+.item-price {
+    font-size: 16px;
+    color: #555;
+    font-weight: bold;
+}
+
+.item-quantity {
+    display: flex;
+    align-items: center;
+    margin: 0 20px;
+}
+
+.item-quantity button {
+    background-color: #f0f0f0;
+    border: 1px solid #ddd;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    font-size: 18px;
+    border-radius: 4px;
+    transition: background-color 0.2s;
+}
+
+.item-quantity button:hover {
+    background-color: #e0e0e0;
+}
+
+.item-quantity input {
+    width: 50px;
+    text-align: center;
+    border: 1px solid #ddd;
+    border-left: none;
+    border-right: none;
+    height: 30px;
+    box-sizing: border-box; /* Include padding/border in element's total width/height */
+    -moz-appearance: textfield; /* Hide arrows for Firefox */
+}
+
+.item-quantity input::-webkit-outer-spin-button,
+.item-quantity input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.item-total {
+    min-width: 120px; /* Ensure space for total */
+    text-align: right;
+    font-size: 17px;
+    font-weight: bold;
+    color: #E63946; /* Red for emphasis */
+}
+
+.item-actions {
+    margin-left: 20px;
+}
+
+.remove-item {
+    background: none;
+    border: none;
+    color: #E63946;
+    font-size: 20px;
+    cursor: pointer;
+    transition: color 0.2s;
+}
+
+.remove-item:hover {
+    color: #c92f3a;
+}
+
+/* Cart Summary */
+.cart-summary {
+    flex: 1; /* Takes less space */
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    min-width: 300px; /* Ensure summary doesn't shrink too much */
+}
+
+.cart-summary h2 {
+    margin-top: 0;
+    margin-bottom: 20px;
+    font-size: 22px;
+    color: #333;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 10px;
+}
+
+.summary-row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    font-size: 16px;
+    color: #555;
+}
+
+.summary-row.total {
+    font-size: 20px;
+    font-weight: bold;
+    color: #333;
+    border-top: 1px solid #eee;
+    padding-top: 10px;
+    margin-top: 15px;
+}
+
+.coupon-section {
+    display: flex;
+    margin-top: 20px;
+    gap: 10px;
+}
+
+.coupon-section input {
+    flex-grow: 1;
+    padding: 8px 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    outline: none;
+}
+
+.coupon-section button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.coupon-section button:hover {
+    background-color: #0056b3;
+}
+
+.checkout-button {
+    display: block;
+    width: 100%;
+    padding: 12px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    text-align: center;
+    cursor: pointer;
+    margin-top: 25px;
+    transition: background-color 0.2s;
+}
+
+.checkout-button:hover {
+    background-color: #45a049;
+}
+
+.continue-shopping {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #f0f0f0;
+    color: #333;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+    text-align: center;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: background-color 0.2s;
+}
+
+.continue-shopping:hover {
+    background-color: #e0e0e0;
+}
+
+/* Footer */
+.footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 40px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .header-content {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .search-bar {
+        width: 100%;
+        margin: 10px 0;
+    }
+
+    .nav-menu ul {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .main-nav ul {
+        flex-wrap: wrap;
+    }
+
+    .cart-container {
+        flex-direction: column;
+        align-items: center; /* Center items in column layout */
+    }
+
+    .cart-items, .cart-summary {
+        width: 95%; /* Adjust width for smaller screens */
+        min-width: unset; /* Remove min-width to allow shrinking */
+    }
+
+    .cart-item {
+        flex-direction: column;
+        align-items: flex-start;
+        text-align: center;
+    }
+
+    .item-image {
+        margin: 0 auto 10px auto; /* Center image */
+    }
+
+    .item-details, .item-quantity, .item-total, .item-actions {
+        width: 100%;
+        text-align: center;
+        margin: 5px 0;
+    }
+
+    .item-quantity {
+        justify-content: center; /* Center quantity controls */
+    }
+}
+</style>
+<body>
+    <header class="header">
+        <div class="container header-content">
+            <div class="logo">
+                <a href="#">Cửa Hàng</a>
+            </div>
+            <div class="search-bar">
+                <input type="text" placeholder="Tìm kiếm sản phẩm...">
+                <button><i class="fas fa-search"></i></button>
+            </div>
+            <nav class="nav-menu">
+                <ul>
+                    <li><a href="#"><i class="fas fa-user"></i> Tài khoản</a></li>
+                    <li><a href="#"><i class="fas fa-shopping-cart"></i> Giỏ hàng</a></li>
+                    <li><a href="#"><i class="fas fa-map-marker-alt"></i> Hồ Chí Minh</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="main-nav">
+            <div class="container">
+                <ul>
+                    <li><a href="#">Điện thoại</a></li>
+                    <li><a href="#">Laptop</a></li>
+                    <li><a href="#">Phụ kiện</a></li>
+                    <li><a href="#">Smartwatch</a></li>
+                    <li><a href="#">Đồng hồ</a></li>
+                    <li><a href="#">Dịch vụ tiện ích</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <div class="container main-content">
+        <div class="breadcrumb">
+            <a href="#">Trang chủ</a> &gt; <span>Giỏ hàng</span>
+        </div>
+
+        <h1>Giỏ hàng của bạn</h1>
+
+        <div class="cart-container">
+            <div class="cart-items">
+                <div class="cart-item">
+                    <div class="item-image">
+                        <img src="https://via.placeholder.com/100x100?text=iPhone+13" alt="iPhone 13">
+                    </div>
+                    <div class="item-details">
+                        <h3 class="item-name">iPhone 13</h3>
+                        <p class="item-attributes">Dung lượng: 128GB, Màu: Trắng</p>
+                        <p class="item-price" data-price="899.99">899.99 đ</p>
+                    </div>
+                    <div class="item-quantity">
+                        <button class="quantity-minus">-</button>
+                        <input type="number" value="1" min="1" class="quantity-input">
+                        <button class="quantity-plus">+</button>
+                    </div>
+                    <div class="item-total">
+                        <span class="item-subtotal">899.99 đ</span>
+                    </div>
+                    <div class="item-actions">
+                        <button class="remove-item"><i class="fas fa-trash-alt"></i></button>
+                    </div>
+                </div>
+                <div class="cart-item">
+                    <div class="item-image">
+                        <img src="https://via.placeholder.com/100x100?text=Galaxy+S21" alt="Galaxy S21">
+                    </div>
+                    <div class="item-details">
+                        <h3 class="item-name">Galaxy S21</h3>
+                        <p class="item-attributes">Dung lượng: 256GB, Màu: Đen</p>
+                        <p class="item-price" data-price="899.99">899.99 đ</p>
+                    </div>
+                    <div class="item-quantity">
+                        <button class="quantity-minus">-</button>
+                        <input type="number" value="1" min="1" class="quantity-input">
+                        <button class="quantity-plus">+</button>
+                    </div>
+                    <div class="item-total">
+                        <span class="item-subtotal">899.99 đ</span>
+                    </div>
+                    <div class="item-actions">
+                        <button class="remove-item"><i class="fas fa-trash-alt"></i></button>
+                    </div>
+                </div>
+                <div class="cart-item">
+                    <div class="item-image">
+                        <img src="https://via.placeholder.com/100x100?text=Galaxy+S23+5G" alt="Samsung Galaxy S23 5G">
+                    </div>
+                    <div class="item-details">
+                        <h3 class="item-name">Samsung Galaxy S23 5G</h3>
+                        <p class="item-attributes">Dung lượng: 128GB, Màu: Tím</p>
+                        <p class="item-price" data-price="199900.00">199,900.00 đ</p>
+                    </div>
+                    <div class="item-quantity">
+                        <button class="quantity-minus">-</button>
+                        <input type="number" value="1" min="1" class="quantity-input">
+                        <button class="quantity-plus">+</button>
+                    </div>
+                    <div class="item-total">
+                        <span class="item-subtotal">199,900.00 đ</span>
+                    </div>
+                    <div class="item-actions">
+                        <button class="remove-item"><i class="fas fa-trash-alt"></i></button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="cart-summary">
+                <h2>Tóm tắt đơn hàng</h2>
+                <div class="summary-row">
+                    <span>Tổng tiền hàng:</span>
+                    <span id="subtotal">0.00 đ</span>
+                </div>
+                <div class="summary-row">
+                    <span>Phí vận chuyển:</span>
+                    <span id="shipping">0.00 đ</span>
+                </div>
+                <div class="summary-row total">
+                    <span>Tổng cộng:</span>
+                    <span id="grand-total">0.00 đ</span>
+                </div>
+                <div class="coupon-section">
+                    <input type="text" placeholder="Mã giảm giá">
+                    <button>Áp dụng</button>
+                </div>
+                <button class="checkout-button">Tiến hành thanh toán</button>
+                <button class="continue-shopping">Tiếp tục mua sắm</button>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 Cửa Hàng. Bảo lưu mọi quyền.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

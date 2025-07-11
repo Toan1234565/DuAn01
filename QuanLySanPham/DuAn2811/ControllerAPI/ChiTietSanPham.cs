@@ -93,6 +93,7 @@ namespace Server._2811._2004.ControllerAPI
                     TenSanPham = sanpham.TenSanPham,
                     MoTa = sanpham.MoTa,
                     Anh = danhsachAnh,
+                    
                     ChiTietSanPhams = sanpham.ChiTietSanPhams.Select(ct => new ChiTietSanPhamViewModel
                     {
                         MaSanPham = ct.MaSanPham,
@@ -101,7 +102,8 @@ namespace Server._2811._2004.ControllerAPI
                         Soluong = ct.SoLuong,
                         LoaiSanPham = ct.LoaiSanPham,
                         ThuocTinh = ct.ThuocTinh,
-                        Mau = ct.Mau
+                        Mau = ct.Mau,
+                        Dung_Luong = ct.Dung_Luong,
 
                     }).ToList(),
                     QuanLyTonKhos = sanpham.QuanLyTonKhos.Select(qt => new QuanLyTonKhoViewModel

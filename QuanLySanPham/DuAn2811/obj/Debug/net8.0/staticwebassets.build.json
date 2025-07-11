@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "AHrkEntEN3rnK3QG969bkWiUcSkGumvM5mPlZ3noPLE=",
+  "Hash": "Ro8Rrrtf/FCO3nBo8bH6qQzWOAR3P414tRFcz75kU0A=",
   "Source": "DuAn2811.",
   "BasePath": "_content/DuAn2811.",
   "Mode": "Default",
@@ -185,6 +185,27 @@
       "OriginalItemSpec": "wwwroot\\css\\DienThoai.css"
     },
     {
+      "Identity": "C:\\Users\\nguue\\source\\repos\\Toan2811\\QuanLySanPham\\DuAn2811\\wwwroot\\css\\GioHang.css",
+      "SourceId": "DuAn2811.",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\nguue\\source\\repos\\Toan2811\\QuanLySanPham\\DuAn2811\\wwwroot\\",
+      "BasePath": "_content/DuAn2811.",
+      "RelativePath": "css/GioHang#[.{fingerprint}]?.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "i50gz1iak9",
+      "Integrity": "OlSTKl8k6e/8DZHCggbn+lGr6eLbkqlWDtyhZyWDfKU=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\GioHang.css"
+    },
+    {
       "Identity": "C:\\Users\\nguue\\source\\repos\\Toan2811\\QuanLySanPham\\DuAn2811\\wwwroot\\css\\LocNhieu.css",
       "SourceId": "DuAn2811.",
       "SourceType": "Discovered",
@@ -199,8 +220,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "avudcj0zvp",
-      "Integrity": "eqoy4cUz8zOdISKakf0n1tGodhPHsf5wRSYn7nTHmaQ=",
+      "Fingerprint": "x7hbsz3v6p",
+      "Integrity": "E9ykGWkKExmAOqJ6wVCSsPZmcm095u8uhs2gZmNKqsE=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\css\\LocNhieu.css"
@@ -225,6 +246,27 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\css\\site.css"
+    },
+    {
+      "Identity": "C:\\Users\\nguue\\source\\repos\\Toan2811\\QuanLySanPham\\DuAn2811\\wwwroot\\css\\ThanhToan.css",
+      "SourceId": "DuAn2811.",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\nguue\\source\\repos\\Toan2811\\QuanLySanPham\\DuAn2811\\wwwroot\\",
+      "BasePath": "_content/DuAn2811.",
+      "RelativePath": "css/ThanhToan#[.{fingerprint}]?.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "3gwbxozl86",
+      "Integrity": "/fWvglSJkfangisvx2EqQVjVxpJ78+BH2wwxw1hxnkk=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\ThanhToan.css"
     },
     {
       "Identity": "C:\\Users\\nguue\\source\\repos\\Toan2811\\QuanLySanPham\\DuAn2811\\wwwroot\\css\\Zalo.css",
@@ -269,6 +311,48 @@
       "OriginalItemSpec": "wwwroot\\favicon.ico"
     },
     {
+      "Identity": "C:\\Users\\nguue\\source\\repos\\Toan2811\\QuanLySanPham\\DuAn2811\\wwwroot\\js\\ChiTietSanPham.js",
+      "SourceId": "DuAn2811.",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\nguue\\source\\repos\\Toan2811\\QuanLySanPham\\DuAn2811\\wwwroot\\",
+      "BasePath": "_content/DuAn2811.",
+      "RelativePath": "js/ChiTietSanPham#[.{fingerprint}]?.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "aqoqn91ocj",
+      "Integrity": "skpNnG183SJORnc94MRay45d9HvA+FyUrlnGhyi1ZjI=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\ChiTietSanPham.js"
+    },
+    {
+      "Identity": "C:\\Users\\nguue\\source\\repos\\Toan2811\\QuanLySanPham\\DuAn2811\\wwwroot\\js\\GioHang.js",
+      "SourceId": "DuAn2811.",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\nguue\\source\\repos\\Toan2811\\QuanLySanPham\\DuAn2811\\wwwroot\\",
+      "BasePath": "_content/DuAn2811.",
+      "RelativePath": "js/GioHang#[.{fingerprint}]?.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "bmytyx5za2",
+      "Integrity": "fRVkOIAfy57LVoTmLjic9+o6w320G8y1VE6/HVZzGsQ=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\GioHang.js"
+    },
+    {
       "Identity": "C:\\Users\\nguue\\source\\repos\\Toan2811\\QuanLySanPham\\DuAn2811\\wwwroot\\js\\LocNhieu.js",
       "SourceId": "DuAn2811.",
       "SourceType": "Discovered",
@@ -283,11 +367,32 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "19g3ef1i45",
-      "Integrity": "+5APFqw/1IeZcyam4uWDTIXqquk/RpYWDzEvNw63G7c=",
+      "Fingerprint": "ugk51j23zx",
+      "Integrity": "IlzoEoKwRbDuwX1IPwpGXQcLo+znT9gh7egt52pJDZM=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\js\\LocNhieu.js"
+    },
+    {
+      "Identity": "C:\\Users\\nguue\\source\\repos\\Toan2811\\QuanLySanPham\\DuAn2811\\wwwroot\\js\\ThanhToan.js",
+      "SourceId": "DuAn2811.",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\nguue\\source\\repos\\Toan2811\\QuanLySanPham\\DuAn2811\\wwwroot\\",
+      "BasePath": "_content/DuAn2811.",
+      "RelativePath": "js/ThanhToan#[.{fingerprint}]?.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "1qdj3aojmx",
+      "Integrity": "x6i4hTerhVbC1cvmKE6eE0wq2aI+fJONnhJWmFs0ne0=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\ThanhToan.js"
     },
     {
       "Identity": "C:\\Users\\nguue\\source\\repos\\Toan2811\\QuanLySanPham\\DuAn2811\\wwwroot\\js\\Zalo.js",
@@ -304,8 +409,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "50gyp912hf",
-      "Integrity": "e20eMeESSOmmt19rIBb33vV5yYiTKsTo2CaZ1UTA3+8=",
+      "Fingerprint": "e7flduh7hw",
+      "Integrity": "OnVwHn6jGw8sAr30DpIw1ZJxMxhYLzgPqL0w+az/Cww=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\js\\Zalo.js"
@@ -2002,8 +2107,8 @@
       ]
     },
     {
-      "Route": "css/LocNhieu.avudcj0zvp.css",
-      "AssetFile": "C:\\Users\\nguue\\source\\repos\\Toan2811\\QuanLySanPham\\DuAn2811\\wwwroot\\css\\LocNhieu.css",
+      "Route": "css/GioHang.css",
+      "AssetFile": "C:\\Users\\nguue\\source\\repos\\Toan2811\\QuanLySanPham\\DuAn2811\\wwwroot\\css\\GioHang.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2012,7 +2117,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "3181"
+          "Value": "6382"
         },
         {
           "Name": "Content-Type",
@@ -2020,11 +2125,48 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"eqoy4cUz8zOdISKakf0n1tGodhPHsf5wRSYn7nTHmaQ=\""
+          "Value": "\"OlSTKl8k6e/8DZHCggbn+lGr6eLbkqlWDtyhZyWDfKU=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 13 May 2025 16:34:14 GMT"
+          "Value": "Wed, 09 Jul 2025 09:26:39 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-OlSTKl8k6e/8DZHCggbn+lGr6eLbkqlWDtyhZyWDfKU="
+        }
+      ]
+    },
+    {
+      "Route": "css/GioHang.i50gz1iak9.css",
+      "AssetFile": "C:\\Users\\nguue\\source\\repos\\Toan2811\\QuanLySanPham\\DuAn2811\\wwwroot\\css\\GioHang.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "6382"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"OlSTKl8k6e/8DZHCggbn+lGr6eLbkqlWDtyhZyWDfKU=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 09 Jul 2025 09:26:39 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2034,15 +2176,15 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "avudcj0zvp"
+          "Value": "i50gz1iak9"
         },
         {
           "Name": "label",
-          "Value": "css/LocNhieu.css"
+          "Value": "css/GioHang.css"
         },
         {
           "Name": "integrity",
-          "Value": "sha256-eqoy4cUz8zOdISKakf0n1tGodhPHsf5wRSYn7nTHmaQ="
+          "Value": "sha256-OlSTKl8k6e/8DZHCggbn+lGr6eLbkqlWDtyhZyWDfKU="
         }
       ]
     },
@@ -2057,7 +2199,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "3181"
+          "Value": "9688"
         },
         {
           "Name": "Content-Type",
@@ -2065,11 +2207,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"eqoy4cUz8zOdISKakf0n1tGodhPHsf5wRSYn7nTHmaQ=\""
+          "Value": "\"E9ykGWkKExmAOqJ6wVCSsPZmcm095u8uhs2gZmNKqsE=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 13 May 2025 16:34:14 GMT"
+          "Value": "Fri, 11 Jul 2025 16:56:54 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2079,7 +2221,52 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-eqoy4cUz8zOdISKakf0n1tGodhPHsf5wRSYn7nTHmaQ="
+          "Value": "sha256-E9ykGWkKExmAOqJ6wVCSsPZmcm095u8uhs2gZmNKqsE="
+        }
+      ]
+    },
+    {
+      "Route": "css/LocNhieu.x7hbsz3v6p.css",
+      "AssetFile": "C:\\Users\\nguue\\source\\repos\\Toan2811\\QuanLySanPham\\DuAn2811\\wwwroot\\css\\LocNhieu.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "9688"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"E9ykGWkKExmAOqJ6wVCSsPZmcm095u8uhs2gZmNKqsE=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 11 Jul 2025 16:56:54 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "x7hbsz3v6p"
+        },
+        {
+          "Name": "label",
+          "Value": "css/LocNhieu.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-E9ykGWkKExmAOqJ6wVCSsPZmcm095u8uhs2gZmNKqsE="
         }
       ]
     },
@@ -2162,6 +2349,88 @@
         {
           "Name": "integrity",
           "Value": "sha256-VUUS13E/WfUhseLrpjxh43HNgTtHwqwUoLefNVXkilk="
+        }
+      ]
+    },
+    {
+      "Route": "css/ThanhToan.3gwbxozl86.css",
+      "AssetFile": "C:\\Users\\nguue\\source\\repos\\Toan2811\\QuanLySanPham\\DuAn2811\\wwwroot\\css\\ThanhToan.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "8570"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"/fWvglSJkfangisvx2EqQVjVxpJ78+BH2wwxw1hxnkk=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 09 Jul 2025 09:41:33 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "3gwbxozl86"
+        },
+        {
+          "Name": "label",
+          "Value": "css/ThanhToan.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-/fWvglSJkfangisvx2EqQVjVxpJ78+BH2wwxw1hxnkk="
+        }
+      ]
+    },
+    {
+      "Route": "css/ThanhToan.css",
+      "AssetFile": "C:\\Users\\nguue\\source\\repos\\Toan2811\\QuanLySanPham\\DuAn2811\\wwwroot\\css\\ThanhToan.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "8570"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"/fWvglSJkfangisvx2EqQVjVxpJ78+BH2wwxw1hxnkk=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 09 Jul 2025 09:41:33 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-/fWvglSJkfangisvx2EqQVjVxpJ78+BH2wwxw1hxnkk="
         }
       ]
     },
@@ -2270,7 +2539,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 16 May 2025 07:18:19 GMT"
+          "Value": "Fri, 11 Jul 2025 09:16:52 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2315,7 +2584,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 16 May 2025 07:18:19 GMT"
+          "Value": "Fri, 11 Jul 2025 09:16:52 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2360,7 +2629,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 16 May 2025 07:18:19 GMT"
+          "Value": "Fri, 11 Jul 2025 09:16:52 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2397,7 +2666,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 16 May 2025 07:18:19 GMT"
+          "Value": "Fri, 11 Jul 2025 09:16:52 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2494,8 +2763,8 @@
       ]
     },
     {
-      "Route": "js/LocNhieu.19g3ef1i45.js",
-      "AssetFile": "C:\\Users\\nguue\\source\\repos\\Toan2811\\QuanLySanPham\\DuAn2811\\wwwroot\\js\\LocNhieu.js",
+      "Route": "js/ChiTietSanPham.aqoqn91ocj.js",
+      "AssetFile": "C:\\Users\\nguue\\source\\repos\\Toan2811\\QuanLySanPham\\DuAn2811\\wwwroot\\js\\ChiTietSanPham.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2504,7 +2773,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "7317"
+          "Value": "4251"
         },
         {
           "Name": "Content-Type",
@@ -2512,11 +2781,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"+5APFqw/1IeZcyam4uWDTIXqquk/RpYWDzEvNw63G7c=\""
+          "Value": "\"skpNnG183SJORnc94MRay45d9HvA+FyUrlnGhyi1ZjI=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 13 Apr 2025 09:16:48 GMT"
+          "Value": "Fri, 11 Jul 2025 16:38:41 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2526,15 +2795,134 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "19g3ef1i45"
+          "Value": "aqoqn91ocj"
         },
         {
           "Name": "label",
-          "Value": "js/LocNhieu.js"
+          "Value": "js/ChiTietSanPham.js"
         },
         {
           "Name": "integrity",
-          "Value": "sha256-+5APFqw/1IeZcyam4uWDTIXqquk/RpYWDzEvNw63G7c="
+          "Value": "sha256-skpNnG183SJORnc94MRay45d9HvA+FyUrlnGhyi1ZjI="
+        }
+      ]
+    },
+    {
+      "Route": "js/ChiTietSanPham.js",
+      "AssetFile": "C:\\Users\\nguue\\source\\repos\\Toan2811\\QuanLySanPham\\DuAn2811\\wwwroot\\js\\ChiTietSanPham.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "4251"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"skpNnG183SJORnc94MRay45d9HvA+FyUrlnGhyi1ZjI=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 11 Jul 2025 16:38:41 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-skpNnG183SJORnc94MRay45d9HvA+FyUrlnGhyi1ZjI="
+        }
+      ]
+    },
+    {
+      "Route": "js/GioHang.bmytyx5za2.js",
+      "AssetFile": "C:\\Users\\nguue\\source\\repos\\Toan2811\\QuanLySanPham\\DuAn2811\\wwwroot\\js\\GioHang.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "3049"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"fRVkOIAfy57LVoTmLjic9+o6w320G8y1VE6/HVZzGsQ=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 11 Jul 2025 09:33:20 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "bmytyx5za2"
+        },
+        {
+          "Name": "label",
+          "Value": "js/GioHang.js"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-fRVkOIAfy57LVoTmLjic9+o6w320G8y1VE6/HVZzGsQ="
+        }
+      ]
+    },
+    {
+      "Route": "js/GioHang.js",
+      "AssetFile": "C:\\Users\\nguue\\source\\repos\\Toan2811\\QuanLySanPham\\DuAn2811\\wwwroot\\js\\GioHang.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "3049"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"fRVkOIAfy57LVoTmLjic9+o6w320G8y1VE6/HVZzGsQ=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 11 Jul 2025 09:33:20 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-fRVkOIAfy57LVoTmLjic9+o6w320G8y1VE6/HVZzGsQ="
         }
       ]
     },
@@ -2549,7 +2937,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "7317"
+          "Value": "15773"
         },
         {
           "Name": "Content-Type",
@@ -2557,11 +2945,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"+5APFqw/1IeZcyam4uWDTIXqquk/RpYWDzEvNw63G7c=\""
+          "Value": "\"IlzoEoKwRbDuwX1IPwpGXQcLo+znT9gh7egt52pJDZM=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 13 Apr 2025 09:16:48 GMT"
+          "Value": "Fri, 11 Jul 2025 17:06:52 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2571,13 +2959,13 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-+5APFqw/1IeZcyam4uWDTIXqquk/RpYWDzEvNw63G7c="
+          "Value": "sha256-IlzoEoKwRbDuwX1IPwpGXQcLo+znT9gh7egt52pJDZM="
         }
       ]
     },
     {
-      "Route": "js/Zalo.50gyp912hf.js",
-      "AssetFile": "C:\\Users\\nguue\\source\\repos\\Toan2811\\QuanLySanPham\\DuAn2811\\wwwroot\\js\\Zalo.js",
+      "Route": "js/LocNhieu.ugk51j23zx.js",
+      "AssetFile": "C:\\Users\\nguue\\source\\repos\\Toan2811\\QuanLySanPham\\DuAn2811\\wwwroot\\js\\LocNhieu.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2586,7 +2974,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "2976"
+          "Value": "15773"
         },
         {
           "Name": "Content-Type",
@@ -2594,11 +2982,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"e20eMeESSOmmt19rIBb33vV5yYiTKsTo2CaZ1UTA3+8=\""
+          "Value": "\"IlzoEoKwRbDuwX1IPwpGXQcLo+znT9gh7egt52pJDZM=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 13 Apr 2025 08:58:16 GMT"
+          "Value": "Fri, 11 Jul 2025 17:06:52 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2608,7 +2996,134 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "50gyp912hf"
+          "Value": "ugk51j23zx"
+        },
+        {
+          "Name": "label",
+          "Value": "js/LocNhieu.js"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-IlzoEoKwRbDuwX1IPwpGXQcLo+znT9gh7egt52pJDZM="
+        }
+      ]
+    },
+    {
+      "Route": "js/ThanhToan.1qdj3aojmx.js",
+      "AssetFile": "C:\\Users\\nguue\\source\\repos\\Toan2811\\QuanLySanPham\\DuAn2811\\wwwroot\\js\\ThanhToan.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "9791"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"x6i4hTerhVbC1cvmKE6eE0wq2aI+fJONnhJWmFs0ne0=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 09 Jul 2025 09:41:33 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "1qdj3aojmx"
+        },
+        {
+          "Name": "label",
+          "Value": "js/ThanhToan.js"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-x6i4hTerhVbC1cvmKE6eE0wq2aI+fJONnhJWmFs0ne0="
+        }
+      ]
+    },
+    {
+      "Route": "js/ThanhToan.js",
+      "AssetFile": "C:\\Users\\nguue\\source\\repos\\Toan2811\\QuanLySanPham\\DuAn2811\\wwwroot\\js\\ThanhToan.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "9791"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"x6i4hTerhVbC1cvmKE6eE0wq2aI+fJONnhJWmFs0ne0=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 09 Jul 2025 09:41:33 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-x6i4hTerhVbC1cvmKE6eE0wq2aI+fJONnhJWmFs0ne0="
+        }
+      ]
+    },
+    {
+      "Route": "js/Zalo.e7flduh7hw.js",
+      "AssetFile": "C:\\Users\\nguue\\source\\repos\\Toan2811\\QuanLySanPham\\DuAn2811\\wwwroot\\js\\Zalo.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "3627"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"OnVwHn6jGw8sAr30DpIw1ZJxMxhYLzgPqL0w+az/Cww=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 11 Jul 2025 09:28:11 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "e7flduh7hw"
         },
         {
           "Name": "label",
@@ -2616,7 +3131,7 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-e20eMeESSOmmt19rIBb33vV5yYiTKsTo2CaZ1UTA3+8="
+          "Value": "sha256-OnVwHn6jGw8sAr30DpIw1ZJxMxhYLzgPqL0w+az/Cww="
         }
       ]
     },
@@ -2631,7 +3146,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "2976"
+          "Value": "3627"
         },
         {
           "Name": "Content-Type",
@@ -2639,11 +3154,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"e20eMeESSOmmt19rIBb33vV5yYiTKsTo2CaZ1UTA3+8=\""
+          "Value": "\"OnVwHn6jGw8sAr30DpIw1ZJxMxhYLzgPqL0w+az/Cww=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 13 Apr 2025 08:58:16 GMT"
+          "Value": "Fri, 11 Jul 2025 09:28:11 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2653,7 +3168,7 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-e20eMeESSOmmt19rIBb33vV5yYiTKsTo2CaZ1UTA3+8="
+          "Value": "sha256-OnVwHn6jGw8sAr30DpIw1ZJxMxhYLzgPqL0w+az/Cww="
         }
       ]
     },

@@ -29,8 +29,16 @@
       "PackagePath": "staticwebassets\\css\\DienThoai.css"
     },
     {
+      "Id": "C:\\Users\\nguue\\source\\repos\\Toan2811\\QuanLySanPham\\DuAn2811\\wwwroot\\css\\GioHang.css",
+      "PackagePath": "staticwebassets\\css\\GioHang.css"
+    },
+    {
       "Id": "C:\\Users\\nguue\\source\\repos\\Toan2811\\QuanLySanPham\\DuAn2811\\wwwroot\\css\\LocNhieu.css",
       "PackagePath": "staticwebassets\\css\\LocNhieu.css"
+    },
+    {
+      "Id": "C:\\Users\\nguue\\source\\repos\\Toan2811\\QuanLySanPham\\DuAn2811\\wwwroot\\css\\ThanhToan.css",
+      "PackagePath": "staticwebassets\\css\\ThanhToan.css"
     },
     {
       "Id": "C:\\Users\\nguue\\source\\repos\\Toan2811\\QuanLySanPham\\DuAn2811\\wwwroot\\css\\Zalo.css",
@@ -45,8 +53,20 @@
       "PackagePath": "staticwebassets\\favicon.ico"
     },
     {
+      "Id": "C:\\Users\\nguue\\source\\repos\\Toan2811\\QuanLySanPham\\DuAn2811\\wwwroot\\js\\ChiTietSanPham.js",
+      "PackagePath": "staticwebassets\\js\\ChiTietSanPham.js"
+    },
+    {
+      "Id": "C:\\Users\\nguue\\source\\repos\\Toan2811\\QuanLySanPham\\DuAn2811\\wwwroot\\js\\GioHang.js",
+      "PackagePath": "staticwebassets\\js\\GioHang.js"
+    },
+    {
       "Id": "C:\\Users\\nguue\\source\\repos\\Toan2811\\QuanLySanPham\\DuAn2811\\wwwroot\\js\\LocNhieu.js",
       "PackagePath": "staticwebassets\\js\\LocNhieu.js"
+    },
+    {
+      "Id": "C:\\Users\\nguue\\source\\repos\\Toan2811\\QuanLySanPham\\DuAn2811\\wwwroot\\js\\ThanhToan.js",
+      "PackagePath": "staticwebassets\\js\\ThanhToan.js"
     },
     {
       "Id": "C:\\Users\\nguue\\source\\repos\\Toan2811\\QuanLySanPham\\DuAn2811\\wwwroot\\js\\Zalo.js",

@@ -1,0 +1,411 @@
+﻿/* General Body & Container */
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+}
+
+/* If you have a fixed header, uncomment and adjust padding-top */
+/*
+body {
+    padding-top: 130px; // Example if header height is 130px
+}
+*/
+
+.container {
+    max-width: 1500px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+/* Main Content - Checkout Page Specific */
+.main-content {
+    flex-grow: 1;
+    padding: 30px 0;
+}
+
+.breadcrumb {
+    margin-bottom: 20px;
+    font-size: 14px;
+    color: #666;
+}
+
+    .breadcrumb a {
+        text-decoration: none;
+        color: #4CAF50;
+    }
+
+h1 {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #333;
+}
+
+.checkout-container {
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap; /* Allow wrapping on smaller screens */
+    justify-content: center; /* Center content */
+}
+
+.checkout-form {
+    flex: 3; /* Takes more space for form */
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    min-width: 600px; /* Ensure form doesn't shrink too much */
+    max-width: calc(66% - 15px); /* Approx 2/3 width */
+    box-sizing: border-box;
+}
+
+.order-summary {
+    flex: 1; /* Takes less space for summary */
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    min-width: 300px; /* Ensure summary doesn't shrink too much */
+    max-width: calc(33% - 15px); /* Approx 1/3 width */
+    box-sizing: border-box;
+}
+
+/* Form Styling */
+section {
+    margin-bottom: 30px;
+}
+
+    section h2 {
+        font-size: 20px;
+        margin-top: 0;
+        margin-bottom: 15px;
+        color: #333;
+        border-bottom: 1px solid #eee;
+        padding-bottom: 10px;
+    }
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+    .form-group label {
+        display: block;
+        margin-bottom: 5px;
+        font-weight: bold;
+        color: #555;
+    }
+
+    .form-group .required {
+        color: #E63946;
+    }
+
+    .form-group input[type="text"],
+    .form-group input[type="tel"],
+    .form-group input[type="email"],
+    .form-group select,
+    .form-group textarea {
+        width: 100%;
+        padding: 10px;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+        box-sizing: border-box;
+        font-size: 16px;
+    }
+
+    .form-group textarea {
+        resize: vertical; /* Allow vertical resizing */
+    }
+
+/* Shipping Method */
+.shipping-options {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.shipping-option {
+    display: flex;
+    align-items: center;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 10px 15px;
+    cursor: pointer;
+    transition: background-color 0.2s, border-color 0.2s;
+}
+
+    .shipping-option:hover {
+        background-color: #f9f9f9;
+        border-color: #4CAF50;
+    }
+
+    .shipping-option input[type="radio"] {
+        margin-right: 10px;
+        transform: scale(1.2); /* Make radio button slightly larger */
+        accent-color: #4CAF50; /* Change radio button color */
+    }
+
+.shipping-details {
+    flex-grow: 1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.shipping-cost {
+    font-weight: bold;
+    color: #4CAF50;
+}
+
+/* Payment Method */
+.payment-tabs {
+    display: flex;
+    border-bottom: 1px solid #ddd;
+    margin-bottom: 15px;
+}
+
+.tab-button {
+    background-color: transparent;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    color: #777;
+    transition: color 0.2s, border-bottom 0.2s;
+    outline: none;
+}
+
+    .tab-button.active {
+        color: #4CAF50;
+        border-bottom: 3px solid #4CAF50;
+    }
+
+.payment-content {
+    display: none;
+    padding: 15px;
+    border: 1px solid #eee;
+    border-radius: 5px;
+    background-color: #fcfcfc;
+}
+
+    .payment-content.active {
+        display: block;
+    }
+
+    .payment-content p {
+        margin-top: 0;
+        font-size: 15px;
+        line-height: 1.5;
+    }
+
+    .payment-content ul {
+        list-style: none;
+        padding: 0;
+        margin: 10px 0;
+    }
+
+        .payment-content ul li {
+            margin-bottom: 5px;
+            font-size: 14px;
+        }
+
+    .payment-content small {
+        display: block;
+        margin-top: 10px;
+        color: #999;
+        font-size: 13px;
+    }
+
+.card-icons img {
+    height: 25px; /* Adjust size of card icons */
+    margin-right: 10px;
+    opacity: 0.8;
+}
+
+/* Order Summary */
+.order-summary h2 {
+    font-size: 20px;
+    margin-top: 0;
+    margin-bottom: 15px;
+    color: #333;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 10px;
+}
+
+.summary-product-list {
+    margin-bottom: 20px;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 15px;
+}
+
+.summary-product-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    gap: 10px;
+}
+
+    .summary-product-item img {
+        width: 50px;
+        height: 50px;
+        object-fit: cover;
+        border-radius: 3px;
+        border: 1px solid #eee;
+    }
+
+    .summary-product-item .product-details {
+        flex-grow: 1;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .summary-product-item .product-name {
+        font-size: 15px;
+        color: #333;
+    }
+
+    .summary-product-item .product-quantity {
+        font-size: 13px;
+        color: #777;
+    }
+
+    .summary-product-item .product-price {
+        font-size: 15px;
+        font-weight: bold;
+        color: #E63946;
+    }
+
+.summary-row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    font-size: 16px;
+    color: #555;
+}
+
+    .summary-row.total {
+        font-size: 20px;
+        font-weight: bold;
+        color: #333;
+        border-top: 1px solid #eee;
+        padding-top: 10px;
+        margin-top: 15px;
+    }
+
+.coupon-section {
+    display: flex;
+    margin-top: 20px;
+    gap: 10px;
+    flex-wrap: wrap; /* Allows wrapping */
+    align-items: center;
+}
+
+    .coupon-section input {
+        flex-grow: 1;
+        padding: 8px 10px;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+        outline: none;
+        box-sizing: border-box;
+    }
+
+    .coupon-section button {
+        background-color: #007bff;
+        color: white;
+        border: none;
+        padding: 8px 15px;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.2s;
+        box-sizing: border-box;
+    }
+
+        .coupon-section button:hover {
+            background-color: #0056b3;
+        }
+
+.place-order-button {
+    display: block;
+    width: 100%;
+    padding: 15px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 20px;
+    text-align: center;
+    cursor: pointer;
+    margin-top: 25px;
+    transition: background-color 0.2s;
+}
+
+    .place-order-button:hover {
+        background-color: #45a049;
+    }
+
+/* Footer */
+.footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    width: 100%;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .checkout-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .checkout-form, .order-summary {
+        width: 95%;
+        min-width: unset;
+        max-width: unset;
+    }
+
+    .shipping-option {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 5px;
+    }
+
+    .shipping-details {
+        width: 100%;
+    }
+
+    .shipping-option input[type="radio"] {
+        align-self: flex-start;
+        margin-bottom: 5px;
+    }
+
+    .payment-tabs {
+        flex-wrap: wrap;
+    }
+
+    .tab-button {
+        flex-basis: 100%; /* Each tab takes full width */
+        border-bottom: 1px solid #eee;
+        padding: 10px;
+        text-align: left;
+    }
+
+        .tab-button.active {
+            border-bottom: 3px solid #4CAF50;
+        }
+
+    .coupon-section {
+        flex-direction: column;
+        gap: 5px;
+    }
+
+        .coupon-section input, .coupon-section button {
+            width: 100%;
+        }
+}

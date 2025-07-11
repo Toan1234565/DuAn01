@@ -88,3 +88,18 @@ function changeLanguage(lang) {
         // Thực hiện các thay đổi ngôn ngữ khác tại đây
     }
 }
+$(document).ready(function () {
+    $('.capacity-button').click(function () {
+        var productId = $(this).data('product-id');
+        var capacity = $(this).data('capacity');
+        var priceDisplay = $('#price-' + productId);
+        var productDetails = $('.product').find('a[href*="/ChiTietSanPham/GetChiTiet/' + productId + '"]').siblings('ul').find('li[data-capacity="' + capacity + '"]');
+
+        if (productDetails.length > 0) {
+            var price = productDetails.data('price');
+            priceDisplay.text('Giá: ' + price + ' đ');
+        } else {
+            priceDisplay.text('Giá: N/A');
+        }
+    });
+});

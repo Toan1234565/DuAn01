@@ -14,18 +14,31 @@
     <link href="~/css/chitietsanpham.css" rel="stylesheet" asp-append-version="true" />
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet" />
     <style>
-        .capacity-options button, .color-options button {
-            padding: 8px 15px;
-            margin-right: 5px;
+        /* Kiểu dáng cơ bản cho tất cả các nút dung lượng và màu sắc */
+        .capacity-button,
+        .color-button {
+            padding: 8px 12px;
+            margin: 5px;
             border: 1px solid #ccc;
-            border-radius: 5px;
+            background-color: white; /* Mặc định là màu trắng */
             cursor: pointer;
-            background-color: white;
+            border-radius: 5px;
+            color: #333; /* Màu chữ mặc định */
         }
 
-            .capacity-options button.selected, .color-options button.selected {
-                border-color: blue;
+            /* Hiệu ứng khi di chuột qua nút */
+            .capacity-button:hover,
+            .color-button:hover {
+                background-color: #f0f0f0; /* Màu nền nhạt hơn khi di chuột */
+            }
+
+            /* Kiểu dáng cho nút đang được chọn */
+            .capacity-button.selected,
+            .color-button.selected {
+                border: 2px solid blue; /* Viền xanh cho nút được chọn */
                 font-weight: bold;
+                background-color: #d0e0ff; /* Màu nền xanh nhạt cho nút được chọn */
+                color: #000; /* Màu chữ đậm hơn cho nút được chọn */
             }
     </style>
 </head>
@@ -70,42 +83,79 @@
 
             </div >
 
-            @* thong tin duong luong dien thoai *@
-            <div class="capacity-options">
-                <p>Dung lượng:</p>
-                @if (Model?.ChiTietSanPhams != null)
-                {
-                    var distinctCapacities = Model.ChiTietSanPhams.Select(ct => ct.ThuocTinh).Distinct().ToList();
-                    @foreach (var capacity in distinctCapacities)
+
+            <div class="product" data-product-id="@Model.MaSanPham">
+                <div class="capacity-options">
+                    <p>Chọn dung lượng:</p>
+                    @if (Model.ChiTietSanPhams != null && Model.ChiTietSanPhams.Any())
                     {
-                        <button type="button" data-capacity="@capacity">@capacity</button>
+                        var distinctCapacities = Model.ChiTietSanPhams.Select(ct => $"{ct.Dung_Luong}").Distinct().ToList();
+                        foreach (var capacity in distinctCapacities)
+                        {
+                            <button type="button" class="capacity-button" data-product-id="@Model.MaSanPham" data-capacity="@capacity">
+                                @capacity
+                            </button>
+                        }
                     }
-                }
+                </div>
+
+                <div class="color-options">
+                    <p>Màu sắc:</p>
+                    @if (Model?.ChiTietSanPhams != null)
+                    {
+                        var distinctColors = Model.ChiTietSanPhams.Select(ct => ct.Mau).Distinct().OrderBy(c => c).ToList();
+                        foreach (var color in distinctColors)
+                        {
+                            <button type="button" class="color-button" data-product-id="@Model.MaSanPham" data-color="@color">@color</button>
+                        }
+                    }
+                </div>
+
+                <div class="product-price-section">
+                    <span class="product-price" id="price-@Model.MaSanPham">
+                        @if (Model?.ChiTietSanPhams != null && Model.ChiTietSanPhams.Any())
+                        {
+                            @Model.ChiTietSanPhams.First()?.Gia
+                        }
+                        else
+                        {
+                            <span>Sản phẩm không có</span>
+                        }
+                    </span>
+                </div>
+
+                <ul class="product-details" data-product-id="@Model.MaSanPham" style="list-style-type:none; padding:10px; display:none;">
+                    @if (Model.ChiTietSanPhams != null)
+                    {
+                        foreach (var chitiet in Model.ChiTietSanPhams)
+                        {
+                            <li data-capacity="@chitiet.Dung_Luong" data-price="@chitiet.Gia" data-color="@chitiet.Mau">
+                                Giá: @chitiet.Gia đ, Dung lượng: @chitiet.Dung_Luong, Màu: @chitiet.Mau
+                            </li>
+                        }
+                    }
+
+                    @if (Model.QuanLyTonKhos != null)
+                    {
+                        foreach (var tonkho in Model.QuanLyTonKhos)
+                        {
+                            <li>Đã bán: @tonkho.So_Luong_Da_Ban</li>
+                        }
+                    }
+
+                    @if (Model.ChiTietKhuyenMais != null)
+                    {
+                        foreach (var ctkm in Model.ChiTietKhuyenMais)
+                        {
+                            <li>
+                                @ctkm.TenKhuyenMai
+                            </li>
+                        }
+                    }
+                </ul>
             </div>
-            <div class="color-options">
-                <p>Màu sắc:</p>
-                @if (Model?.ChiTietSanPhams != null)
-                {
-                    var distinctColors = Model.ChiTietSanPhams.Select(ct => ct.Mau).Distinct().ToList();
-                    @foreach (var color in distinctColors)
-                    {
-                        <button type="button" data-color="@color">@color</button>
-                    }
-                }
-            </div>
-            <div class="product-price-section">
-                <span class="product-price">
-                    @if (Model?.ChiTietSanPhams != null && Model.ChiTietSanPhams.Any())
-                    {
-                        @Model.ChiTietSanPhams.FirstOrDefault()?.Gia
-                       
-                    }
-                    else
-                    {
-                        <span>Chưa có giá</span>
-                    }
-                </span>
-            </div>
+            
+          
             <div class="product-warranty">
                 Bảo hành: Chính hãng đến 03/03/2026
             </div>
@@ -239,119 +289,18 @@
             sản phẩm liên quan
         </h2>
     </div>
+    @* Đảm bảo jQuery được tải trước *@
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+
+    @* Khởi tạo một biến JavaScript với MaSanPham trước khi tải script của bạn *@
+    <script>
+        var initialProductId = '@Model.MaSanPham';
+    </script>
+
+    @* Liên kết tệp JavaScript riêng biệt của bạn SAU khi biến được khởi tạo *@
+    <script src="~/js/chitietsanpham.js"></script>
 </body>
 </html>
-<script>
-        document.addEventListener('DOMContentLoaded', function() {
-        const mainImage = document.querySelector('.product-main-image');
-        const thumbnailImages = document.querySelectorAll('.product-thumbnail-image');
-
-        thumbnailImages.forEach(thumbnail => {
-            thumbnail.addEventListener('click', function() {
-                const newMainImageSrc = this.dataset.mainImage;
-                mainImage.src = newMainImageSrc;
-
-                // Loại bỏ lớp 'active' khỏi tất cả thumbnails
-                thumbnailImages.forEach(img => img.classList.remove('active'));
-                // Thêm lớp 'active' vào thumbnail vừa được click
-                this.classList.add('active');
-            });
-        });
-
-        // Thiết lập thumbnail đầu tiên là active khi trang tải (nếu có thumbnails)
-        if (thumbnailImages.length > 0) {
-            thumbnailImages[0].classList.add('active');
-        }
-    });
-        document.addEventListener('DOMContentLoaded', function() {
-        const mainImage = document.querySelector('.product-main-image');
-        const thumbnailImages = document.querySelectorAll('.product-thumbnail-image');
-        const capacityButtons = document.querySelectorAll('.capacity-options button');
-        const colorButtons = document.querySelectorAll('.color-options button');
-        const priceDisplay = document.getElementById('productPrice');
-
-        let selectedCapacity = capacityButtons.length > 0 ? capacityButtons[0].dataset.capacity : null;
-        let selectedColor = colorButtons.length > 0 ? colorButtons[0].dataset.color : null;
-
-        thumbnailImages.forEach(thumbnail => {
-            thumbnail.addEventListener('click', function() {
-                const newMainImageSrc = this.dataset.mainImage;
-                mainImage.src = newMainImageSrc;
-
-                thumbnailImages.forEach(img => img.classList.remove('active'));
-                this.classList.add('active');
-            });
-        });
-
-        if (thumbnailImages.length > 0) {
-            thumbnailImages[0].classList.add('active');
-        }
-
-        function updatePrice() {
-            if (Model && Model.ChiTietSanPhams && selectedCapacity && selectedColor) {
-                const variant = Model.ChiTietSanPhams.find(ct => ct.ThuocTinh === selectedCapacity && ct.Mau === selectedColor);
-                if (variant) {
-                    priceDisplay.textContent = variant.Gia;
-                    // Cập nhật ảnh chính nếu có ảnh tương ứng với biến thể (nếu thông tin ảnh được lưu trong ChiTietSanPham)
-                    // Ví dụ (giả định bạn có thuộc tính AnhBienThe trong ChiTietSanPhamViewModel):
-                    // if (variant.AnhBienThe) {
-                    //     mainImage.src = variant.AnhBienThe;
-                    //     // Cập nhật thumbnails nếu cần
-                    // }
-                } else if (Model.ChiTietSanPhams.length > 0) {
-                    // Nếu không tìm thấy biến thể phù hợp, hiển thị giá mặc định hoặc thông báo
-                    priceDisplay.textContent = Model.ChiTietSanPhams[0].Gia;
-                    // Có thể reset ảnh chính về ảnh đầu tiên
-                    if (Model.Anh && Model.Anh.length > 0) {
-                        mainImage.src = Model.Anh[0];
-                        // Cập nhật active thumbnail
-                        thumbnailImages.forEach(img => img.classList.remove('active'));
-                        if (thumbnailImages.length > 0) {
-                            thumbnailImages[0].classList.add('active');
-                        }
-                    } else {
-                        priceDisplay.textContent = "Chưa có giá";
-                        mainImage.src = ""; // Hoặc ảnh mặc định không có
-                    }
-                } else {
-                    priceDisplay.textContent = "Chưa có giá";
-                    mainImage.src = ""; // Hoặc ảnh mặc định không có
-                }
-            } else if (Model?.ChiTietSanPhams?.length > 0) {
-                // Trường hợp ban đầu hoặc khi chỉ có một biến thể
-                priceDisplay.textContent = Model.ChiTietSanPhams[0].Gia;
-            } else {
-                priceDisplay.textContent = "Chưa có giá";
-            }
-        }
-
-        capacityButtons.forEach(button => {
-            button.addEventListener('click', function() {
-                capacityButtons.forEach(btn => btn.classList.remove('selected'));
-                this.classList.add('selected');
-                selectedCapacity = this.dataset.capacity;
-                updatePrice();
-            });
-            // Set initial selected state for the first capacity button
-            if (capacityButtons.length > 0 && button === capacityButtons[0]) {
-                button.classList.add('selected');
-            }
-        });
-
-        colorButtons.forEach(button => {
-            button.addEventListener('click', function() {
-                colorButtons.forEach(btn => btn.classList.remove('selected'));
-                this.classList.add('selected');
-                selectedColor = this.dataset.color;
-                updatePrice();
-            });
-            // Set initial selected state for the first color button
-            if (colorButtons.length > 0 && button === colorButtons[0]) {
-                button.classList.add('selected');
-            }
-        });
-
-        // Gọi updatePrice ban đầu để hiển thị giá của biến thể được chọn mặc định
-        updatePrice();
-    });
-</script>
+    

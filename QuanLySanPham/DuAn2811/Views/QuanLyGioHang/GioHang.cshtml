@@ -1,0 +1,119 @@
+﻿<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Giỏ hàng của bạn</title>
+    <link href="~/css/giohang.css" rel="stylesheet" asp-append-version="true" />
+</head>
+
+<body>
+    <div class="container main-content">
+        <div class="breadcrumb">
+            <a href="/QuanlySanPham/GetAllProducts">Trang chủ</a> &gt; <span>Giỏ hàng</span>
+        </div>
+
+        <h1>Giỏ hàng của bạn</h1>
+
+        <div class="cart-container">
+            <div class="cart-items">
+                <div class="cart-item">
+                    <div class="item-image">
+                        <img src="https://via.placeholder.com/100x100?text=iPhone+13" alt="iPhone 13">
+                    </div>
+                    <div class="item-details">
+                        <h3 class="item-name">iPhone 13</h3>
+                        <p class="item-attributes">Dung lượng: 128GB, Màu: Trắng</p>
+                        <p class="item-price" data-price="899.99">899.99 đ</p>
+                    </div>
+                    <div class="item-quantity">
+                        <button class="quantity-minus">-</button>
+                        <input type="number" value="1" min="1" class="quantity-input">
+                        <button class="quantity-plus">+</button>
+                    </div>
+                    <div class="item-total">
+                        <span class="item-subtotal">899.99 đ</span>
+                    </div>
+                    <div class="item-actions">
+                        <button class="remove-item"><i class="fas fa-trash-alt"></i></button>
+                    </div>
+                </div>
+                <div class="cart-item">
+                    <div class="item-image">
+                        <img src="https://via.placeholder.com/100x100?text=Galaxy+S21" alt="Galaxy S21">
+                    </div>
+                    <div class="item-details">
+                        <h3 class="item-name">Galaxy S21</h3>
+                        <p class="item-attributes">Dung lượng: 256GB, Màu: Đen</p>
+                        <p class="item-price" data-price="899.99">899.99 đ</p>
+                    </div>
+                    <div class="item-quantity">
+                        <button class="quantity-minus">-</button>
+                        <input type="number" value="1" min="1" class="quantity-input">
+                        <button class="quantity-plus">+</button>
+                    </div>
+                    <div class="item-total">
+                        <span class="item-subtotal">899.99 đ</span>
+                    </div>
+                    <div class="item-actions">
+                        <button class="remove-item"><i class="fas fa-trash-alt"></i></button>
+                    </div>
+                </div>
+                <div class="cart-item">
+                    <div class="item-image">
+                        <img src="https://via.placeholder.com/100x100?text=Galaxy+S23+5G" alt="Samsung Galaxy S23 5G">
+                    </div>
+                    <div class="item-details">
+                        <h3 class="item-name">Samsung Galaxy S23 5G</h3>
+                        <p class="item-attributes">Dung lượng: 128GB, Màu: Tím</p>
+                        <p class="item-price" data-price="199900.00">199,900.00 đ</p>
+                    </div>
+                    <div class="item-quantity">
+                        <button class="quantity-minus">-</button>
+                        <input type="number" value="1" min="1" class="quantity-input">
+                        <button class="quantity-plus">+</button>
+                    </div>
+                    <div class="item-total">
+                        <span class="item-subtotal">199,900.00 đ</span>
+                    </div>
+                    <div class="item-actions">
+                        <button class="remove-item"><i class="fas fa-trash-alt"></i></button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="cart-summary">
+                <h2>Tóm tắt đơn hàng</h2>
+                <div class="summary-row">
+                    <span>Tổng tiền hàng:</span>
+                    <span id="subtotal">0.00 đ</span>
+                </div>
+                <div class="summary-row">
+                    <span>Phí vận chuyển:</span>
+                    <span id="shipping">0.00 đ</span>
+                </div>
+                <div class="summary-row total">
+                    <span>Tổng cộng:</span>
+                    <span id="grand-total">0.00 đ</span>
+                </div>
+                <div class="coupon-section">
+                    <input type="text" placeholder="Mã giảm giá">
+                    <button>Áp dụng</button>
+                </div>
+                <button class="checkout-button">Tiến hành thanh toán</button>
+                <button id="continueShoppingBtn" class="continue-shopping">Tiếp tục mua sắm</button>
+                
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="footer1">
+            <p>&copy; 2025 Cửa Hàng. Bảo lưu mọi quyền.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="~/js/giohang.js" asp-append-version="true"></script>
+</body>
+</html>

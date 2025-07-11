@@ -68,6 +68,10 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTG9jU2FuUGhhbVxMb2NTYW5QaGFtTmhpZXUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/nguue/source/repos/Toan2811/QuanLySanPham/DuAn2811/Views/QuanLyGioHang/GioHang.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUXVhbkx5R2lvSGFuZ1xHaW9IYW5nLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/nguue/source/repos/Toan2811/QuanLySanPham/DuAn2811/Views/QuanLySanPham/GetAllProducts.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUXVhbkx5U2FuUGhhbVxHZXRBbGxQcm9kdWN0cy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
@@ -90,6 +94,10 @@ build_metadata.AdditionalFiles.CssScope =
 
 [C:/Users/nguue/source/repos/Toan2811/QuanLySanPham/DuAn2811/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/nguue/source/repos/Toan2811/QuanLySanPham/DuAn2811/Views/ThanhToan/GetThanhToan.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGhhbmhUb2FuXEdldFRoYW5oVG9hbi5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/nguue/source/repos/Toan2811/QuanLySanPham/DuAn2811/Views/TimKiemSanPham/TimKiem.cshtml]
